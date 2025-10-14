@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=document.querySelectorAll(".overlay__cards"),c=document.querySelector(".popupcards"),r=document.querySelector(".cardsPopUp__img ");e.forEach(e=>{e.addEventListener("click",()=>{c.classList.add("open")})}),r.addEventListener("click",()=>{c.classList.remove("open")})})();
+//# sourceMappingURL=cardsPopUp.bundle.js.map
