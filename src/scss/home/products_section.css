@@ -1,0 +1,659 @@
+.products {
+  -webkit-padding-before: 87px;
+          padding-block-start: 87px;
+}
+@media (max-width: 600px) {
+  .products {
+    display: none;
+  }
+}
+
+.products__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 992.99px) {
+  .products__title {
+    padding-inline: 30px;
+  }
+}
+
+.products__title-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 100%;
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+}
+
+.products__title-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  line-height: 28px;
+  max-width: 605px;
+  -webkit-margin-start: -6px;
+          margin-inline-start: -6px;
+}
+
+.products__cards {
+  display: grid;
+  gap: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(3, minmax(410px, 410px));
+  -webkit-padding-before: 47px;
+          padding-block-start: 47px;
+  -webkit-padding-start: 318px;
+          padding-inline-start: 318px;
+  -webkit-padding-end: 314px;
+          padding-inline-end: 314px;
+  row-gap: 47px;
+}
+@media (max-width: 1440px) {
+  .products__cards {
+    grid-template-columns: repeat(2, minmax(410px, 410px));
+    padding-inline: 100px;
+  }
+}
+@media (max-width: 992.99px) {
+  .products__cards {
+    grid-template-columns: repeat(1, minmax(410px, 410px));
+    padding-inline: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .products__cards {
+    grid-template-columns: repeat(1, minmax(240px, 300px));
+  }
+}
+
+.product__card {
+  cursor: pointer;
+  border: 1.5px solid rgba(0, 0, 0, 0.0784313725);
+}
+.product__card p {
+  margin: 0;
+}
+.product__card:hover {
+  border: 1.5px solid #93b474;
+}
+.product__card:hover .card__zoom {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.card__img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+}
+
+.card__img-img {
+  width: 109px;
+  height: 235px;
+}
+
+.card__info {
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  padding-inline: 18px;
+}
+
+.card__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.card__art {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 500;
+  color: #8a8a8a;
+  -webkit-padding-before: 11px;
+          padding-block-start: 11px;
+  -webkit-padding-start: 1px;
+          padding-inline-start: 1px;
+  letter-spacing: 0.2px;
+}
+
+.card__description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  line-height: 20px;
+  max-width: 250px;
+  -webkit-padding-before: 12px;
+          padding-block-start: 12px;
+  -webkit-padding-start: 2px;
+          padding-inline-start: 2px;
+  letter-spacing: -0.3px;
+}
+
+.card__neto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-padding-before: 16px;
+          padding-block-start: 16px;
+  -webkit-padding-end: 32px;
+          padding-inline-end: 32px;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+@media (max-width: 414px) {
+  .card__neto {
+    gap: 30px;
+  }
+}
+
+.card__mass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.card__neto-img {
+  width: 18px;
+  height: 18px;
+  -webkit-margin-before: -2px;
+          margin-block-start: -2px;
+}
+
+.mass__info {
+  line-height: 18px;
+}
+
+.card__mass-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #8a8a8a;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.card__mass-number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #337d5a;
+}
+
+.card__package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+  -webkit-margin-before: -3px;
+          margin-block-start: -3px;
+}
+
+.card__package-img {
+  width: 12px;
+  height: 17px;
+}
+
+.package__info {
+  line-height: 20px;
+}
+
+.package__info-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #8a8a8a;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.package__info-caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #337d5a;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-padding-before: 33px;
+          padding-block-start: 33px;
+  -webkit-padding-start: 18px;
+          padding-inline-start: 18px;
+  -webkit-padding-end: 23px;
+          padding-inline-end: 23px;
+  -webkit-padding-after: 15px;
+          padding-block-end: 15px;
+}
+@media (max-width: 414px) {
+  .card__footer {
+    padding-inline: 10px !important;
+  }
+}
+
+.card__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
+}
+@media (max-width: 600px) {
+  .card__price {
+    -webkit-padding-end: 5px;
+            padding-inline-end: 5px;
+  }
+}
+
+.card__price-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card__price-cost {
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #337d5a;
+  -webkit-padding-end: 0px;
+          padding-inline-end: 0px;
+}
+.card__price-cost span {
+  font-size: 15px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+}
+
+.card__price-cost--count {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+.card__price-cost--count span {
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+}
+
+.card__price-cost--old {
+  text-decoration: line-through;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #8a8a8a;
+  -webkit-padding-before: 4px;
+          padding-block-start: 4px;
+  font-weight: 500;
+}
+.card__price-cost--old span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.card__buy {
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  background-color: #337d5a;
+  padding-block: 13.5px;
+  padding-inline: 38px;
+}
+@media (max-width: 360px) {
+  .card__buy {
+    padding-inline: 20px;
+  }
+}
+
+.card__mass--count {
+  gap: 8px;
+}
+
+.card__img-img--count {
+  -webkit-margin-start: 3px;
+          margin-inline-start: 3px;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+}
+
+.price-ua {
+  -webkit-margin-start: 3px !important;
+          margin-inline-start: 3px !important;
+}
+
+.card__info--third {
+  padding-inline: 16px;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+}
+
+.card__neto--third {
+  -webkit-padding-start: 18px;
+          padding-inline-start: 18px;
+  -webkit-padding-end: 33px;
+          padding-inline-end: 33px;
+}
+
+.card__footer--third {
+  -webkit-padding-start: 16px;
+          padding-inline-start: 16px;
+  -webkit-padding-end: 25px;
+          padding-inline-end: 25px;
+}
+
+.card__third-ua {
+  -webkit-margin-start: 6px !important;
+          margin-inline-start: 6px !important;
+}
+
+.card__footer--first {
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+  -webkit-padding-end: 21px;
+          padding-inline-end: 21px;
+}
+
+.card__neto--first {
+  -webkit-padding-start: 21px;
+          padding-inline-start: 21px;
+  -webkit-padding-end: 30px;
+          padding-inline-end: 30px;
+}
+
+.card__neto--third {
+  -webkit-padding-start: 18px;
+          padding-inline-start: 18px;
+  -webkit-padding-end: 34px;
+          padding-inline-end: 34px;
+}
+
+.card__info--first {
+  padding-inline: 20px;
+}
+
+.walnat__img-img {
+  width: 243px;
+  height: 191px;
+}
+
+.walnat__img {
+  -webkit-padding-before: 50px;
+          padding-block-start: 50px;
+  -webkit-padding-after: 38px;
+          padding-block-end: 38px;
+}
+
+.walnat__img--second {
+  -webkit-padding-after: 38px;
+          padding-block-end: 38px;
+}
+
+.walnat__info {
+  -webkit-padding-before: 22px;
+          padding-block-start: 22px;
+  -webkit-padding-start: 20px;
+          padding-inline-start: 20px;
+}
+
+.walnat__img--second {
+  -webkit-padding-before: 49px;
+          padding-block-start: 49px;
+  -webkit-padding-end: 7px;
+          padding-inline-end: 7px;
+}
+
+.walnat__img--third {
+  -webkit-padding-before: 49px;
+          padding-block-start: 49px;
+  -webkit-padding-after: 38px;
+          padding-block-end: 38px;
+  -webkit-padding-end: 12px;
+          padding-inline-end: 12px;
+}
+
+.card__walnat--second {
+  -webkit-padding-before: 21px;
+          padding-block-start: 21px;
+  padding-inline: 18px;
+}
+
+.waltan__neto__second {
+  -webkit-padding-start: 19px;
+          padding-inline-start: 19px;
+  -webkit-padding-end: 31px;
+          padding-inline-end: 31px;
+}
+
+.waltan__footer--second {
+  -webkit-padding-start: 18px;
+          padding-inline-start: 18px;
+  -webkit-padding-end: 24px;
+          padding-inline-end: 24px;
+}
+
+.card__info--second {
+  -webkit-padding-start: 16px;
+          padding-inline-start: 16px;
+}
+
+.shop__item {
+  -webkit-padding-before: 70px;
+          padding-block-start: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 600px) {
+  .shop__item {
+    display: none;
+  }
+}
+
+.shop__item-link {
+  text-decoration: none;
+  color: #337d5a;
+  border: 1px solid #337d5a;
+  padding-block: 18px;
+  padding-inline: 26px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.card__count-new,
+.card__count-img {
+  position: absolute;
+  top: 20px;
+  left: -4px;
+  z-index: 50;
+}
+
+.card__zoom {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 117px;
+  opacity: 0;
+  left: 176px;
+  z-index: 100 !important;
+}
+
+.swiper-slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+  background-color: #fcfcfc;
+}
+
+.swiper-button-prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0.2;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 23px;
+  height: 23px;
+  top: 151px !important;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.swiper:hover .swiper-button-prev {
+  opacity: 0.2;
+  pointer-events: auto;
+}
+
+.swiper-button-next.active {
+  opacity: 0.2 !important;
+  pointer-events: none;
+}
+
+.swiper-button-prev.active {
+  opacity: 1 !important;
+  pointer-events: none;
+}
+
+.swiper-wrapper--walnat {
+  -webkit-padding-before: 49px;
+          padding-block-start: 49px;
+  -webkit-padding-after: 38px;
+          padding-block-end: 38px;
+  -webkit-margin-start: 2px;
+          margin-inline-start: 2px;
+}
+
+.walnat__info--withoutcount {
+  padding-inline: 18px;
+}
+
+.card__neto--second {
+  -webkit-padding-start: 19px;
+          padding-inline-start: 19px;
+  -webkit-padding-end: 34px;
+          padding-inline-end: 34px;
+}
+
+.walnat__mass--count {
+  gap: 14px;
+}
+
+.card__package--walnat {
+  -webkit-margin-before: -2px;
+          margin-block-start: -2px;
+}
+
+.walnat__neto--first {
+  -webkit-padding-end: 32px;
+          padding-inline-end: 32px;
+}
+
+.walnat_footer--first {
+  -webkit-padding-start: 17px;
+          padding-inline-start: 17px;
+  -webkit-padding-end: 23px;
+          padding-inline-end: 23px;
+  -webkit-padding-before: 35px;
+          padding-block-start: 35px;
+}
+
+.walnat__withoutcount--second {
+  padding-inline: 16px;
+}
+
+.card__footer--third {
+  -webkit-padding-end: 26px;
+          padding-inline-end: 26px;
+}
+
+@media (max-width: 992.99px) {
+  .product__card--none {
+    display: none;
+  }
+}/*# sourceMappingURL=products_section.css.map */

@@ -1,0 +1,140 @@
+@use "../variables/variables" as *;
+.section__news {
+  position: relative;
+  padding-block-start: 89px;
+  background-color: #f9f9f9b2;
+  padding-inline: 100px;
+  @media (max-width: 992.99px) {
+    padding-inline: 30px;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.swiper__news {
+  max-width: 1286px;
+}
+
+.background__news-arrow {
+  right: 0;
+  left: inherit;
+  top: 0px;
+  width: 141px;
+  height: 58px;
+  position: relative;
+  margin-block-start: -5px;
+}
+
+.news__arrow-left {
+  position: absolute;
+  top: 30px !important;
+  z-index: 150 !important;
+  opacity: 0.2;
+  left: 18px !important;
+}
+.news__arrow-right {
+  opacity: 1;
+  top: 28px !important;
+  z-index: 150 !important;
+  right: 16px !important;
+}
+
+.news__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-end: 32px;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+.news__info {
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: -2px;
+}
+.news__body-title {
+  @include font($Raleway45);
+  padding-block-end: 29px;
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+.news__body-text {
+  @include font($Raleway18);
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+.card__news-img {
+  object-fit: cover;
+  width: 408px;
+  height: 270px;
+}
+
+.card__news-img {
+}
+.card__news-data {
+  @include font($Montserrat13);
+  font-weight: 500;
+  color: $greyColor;
+  margin: 0;
+  padding-block-start: 28px;
+}
+.card__news-title {
+  @include font($Raleway16);
+  max-width: 350px;
+  line-height: 20px;
+  margin: 0;
+  padding-block-start: 14px;
+}
+.card__news-text {
+  @include font($Raleway14);
+  line-height: 20px;
+  font-weight: 500;
+  max-width: 350px;
+  margin: 0;
+  padding-block-start: 15px;
+  padding-block-end: 23px;
+}
+.card__news-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding-block-end: 30px;
+  color: black;
+  @include font($Raleway14);
+  &:hover {
+    color: $primaryColor;
+    .card__arrow-img {
+      opacity: 1;
+    }
+  }
+}
+.card__arrow-img {
+  opacity: 0.4;
+}
+.news__card-info {
+  background-color: white;
+  padding-inline: 22px;
+}
+
+.news__all {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 45px;
+}
+.news__all-link {
+  text-decoration: none;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  @include font($Raleway15);
+  font-weight: 700;
+  padding-block: 18px;
+  padding-inline: 25px;
+  letter-spacing: 0.2px;
+}

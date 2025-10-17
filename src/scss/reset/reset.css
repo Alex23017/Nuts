@@ -30,14 +30,13 @@ summary {
 
 /* Set default body styles */
 
-
 /* Remove list styles on ul, ol elements */
 ul,
 ol,
-li {
+li,
+a {
   list-style: none;
   text-decoration: none;
-
 }
 
 /* Remove default quotes for blockquote, q */
@@ -73,7 +72,7 @@ textarea {
 
 /* Anchor tag reset */
 a {
-  text-decoration: none;
+  text-decoration: none ;
   color: inherit;
 }
 

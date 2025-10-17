@@ -1,0 +1,149 @@
+@use "../variables/variables" as *;
+.usefull {
+  padding-block-start: 88px;
+  padding-inline: 100px;
+  @media (max-width: 992.99px) {
+    padding-inline: 30px;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.usefull__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  left: 0;
+}
+.usefull__overlay--green {
+  background-color: #337d5af2;
+}
+.usefull__overlay--black {
+  background-color: #00000033;
+}
+
+.usefull__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(210px, 410px));
+  gap: 31px;
+  justify-content: center;
+  padding-block-start: 46px;
+  padding-block-end: 100px;
+  @media (max-width: 992.99px) {
+    grid-template-columns: repeat(1, minmax(210px, 410px));
+  }
+}
+.usefull__card {
+  position: relative;
+  height: 525px;
+  @media (max-width: 1500px) {
+    height: inherit;
+    height: 425px;
+  }
+}
+
+.usefull__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.usefull__title-title {
+  @include font($Raleway45);
+  padding-block-end: 24px;
+}
+.usefull__title-text {
+  @include font($Raleway18);
+  font-weight: 500;
+  max-width: 550px;
+  line-height: 28px;
+}
+.usefull__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.usefull__card-icon {
+  position: absolute;
+  top: 39%;
+  left: 50.5%;
+  transform: translate(-50%);
+  z-index: 20;
+}
+.usefull__card-icon--ship {
+  top: 38.5%;
+  left: 47.5%;
+}
+.usefull__card-title {
+  position: absolute;
+  top: 53.2%;
+  left: 49.8%;
+  transform: translate(-50%);
+  z-index: 20;
+  @include font($Raleway40);
+  z-index: 15;
+  color: white;
+}
+.usefull__card-title--nuts {
+  width: 100%;
+  left: 67.1%;
+  top: 35.2%;
+  @media (max-width: 1500px) {
+    top: 20%;
+    font-size: 24px;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    width: 50%;
+  }
+  @media (max-width: 1200px) {
+    left: 45%;
+  }
+  @media (max-width: 992.99px) {
+    left: 55%;
+  }
+  @media (max-width: 400px) {
+    left: 45%;
+  }
+}
+.usefull__card-icon--nuts {
+  top: 18.5%;
+  left: 51.4%;
+  @media (max-width: 1500px) {
+    top: 2%;
+  }
+}
+
+.usefull__card-text {
+  position: absolute;
+  bottom: 170px;
+  left: 38px;
+  z-index: 15;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Raleway";
+  max-width: 330px;
+  text-align: center;
+  @media (max-width: 1400px) {
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 100%;
+    width: 90%;
+  }
+}
+.usefull__card-text--second {
+  bottom: 50px;
+  left: 37px;
+  line-height: 25px;
+  @media (max-width: 1400px) {
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+  }
+}

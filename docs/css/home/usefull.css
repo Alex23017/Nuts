@@ -1,0 +1,193 @@
+.usefull {
+  padding-block-start: 5.5rem;
+  padding-inline: 6.25rem;
+}
+@media (max-width: 992.99px) {
+  .usefull {
+    padding-inline: 1.875rem;
+  }
+}
+@media (max-width: 600px) {
+  .usefull {
+    display: none;
+  }
+}
+
+.usefull__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  left: 0;
+}
+
+.usefull__overlay--green {
+  background-color: rgba(51, 125, 90, 0.9490196078);
+}
+
+.usefull__overlay--black {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.usefull__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(13.125rem, 25.625rem));
+  gap: 1.9375rem;
+  justify-content: center;
+  padding-block-start: 2.875rem;
+  padding-block-end: 6.25rem;
+}
+@media (max-width: 992.99px) {
+  .usefull__cards {
+    grid-template-columns: repeat(1, minmax(13.125rem, 25.625rem));
+  }
+}
+
+.usefull__card {
+  position: relative;
+  height: 32.8125rem;
+}
+@media (max-width: 1500px) {
+  .usefull__card {
+    height: inherit;
+    height: 26.5625rem;
+  }
+}
+
+.usefull__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.usefull__title-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 2.8125rem;
+  line-height: 100%;
+  padding-block-end: 1.5rem;
+}
+
+.usefull__title-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 100%;
+  font-weight: 500;
+  max-width: 34.375rem;
+  line-height: 1.75rem;
+}
+
+.usefull__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.usefull__card-icon {
+  position: absolute;
+  top: 39%;
+  left: 50.5%;
+  transform: translate(-50%);
+  z-index: 20;
+}
+
+.usefull__card-icon--ship {
+  top: 38.5%;
+  left: 47.5%;
+}
+
+.usefull__card-title {
+  position: absolute;
+  top: 53.2%;
+  left: 49.8%;
+  transform: translate(-50%);
+  z-index: 20;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 100%;
+  z-index: 15;
+  color: white;
+}
+
+.usefull__card-title--nuts {
+  width: 100%;
+  left: 67.1%;
+  top: 35.2%;
+}
+@media (max-width: 1500px) {
+  .usefull__card-title--nuts {
+    top: 20%;
+    font-size: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    white-space: nowrap;
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .usefull__card-title--nuts {
+    left: 45%;
+  }
+}
+@media (max-width: 992.99px) {
+  .usefull__card-title--nuts {
+    left: 55%;
+  }
+}
+@media (max-width: 400px) {
+  .usefull__card-title--nuts {
+    left: 45%;
+  }
+}
+
+.usefull__card-icon--nuts {
+  top: 18.5%;
+  left: 51.4%;
+}
+@media (max-width: 1500px) {
+  .usefull__card-icon--nuts {
+    top: 2%;
+  }
+}
+
+.usefull__card-text {
+  position: absolute;
+  bottom: 10.625rem;
+  left: 2.375rem;
+  z-index: 15;
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  font-weight: 500;
+  font-family: "Raleway";
+  max-width: 20.625rem;
+  text-align: center;
+}
+@media (max-width: 1400px) {
+  .usefull__card-text {
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 100%;
+    width: 90%;
+  }
+}
+
+.usefull__card-text--second {
+  bottom: 3.125rem;
+  left: 2.3125rem;
+  line-height: 1.5625rem;
+}
+@media (max-width: 1400px) {
+  .usefull__card-text--second {
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1.25rem;
+  }
+}
+/*# sourceMappingURL=usefull.css.map */

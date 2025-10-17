@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+body.open {
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  overflow: hidden;
+}/*# sourceMappingURL=base.css.map */

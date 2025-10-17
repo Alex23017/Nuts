@@ -1,0 +1,427 @@
+@use "../variables/variables" as *;
+
+.products {
+  padding-block-start: 87px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.products__title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  @media (max-width: 992.99px) {
+    padding-inline: 30px;
+  }
+}
+.products__title-title {
+  @include font($Raleway45);
+  padding-block-end: 24px;
+}
+.products__title-text {
+  @include font($Raleway18);
+  line-height: 28px;
+  max-width: 605px;
+  margin-inline-start: -6px;
+}
+
+.products__cards {
+  display: grid;
+  gap: 32px;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(410px, 410px));
+  padding-block-start: 47px;
+  padding-inline-start: 318px;
+  padding-inline-end: 314px;
+  row-gap: 47px;
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(2, minmax(410px, 410px));
+    padding-inline: 100px;
+  }
+  @media (max-width: 992.99px) {
+    grid-template-columns: repeat(1, minmax(410px, 410px));
+    padding-inline: 30px;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, minmax(240px, 300px));
+  }
+}
+.product__card {
+  cursor: pointer;
+  border: 1.5px solid #00000014;
+  p {
+    margin: 0;
+  }
+  &:hover {
+    border: 1.5px solid #93b474;
+  }
+  &:hover {
+    .card__zoom {
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+.card__img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-block-start: 20px;
+
+  padding-block-end: 24px;
+}
+.card__img-img {
+  width: 109px;
+  height: 235px;
+}
+.card__info {
+  padding-block-start: 20px;
+  padding-inline: 18px;
+}
+.card__name {
+  @include font($Raleway18);
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+.card__art {
+  @include font($Montserrat15);
+  font-weight: 500;
+  color: $greyColor;
+  padding-block-start: 11px;
+  padding-inline-start: 1px;
+  letter-spacing: 0.2px;
+}
+.card__description {
+  @include font($Raleway16);
+  line-height: 20px;
+  max-width: 250px;
+  padding-block-start: 12px;
+  padding-inline-start: 2px;
+  letter-spacing: -0.3px;
+}
+.card__neto {
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 16px;
+  padding-inline-end: 32px;
+  padding-inline-start: 20px;
+  @media (max-width: 414px) {
+    gap: 30px;
+  }
+}
+.card__mass {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card__neto-img {
+  width: 18px;
+  height: 18px;
+  margin-block-start: -2px;
+}
+.mass__info {
+  line-height: 18px;
+}
+.card__mass-text {
+  @include font($Montserrat14);
+  color: $greyColor;
+  font-weight: 500;
+  line-height: 130%;
+}
+.card__mass-number {
+  @include font($Montserrat14);
+  color: $primaryColor;
+}
+.card__package {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-block-start: -3px;
+}
+.card__package-img {
+  width: 12px;
+  height: 17px;
+}
+.package__info {
+  line-height: 20px;
+}
+.package__info-text {
+  @include font($Montserrat14);
+  color: $greyColor;
+  font-weight: 500;
+  line-height: 140%;
+}
+.package__info-caption {
+  @include font($Montserrat14);
+  color: $primaryColor;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 33px;
+  padding-inline-start: 18px;
+  padding-inline-end: 23px;
+  padding-block-end: 15px;
+  @media (max-width: 414px) {
+    padding-inline: 10px !important;
+  }
+}
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  @media (max-width: 600px) {
+    padding-inline-end: 5px;
+  }
+}
+.card__price-text {
+  @include font($Montserrat15);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.card__price-cost {
+  white-space: nowrap;
+  @include font($Montserrat20);
+  color: $primaryColor;
+  padding-inline-end: 0px;
+  span {
+    font-size: 15px;
+    margin-inline-start: 0px;
+  }
+}
+.card__price-cost--count {
+  padding-inline-start: 0px;
+
+  span {
+    margin-inline-start: 0px;
+  }
+}
+.card__price-cost--old {
+  text-decoration: line-through;
+  @include font($Montserrat16);
+  color: $greyColor;
+  padding-block-start: 4px;
+  font-weight: 500;
+  span {
+    @include font($Montserrat13);
+    font-weight: 500;
+  }
+}
+.card__buy {
+  text-decoration: none;
+  color: white;
+  @include font($Raleway14);
+  background-color: $primaryColor;
+  padding-block: 13.5px;
+  padding-inline: 38px;
+  @media (max-width: 360px) {
+    padding-inline: 20px;
+  }
+}
+
+.card__mass--count {
+  gap: 8px;
+}
+.card__img-img--count {
+  margin-inline-start: 3px;
+  margin-block-start: 0px;
+}
+
+.price-ua {
+  margin-inline-start: 3px !important;
+}
+.card__info--third {
+  padding-inline: 16px;
+  padding-block-start: 20px;
+}
+.card__neto--third {
+  padding-inline-start: 18px;
+  padding-inline-end: 33px;
+}
+.card__footer--third {
+  padding-inline-start: 16px;
+  padding-inline-end: 25px;
+}
+.card__third-ua {
+  margin-inline-start: 6px !important;
+}
+
+.card__footer--first {
+  padding-inline-start: 20px;
+  padding-inline-end: 21px;
+}
+.card__neto--first {
+  padding-inline-start: 21px;
+  padding-inline-end: 30px;
+}
+.card__mass-text--first {
+}
+.card__neto--third {
+  padding-inline-start: 18px;
+  padding-inline-end: 34px;
+}
+.card__info--third {
+}
+.card__info--first {
+  padding-inline: 20px;
+}
+.walnat__img-img {
+  width: 243px;
+  height: 191px;
+}
+.walnat__img {
+  padding-block-start: 50px;
+  padding-block-end: 38px;
+}
+.walnat__img--second {
+  padding-block-end: 38px;
+}
+.walnat__info {
+  padding-block-start: 22px;
+  padding-inline-start: 20px;
+}
+.walnat__img--second {
+  padding-block-start: 49px;
+  padding-inline-end: 7px;
+}
+.walnat__img--third {
+  padding-block-start: 49px;
+  padding-block-end: 38px;
+  padding-inline-end: 12px;
+}
+.card__walnat--second {
+  padding-block-start: 21px;
+  padding-inline: 18px;
+}
+.waltan__neto__second {
+  padding-inline-start: 19px;
+  padding-inline-end: 31px;
+}
+.waltan__footer--second {
+  padding-inline-start: 18px;
+  padding-inline-end: 24px;
+}
+
+.card__info--second {
+  padding-inline-start: 16px;
+}
+
+.shop__item {
+  padding-block-start: 70px;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 600px) {
+    display: none;
+  
+  }
+}
+.shop__item-link {
+  text-decoration: none;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+  padding-block: 18px;
+  padding-inline: 26px;
+  @include font($Raleway15);
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.card__count-new,
+.card__count-img {
+  position: absolute;
+  top: 20px;
+  left: -4px;
+  z-index: 50;
+}
+
+.card__zoom {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 117px;
+  opacity: 0;
+  left: 176px;
+  z-index: 100 !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  padding-block-start: 20px;
+  padding-block-end: 24px;
+  background-color: #fcfcfc;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  opacity: 0.2;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 23px;
+  height: 23px;
+  top: 151px !important;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+  pointer-events: auto;
+}
+.swiper:hover .swiper-button-prev {
+  opacity: 0.2;
+  pointer-events: auto;
+}
+.swiper-button-next.active {
+  opacity: 0.2 !important;
+  pointer-events: none;
+}
+.swiper-button-prev.active {
+  opacity: 1 !important;
+  pointer-events: none;
+}
+.swiper-wrapper--walnat {
+  padding-block-start: 49px;
+  padding-block-end: 38px;
+  margin-inline-start: 2px;
+}
+
+.walnat__info--withoutcount {
+  padding-inline: 18px;
+}
+.card__neto--second {
+  padding-inline-start: 19px;
+  padding-inline-end: 34px;
+}
+.walnat__mass--count {
+  gap: 14px;
+}
+.card__package--walnat {
+  margin-block-start: -2px;
+}
+.walnat__neto--first {
+  padding-inline-end: 32px;
+}
+.walnat_footer--first {
+  padding-inline-start: 17px;
+  padding-inline-end: 23px;
+  padding-block-start: 35px;
+}
+.walnat__withoutcount--second {
+  padding-inline: 16px;
+}
+.card__footer--third {
+  padding-inline-end: 26px;
+}
+.product__card--none {
+  @media (max-width: 992.99px) {
+    display: none;
+  }
+}

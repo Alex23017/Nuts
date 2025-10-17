@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.info__company {
+  padding-inline-start: 24.6875rem;
+  padding-inline-end: 21.875rem;
+  display: flex;
+  gap: 3.125rem;
+  padding-block-start: 9.0625rem;
+  padding-block-end: 4.375rem;
+}
+@media (max-width: 1900px) {
+  .info__company {
+    padding-inline: 6.25rem;
+    justify-content: center;
+  }
+}
+@media (max-width: 1250px) {
+  .info__company {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+  }
+}
+@media (max-width: 992.99px) {
+  .info__company {
+    padding-inline: 1.875rem;
+  }
+}
+@media (max-width: 600px) {
+  .info__company {
+    display: none;
+  }
+}
+
+.info__body-number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 100%;
+  padding-block-end: 0.3125rem;
+}
+@media (max-width: 1400px) {
+  .info__body-number {
+    font-size: 3rem;
+  }
+}
+
+.info__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info__body-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 100%;
+  font-weight: 400;
+  max-width: 6.25rem;
+  line-height: 1.25rem;
+}
+
+.info__body-text--width {
+  max-width: 21.875rem;
+}
+
+.info__body-text--last {
+  max-width: 9.375rem;
+}
+
+.info__body--1 {
+  margin-inline-start: 9.6875rem;
+}
+@media (max-width: 1250px) {
+  .info__body--1 {
+    margin: 0;
+  }
+}
+
+.info__body--10 {
+  margin-inline-start: 3.5rem;
+}
+@media (max-width: 1250px) {
+  .info__body--10 {
+    margin: 0;
+  }
+}
+
+.info__body--80 {
+  position: relative;
+  margin-inline-start: 1.875rem;
+}
+.info__body--80::before {
+  position: absolute;
+  content: "%";
+  top: 0.375rem;
+  right: 0.4375rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 100%;
+  font-weight: 900;
+}
+@media (max-width: 1250px) {
+  .info__body--80 {
+    margin: 0;
+  }
+}
+
+.info__body--240,
+.info__body--1,
+.info__body--10 {
+  position: relative;
+}
+.info__body--240::before,
+.info__body--1::before,
+.info__body--10::before {
+  position: absolute;
+  content: "Га";
+  top: 0;
+  right: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 100%;
+  font-weight: 900;
+}
+
+.info__body--240::before {
+  top: 0.375rem;
+  right: -1.6875rem;
+}
+
+.info__body--1::before {
+  top: 0.375rem;
+  right: 0.625rem;
+}
+
+.info__body--10::before {
+  top: 0.375rem;
+  right: 6.875rem;
+}
+/*# sourceMappingURL=info.css.map */

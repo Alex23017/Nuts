@@ -1,0 +1,179 @@
+@use "sass:map";
+
+$primaryColor: #337d5a;
+$secondaryColor: #93b474;
+$greyColor: #8a8a8a;
+$backgroundColor: #f5f5f580;
+
+$fonts: (
+  "Raleway11": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 11px,
+    line-height: 100%,
+    weight: 600,
+  ),
+  "Raleway12": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 12px,
+    line-height: 100%,
+    weight: 600,
+  ),
+  "Raleway13": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 13px,
+    line-height: 100%,
+    weight: 500,
+  ),
+  "Raleway14": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 14px,
+    line-height: 100%,
+    weight: 700,
+  ),
+  "Raleway16": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 16px,
+    line-height: 100%,
+    weight: 600,
+  ),
+  "Raleway17": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 17px,
+    line-height: 100%,
+    weight: 800,
+  ),
+  "Raleway62": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 62px,
+    line-height: 100%,
+    weight: 800,
+  ),
+  "Raleway18": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 18px,
+    line-height: 100%,
+    weight: 500,
+  ),
+  "Raleway40": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 40px,
+    line-height: 100%,
+    weight: 800,
+  ),
+  "Raleway45": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 45px,
+    line-height: 100%,
+    weight: 800,
+  ),
+  "Raleway25": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 25px,
+    line-height: 100%,
+    weight: 600,
+  ),
+  "Raleway24": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 24px,
+    line-height: 100%,
+    weight: 500,
+  ),
+  "Montserrat14": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 14px,
+    line-height: 100%,
+    weight: 600,
+  ),
+  "Montserrat15": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 15px,
+    line-height: 100%,
+    weight: 500,
+  ),
+  "Montserrat16": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 16px,
+    line-height: 100%,
+    weight: 600,
+  ),
+  "Montserrat20": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 20px,
+    line-height: 100%,
+    weight: 600,
+  ),
+  "Montserrat13": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 13px,
+    line-height: 100%,
+    weight: 800,
+  ),
+  "Montserrat12": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 12px,
+    line-height: 100%,
+    weight: 500,
+  ),
+  "Montserrat72": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 72px,
+    line-height: 100%,
+    weight: 800,
+  ),
+  "Raleway15": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 15px,
+    line-height: 100%,
+    weight: 800,
+  ),
+);
+
+// универсальный миксин
+@mixin font($font-map) {
+  font-family: map.get($font-map, family), map.get($font-map, fallback);
+  font-weight: map.get($font-map, weight);
+  font-size: map.get($font-map, font-size);
+  line-height: map.get($font-map, line-height);
+}
+
+// извлекаем из map корректно (все ключи — строки)
+$Raleway11: map.get($fonts, "Raleway11");
+$Raleway12: map.get($fonts, "Raleway12");
+$Raleway13: map.get($fonts, "Raleway13");
+$Raleway14: map.get($fonts, "Raleway14");
+$Raleway16: map.get($fonts, "Raleway16");
+$Montserrat72: map.get($fonts, "Montserrat72");
+$Montserrat20: map.get($fonts, "Montserrat20");
+$Montserrat16: map.get($fonts, "Montserrat16");
+$Montserrat15: map.get($fonts, "Montserrat15");
+$Montserrat14: map.get($fonts, "Montserrat14");
+$Montserrat13: map.get($fonts, "Montserrat13");
+$Montserrat12: map.get($fonts, "Montserrat12");
+$Raleway15: map.get($fonts, "Raleway15");
+$Raleway17: map.get($fonts, "Raleway17");
+$Raleway18: map.get($fonts, "Raleway18");
+$Raleway62: map.get($fonts, "Raleway62");
+$Raleway25: map.get($fonts, "Raleway25");
+$Raleway24: map.get($fonts, "Raleway24");
+$Raleway45: map.get($fonts, "Raleway45");
+$Raleway40: map.get($fonts, "Raleway40");

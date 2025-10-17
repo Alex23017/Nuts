@@ -1,0 +1,125 @@
+body.loading {
+  overflow: hidden;
+}
+
+.preload {
+  position: fixed;
+  inset: 0;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ease;
+  &.loaded {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.preload__text {
+  bottom: 30px;
+  left: 0;
+  position: absolute;
+  font-size: 32px;
+  width: 100%;
+  padding-block-start: 20px;
+  margin: 0;
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
+}
+
+.load__img {
+  position: absolute;
+  top: 120px;
+  left: 70px;
+  animation: rotate 2s infinite;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  @media (max-width: 600px) {
+    top: 160px;
+    max-width: 150px;
+    left: 50px;
+  }
+}
+
+.preload__items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  height: 400px;
+  @media (max-width: 600px) {
+    width: 250px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// .ripple {
+//   display: inline-block;
+//   position: relative;
+//   width: 80px;
+//   height: 80px;
+//   z-index: 1000;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%);
+//   @media (max-width: 414px) {
+//     left: 45%;
+//     top: 30%;
+//   }
+// }
+
+// .ripple div {
+//   position: absolute;
+//   border: 4px solid rgb(0, 0, 0);
+//   opacity: 1;
+//   border-radius: 50%;
+//   animation: ripple 1.5s cubic-bezier(1, 1, 1, 1) infinite;
+// }
+
+// .ripple div:nth-child(2) {
+//   animation-delay: -0.5s;
+// }
+// @keyframes ripple {
+//   0% {
+//     top: 72px;
+//     left: 72px;
+//     width: 0;
+//     height: 0;
+//     opacity: 0;
+//   }
+//   5% {
+//     top: 72px;
+//     left: 72px;
+//     width: 0;
+//     height: 0;
+//     opacity: 1;
+//   }
+//   100% {
+//     top: 0%;
+//     left: 0%;
+//     width: 144px;
+//     height: 144px;
+//     opacity: 0;
+//   }
+// }

@@ -8,6 +8,9 @@ export default {
   mode: "production",
   entry: {
     main: "./src/js/main.js",
+    products: "./src/js/products.js",
+    about: "./src/js/about.js",
+    news: "./src/js/news.js",
   },
   output: {
     filename: "[name].bundle.js",

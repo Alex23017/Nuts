@@ -1,0 +1,212 @@
+.usefull {
+  -webkit-padding-before: 88px;
+          padding-block-start: 88px;
+  padding-inline: 100px;
+}
+@media (max-width: 992.99px) {
+  .usefull {
+    padding-inline: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .usefull {
+    display: none;
+  }
+}
+
+.usefull__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  left: 0;
+}
+
+.usefull__overlay--green {
+  background-color: rgba(51, 125, 90, 0.9490196078);
+}
+
+.usefull__overlay--black {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.usefull__cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(210px, 410px));
+  gap: 31px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-padding-before: 46px;
+          padding-block-start: 46px;
+  -webkit-padding-after: 100px;
+          padding-block-end: 100px;
+}
+@media (max-width: 992.99px) {
+  .usefull__cards {
+    grid-template-columns: repeat(1, minmax(210px, 410px));
+  }
+}
+
+.usefull__card {
+  position: relative;
+  height: 525px;
+}
+@media (max-width: 1500px) {
+  .usefull__card {
+    height: inherit;
+    height: 425px;
+  }
+}
+
+.usefull__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.usefull__title-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 100%;
+  -webkit-padding-after: 24px;
+          padding-block-end: 24px;
+}
+
+.usefull__title-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: 500;
+  max-width: 550px;
+  line-height: 28px;
+}
+
+.usefull__card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.usefull__card-icon {
+  position: absolute;
+  top: 39%;
+  left: 50.5%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 20;
+}
+
+.usefull__card-icon--ship {
+  top: 38.5%;
+  left: 47.5%;
+}
+
+.usefull__card-title {
+  position: absolute;
+  top: 53.2%;
+  left: 49.8%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 20;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 100%;
+  z-index: 15;
+  color: white;
+}
+
+.usefull__card-title--nuts {
+  width: 100%;
+  left: 67.1%;
+  top: 35.2%;
+}
+@media (max-width: 1500px) {
+  .usefull__card-title--nuts {
+    top: 20%;
+    font-size: 24px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    white-space: nowrap;
+    width: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .usefull__card-title--nuts {
+    left: 45%;
+  }
+}
+@media (max-width: 992.99px) {
+  .usefull__card-title--nuts {
+    left: 55%;
+  }
+}
+@media (max-width: 400px) {
+  .usefull__card-title--nuts {
+    left: 45%;
+  }
+}
+
+.usefull__card-icon--nuts {
+  top: 18.5%;
+  left: 51.4%;
+}
+@media (max-width: 1500px) {
+  .usefull__card-icon--nuts {
+    top: 2%;
+  }
+}
+
+.usefull__card-text {
+  position: absolute;
+  bottom: 170px;
+  left: 38px;
+  z-index: 15;
+  color: white;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: "Raleway";
+  max-width: 330px;
+  text-align: center;
+}
+@media (max-width: 1400px) {
+  .usefull__card-text {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    line-height: 100%;
+    width: 90%;
+  }
+}
+
+.usefull__card-text--second {
+  bottom: 50px;
+  left: 37px;
+  line-height: 25px;
+}
+@media (max-width: 1400px) {
+  .usefull__card-text--second {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    bottom: 20px;
+  }
+}/*# sourceMappingURL=usefull.css.map */

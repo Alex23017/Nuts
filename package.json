@@ -49,6 +49,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
     "swiper": "^12.0.2"
   }
 }

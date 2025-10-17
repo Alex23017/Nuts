@@ -1,2 +1,15 @@
+@use "../variables/variables" as *;
 @use "../reset/reset" as *;
 @use "../base/base" as *;
+@use "../components/header" as *;
+@use "../components/footer" as *;
+@use "../home/hero_section" as *;
+@use "../home/products_section" as *;
+@use "../home/about" as *;
+@use "../home/info" as *;
+@use "../home/usefull" as *;
+@use "../home/target" as *;
+@use "../home/eco" as *;
+@use "../home/news" as *;
+@use "../home/map" as *;
+@use "../components/preload" as * ;

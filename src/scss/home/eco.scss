@@ -1,0 +1,83 @@
+@use "../variables/variables" as *;
+
+.eco {
+  position: relative;
+  max-height: 740px;
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.overlay__eco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  left: 0;
+  background-color: #00000073;
+}
+
+.eco__text {
+  top: 417px;
+  left: 50.2%;
+  transform: translate(-50%);
+  position: absolute;
+  color: white;
+  z-index: 20;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: "Raleway";
+  text-align: center;
+  max-width: 650px;
+  @media (max-width: 1900px) {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  @media (max-width: 992.99px) {
+    top: 50%;
+    font-size: 12px;
+    line-height: 100%;
+  }
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+}
+.eco__title {
+  position: absolute;
+  @include font($Raleway45);
+  left: 0;
+  top: 47%;
+  left: 40.6%;
+  color: white;
+  z-index: 15;
+  @media (max-width: 1900px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  @media (max-width: 992.99px) {
+    top: 30%;
+    font-size: 20px;
+    white-space: nowrap;
+  }
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+.play__eco {
+  position: absolute;
+  top: 225px;
+  left: 48.2%;
+  z-index: 15;
+  @media (max-width: 1900px) {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  @media (max-width: 992.99px) {
+    top: 5%;
+    width: 30px;
+  }
+}

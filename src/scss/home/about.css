@@ -1,0 +1,195 @@
+.about__column-swiper {
+  position: relative;
+  max-width: 720px;
+}
+@media (max-width: 1400px) {
+  .about__column-swiper {
+    max-width: 500px;
+  }
+}
+
+.about__company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-padding-start: 315px;
+          padding-inline-start: 315px;
+  -webkit-padding-end: 305px;
+          padding-inline-end: 305px;
+  -webkit-padding-before: 170px;
+          padding-block-start: 170px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 1800px) {
+  .about__company {
+    padding-inline: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 1200px) {
+  .about__company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 100px;
+  }
+}
+@media (max-width: 992.99px) {
+  .about__company {
+    padding-inline: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .about__company {
+    display: none;
+  }
+}
+
+.about__column--title {
+  -webkit-padding-before: 51px;
+          padding-block-start: 51px;
+  -webkit-padding-end: 140px;
+          padding-inline-end: 140px;
+}
+@media (max-width: 1200px) {
+  .about__column--title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+}
+
+.about__column-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 100%;
+  -webkit-padding-after: 36px;
+          padding-block-end: 36px;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .about__column-title {
+    font-size: 24px;
+  }
+}
+
+.about__column-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 500;
+  line-height: 165%;
+  max-width: 450px;
+  -webkit-padding-after: 7px;
+          padding-block-end: 7px;
+}
+.about__column-text span {
+  font-weight: 600;
+  color: #337d5a;
+  letter-spacing: -0.4px;
+}
+.about__column-text:last-of-type {
+  -webkit-padding-after: 42px;
+          padding-block-end: 42px;
+}
+@media (max-width: 768px) {
+  .about__column-text {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.about__column-link {
+  text-decoration: none;
+  color: #337d5a;
+  border: 1.5px solid #337d5a;
+  padding-block: 17px;
+  padding-inline: 43px;
+  letter-spacing: 0.3px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+.about-wrapper {
+  max-width: 700px;
+}
+@media (max-width: 600px) {
+  .about-wrapper {
+    max-width: 400px;
+  }
+}
+@media (max-width: 414px) {
+  .about-wrapper {
+    max-width: 300px;
+  }
+}
+
+.about__arrow-left {
+  bottom: 5px !important;
+  top: inherit !important;
+  left: 15px !important;
+  opacity: 0.2;
+}
+
+.about__arrow-right {
+  bottom: 6px !important;
+  top: inherit !important;
+  left: 82px !important;
+  opacity: 1;
+}
+
+.background__about-arrow {
+  background-color: #337d5a;
+  position: absolute;
+  bottom: 24px;
+  left: 0;
+  width: 141px;
+  height: 56px;
+  z-index: 50;
+}
+
+.about__player {
+  position: absolute;
+  top: 233px;
+  left: 323px;
+}
+@media (max-width: 1400px) {
+  .about__player {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+@media (max-width: 414px) {
+  .about__player {
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}/*# sourceMappingURL=about.css.map */

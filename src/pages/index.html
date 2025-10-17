@@ -4,24 +4,896 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,800,italic&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Bruno+Ace+SC:regular" rel="stylesheet" />
     <link rel="stylesheet" href="css/style/style.css" />
   </head>
-  <body class="body">
+  <body class="loading1">
+    <!-- <div class="preload">
+      <div class="preload__items">
+        <img class="load__img" src="img/preload/nutsPreload.webp" alt="nutsPreload" />
+        <p class="preload__text">Загрузка...</p>
+      </div>
+    </div> -->
     <div class="wrapper">
-      <header class="header"></header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <header class="header">
+        <div class="menu__mob">
+          <div class="mob__header">
+            <div class="mob__logo">
+              <img src="img/header/logo.webp" alt="logo" class="mob__logo-img" />
+              <p class="mob__logo-text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
+            </div>
+            <img src="img/header/closeBtn.webp" alt="closeBtn" class="mob__close" />
+          </div>
+          <div class="mob__login">
+            <img src="img/header/man-user.webp" alt="user" class="login__img" />
+            <p class="mob__login-sign">Вход</p>
+            <p class="mob__login-signup">Регистрация</p>
+            <div class="login__social">
+              <img src="img/header/facebook.webp" alt="face" class="login__social-img" />
+              <img src="img/header/instagram.webp" alt="inst" class="login__social-img" />
+              <img src="img/header/youtube.webp" alt="utube" class="login__social-img" />
+            </div>
+          </div>
+          <div class="mob__items">
+            <ul class="mob__list">
+              <li class="mob__item mob__item--shop"><a href="" class="mob__link">Магазин</a></li>
+              <li class="mob__item"><a href="" class="mob__link">О производстве</a></li>
+              <li class="mob__item"><a href="" class="mob__link">Оплата и доставка</a></li>
+              <li class="mob__item">
+                <a href="" class="mob__link">Оптовым и корпоративным клиентам</a>
+              </li>
+              <li class="mob__item"><a href="" class="mob__link">Новости и статьи</a></li>
+              <li class="mob__item"><a href="" class="mob__link">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__profile">
+          <div class="header__number--mob">
+            <img class="header__img--mob" src="../img/header/phone.png" alt="phone" />
+            <p class="header__text--mob"><span>+38 (044)</span> 750-50-11</p>
+            <p class="header__call--mob">Заказать звонок</p>
+            <div class="header__language dropdown">
+              <button
+                class="btn-secondary"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Ru
+              </button>
+              <img class="drop-arrow" src="img/header/arrow.webp" alt="arrow-Language" />
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Ua</a></li>
+                <li><a class="dropdown-item" href="#">Ru</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__social">
+            <img src="img/header/facebook.jpg" alt="faceboock" class="header__social-faceboock" />
+            <img src="img/header/instagram.jpg" alt="instagram" class="header__social-instagram" />
+            <img src="img/header/youtube.jpg" alt="youtube" class="header__social-youtube" />
+          </div>
+          <div class="header__count">
+            <p class="header__count-text">Ваша персональная скидка - 5%</p>
+          </div>
+          <div class="header__user">
+            <div class="header__user-login">
+              <img src="img/header/man-user.jpg" alt="userLogo" class="user__logo" />
+              <p class="user__text">Вход</p>
+            </div>
+            <div class="header__user-reg">
+              <p class="user__reg">Регистрация</p>
+            </div>
+            <div class="header__language dropdown">
+              <button
+                class="btn-secondary"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Ru
+              </button>
+              <img class="drop-arrow" src="img/header/arrow.webp" alt="arrow-Language" />
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Ua</a></li>
+                <li><a class="dropdown-item" href="#">Ru</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__contacts">
+          <div class="burger">
+            <span></span>
+          </div>
+          <div class="header__logo">
+            <img src="../img/header/logo.jpg" alt="logo" class="header__logo-img" />
+            <p class="header__logo-text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
+          </div>
+          <div class="social__background">
+            <div class="social__background--background">
+              <img src="img/header/viber.webp" alt="viber" class="social__background-viber" />
+            </div>
+            <div class="social__background--background social__background--margin">
+              <img
+                src="img/header/telegram.webp"
+                alt="telegram"
+                class="social__background-telegram"
+              />
+            </div>
+            <div class="social__background--background">
+              <img
+                src="img/header/whatsApp.webp"
+                alt="whatsaap"
+                class="social__background-whatsaap"
+              />
+            </div>
+            <div class="social__contact">
+              <p class="social__contact-number"><span>+38 (044) </span>750-50-11</p>
+              <p class="social__contact-number"><span>+38 (097) </span>775-50-51</p>
+            </div>
+          </div>
+          <div class="order__call">
+            <a class="order__call-link" href="">Заказать звонок</a>
+            <p class="order__call-text">Ждем Вашего звонка ежедневно с 9 до 18</p>
+            <img src="img/header/bag.jpg" alt="basket" class="order__call-basket" />
+            <div class="basket__count">0</div>
+          </div>
+        </div>
+        <div class="header__links">
+          <p class="mob__count">Ваша персональная скидка - 5%</p>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link">Магазин</a>
+                <a href="" class="nav__link nav__about">О производстве</a>
+                <a href="" class="nav__link nav__delivery">Оплата и доставка</a>
+                <a href="" class="nav__link nav__clients">Оптовым и корпоративным клиентам</a>
+                <a href="" class="nav__link nav__news">Новости и статьи</a>
+                <a href="" class="nav__link nav__contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <img src="img/home/hero/pic.webp" alt="hero" class="hero__video" />
+          <h2 class="hero__tittle">Орех Причерноморья</h2>
+          <p class="hero__text">
+            Единственный в Украине сад совместного выращивание фундука и грецкого ореха
+          </p>
+          <img src="img/home/hero/play.webp" alt="" class="play__img" />
+        </section>
+        <section class="products">
+          <div class="products__title">
+            <h2 class="products__title-title">Продукция</h2>
+            <p class="products__title-text">
+              Экологически чистые, качественные ядра грецкого ореха и фундука, а также плоды
+              шиповника в удобной, надежной, вакуумной упаковке разного объема
+            </p>
+          </div>
+          <div class="products__cards">
+            <div class="product__card">
+              <div class="swiper product__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="img/home/products/brown.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/home/products/brown.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="img/home/products/brown.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count"
+                    />
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="rightArrow"
+                    class="button__next-img"
+                  />
+                </div>
+                <div class="swiper-button-next">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="rightArrow"
+                    class="button__next-img"
+                  />
+                </div>
+
+                <img src="img/home/products/акция.webp" alt="" class="card__count-img" />
+                <img src="img/home/products/zoom.webp" alt="" class="card__zoom" />
+              </div>
+
+              <div class="card__info card__info--first">
+                <h3 class="card__name">Грецкий орех</h3>
+                <p class="card__art">Арт: 0091</p>
+                <p class="card__description">Орех сладкий, классический, очищенный</p>
+              </div>
+
+              <div class="card__neto card__neto--first">
+                <div class="card__mass card__mass--count">
+                  <img src="img/home/products/food-scale-tool.webp" alt="" class="card__neto-img" />
+                  <div class="mass__info">
+                    <p class="card__mass-text card__mass-text--first">Масса:</p>
+                    <p class="card__mass-number">40г.</p>
+                  </div>
+                </div>
+                <div class="card__package">
+                  <img src="img/home/products/bag.webp" alt="bag" class="card__package-img" />
+                  <div class="package__info">
+                    <p class="package__info-text">Упаковка</p>
+                    <p class="package__info-caption">вакуумная</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__footer card__footer--first">
+                <div class="card__price">
+                  <p class="card__price-text">Цена:</p>
+                  <p class="card__price-cost card__price-cost--count">19<span> грн.</span></p>
+                  <p class="card__price-cost--old">21<span> грн.</span></p>
+                </div>
+                <a href="#" class="card__buy">Купить</a>
+              </div>
+            </div>
+            <div class="product__card">
+              <div class="swiper product__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/home/products/orange.webp" alt="product" class="card__img-img" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/home/products/orange.webp" alt="product" class="card__img-img" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/home/products/orange.webp" alt="product" class="card__img-img" />
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="prev"
+                    class="button__next-img"
+                  />
+                </div>
+                <div class="swiper-button-next">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="next"
+                    class="button__next-img"
+                  />
+                </div>
+
+                <img src="img/home/products/новинка.webp" alt="" class="card__count-new" />
+                <img src="img/home/products/zoom.webp" alt="" class="card__zoom" />
+              </div>
+
+              <div class="card__info">
+                <h3 class="card__name">Грецкий орех</h3>
+                <p class="card__art">Арт: 0091</p>
+                <p class="card__description">Орех сладкий, классический, очищенный</p>
+              </div>
+
+              <div class="card__neto">
+                <div class="card__mass">
+                  <img src="img/home/products/food-scale-tool.webp" alt="" class="card__neto-img" />
+                  <div class="mass__info">
+                    <p class="card__mass-text">Масса:</p>
+                    <p class="card__mass-number">40г.</p>
+                  </div>
+                </div>
+                <div class="card__package">
+                  <img src="img/home/products/bag.webp" alt="bag" class="card__package-img" />
+                  <div class="package__info">
+                    <p class="package__info-text">Упаковка</p>
+                    <p class="package__info-caption">вакуумная</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__footer">
+                <div class="card__price">
+                  <p class="card__price-text">Цена:</p>
+                  <p class="card__price-cost">
+                    <span>от</span> 21<span class="price-ua">грн.</span>
+                  </p>
+                  <p class="card__price-cost--old"><span></span></p>
+                </div>
+                <a href="" class="card__buy">Купить</a>
+              </div>
+            </div>
+            <div class="product__card">
+              <div class="swiper product__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/home/products/white.webp" alt="product" class="card__img-img" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/home/products/white.webp" alt="product" class="card__img-img" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/home/products/white.webp" alt="product" class="card__img-img" />
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="prev"
+                    class="button__next-img"
+                  />
+                </div>
+                <div class="swiper-button-next">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="next"
+                    class="button__next-img"
+                  />
+                </div>
+
+                <img src="img/home/products/zoom.webp" alt="" class="card__zoom" />
+              </div>
+
+              <div class="card__info card__info--third">
+                <h3 class="card__name">Грецкий орех</h3>
+                <p class="card__art">Арт: 0091</p>
+                <p class="card__description">Орех сладкий, классический, очищенный</p>
+              </div>
+
+              <div class="card__neto card__neto--third">
+                <div class="card__mass">
+                  <img src="img/home/products/food-scale-tool.webp" alt="" class="card__neto-img" />
+                  <div class="mass__info">
+                    <p class="card__mass-text">Масса:</p>
+                    <p class="card__mass-number">40г.</p>
+                  </div>
+                </div>
+                <div class="card__package">
+                  <img src="img/home/products/bag.webp" alt="bag" class="card__package-img" />
+                  <div class="package__info">
+                    <p class="package__info-text">Упаковка</p>
+                    <p class="package__info-caption">вакуумная</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card__footer card__footer--third">
+                <div class="card__price">
+                  <p class="card__price-text">Цена:</p>
+                  <p class="card__price-cost">
+                    <span>от</span> 21<span class="price-ua">грн.</span>
+                  </p>
+                  <p class="card__price-cost--old"><span></span></p>
+                </div>
+                <a href="" class="card__buy">Купить</a>
+              </div>
+            </div>
+            <div class="product__card product__card--none">
+              <div class="swiper product__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/blueSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/orangeSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/greenSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="prev"
+                    class="button__next-img"
+                  />
+                </div>
+                <div class="swiper-button-next">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="next"
+                    class="button__next-img"
+                  />
+                </div>
+                <img src="img/home/products/zoom.webp" alt="" class="card__zoom" />
+                <div class="card__info card__info--first walnat__info">
+                  <h3 class="card__name">Грецкий орех</h3>
+                  <p class="card__art">Арт: 0091</p>
+                  <p class="card__description">Орех сладкий, классический, очищенный</p>
+                </div>
+                <div class="card__neto card__neto--first">
+                  <div class="card__mass card__mass--count">
+                    <img
+                      src="img/home/products/food-scale-tool.webp"
+                      alt=""
+                      class="card__neto-img"
+                    />
+                    <div class="mass__info">
+                      <p class="card__mass-text card__mass-text--first">Масса:</p>
+                      <p class="card__mass-number">40г.</p>
+                    </div>
+                  </div>
+                  <div class="card__package">
+                    <img src="img/home/products/bag.webp" alt="bag" class="card__package-img" />
+                    <div class="package__info">
+                      <p class="package__info-text">Упаковка</p>
+                      <p class="package__info-caption">вакуумная</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer card__footer--first">
+                  <div class="card__price">
+                    <p class="card__price-text">Цена:</p>
+                    <p class="card__price-cost card__price-cost--count">19<span>грн.</span></p>
+                    <p class="card__price-cost--old">21<span> грн.</span></p>
+                  </div>
+                  <a href="" class="card__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="product__card product__card--none">
+              <div class="swiper product__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/orangeSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/blueSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/greenSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="prev"
+                    class="button__next-img"
+                  />
+                </div>
+                <div class="swiper-button-next">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="next"
+                    class="button__next-img"
+                  />
+                </div>
+                <img src="img/home/products/zoom.webp" alt="" class="card__zoom" />
+                <div class="card__info card__info--first walnat__info--withoutcount">
+                  <h3 class="card__name">Грецкий орех</h3>
+                  <p class="card__art">Арт: 0091</p>
+                  <p class="card__description">Орех сладкий, классический, очищенный</p>
+                </div>
+                <div class="card__neto card__neto--first walnat__neto--first">
+                  <div class="card__mass walnat__mass--count">
+                    <img
+                      src="img/home/products/food-scale-tool.webp"
+                      alt=""
+                      class="card__neto-img"
+                    />
+                    <div class="mass__info">
+                      <p class="card__mass-text card__mass-text--first">Масса:</p>
+                      <p class="card__mass-number">40г.</p>
+                    </div>
+                  </div>
+                  <div class="card__package card__package--walnat">
+                    <img src="img/home/products/bag.webp" alt="bag" class="card__package-img" />
+                    <div class="package__info">
+                      <p class="package__info-text">Упаковка</p>
+                      <p class="package__info-caption">вакуумная</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer card__footer--first walnat_footer--first">
+                  <div class="card__price">
+                    <p class="card__price-text">Цена:</p>
+                    <p class="card__price-cost card__price-cost--count">
+                      <span>от</span> 21<span class="price-ua">грн.</span>
+                    </p>
+                  </div>
+                  <a href="" class="card__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+            <div class="product__card product__card--none">
+              <div class="swiper product__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/greenSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/orangeSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                  <div class="swiper-slide swiper-wrapper--walnat">
+                    <img
+                      src="img/home/products/blueSecond.webp"
+                      alt="product"
+                      class="card__img-img card__img-img--count walnat__img-img"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="prev"
+                    class="button__next-img"
+                  />
+                </div>
+                <div class="swiper-button-next">
+                  <img
+                    src="img/home/products/rightArrow.webp"
+                    alt="next"
+                    class="button__next-img"
+                  />
+                </div>
+                <img src="img/home/products/zoom.webp" alt="" class="card__zoom" />
+                <div class="card__info card__info--first walnat__info walnat__withoutcount--second">
+                  <h3 class="card__name">Грецкий орех</h3>
+                  <p class="card__art">Арт: 0091</p>
+                  <p class="card__description">Орех сладкий, классический, очищенный</p>
+                </div>
+                <div class="card__neto card__neto--second">
+                  <div class="card__mass walnat__mass--count">
+                    <img
+                      src="img/home/products/food-scale-tool.webp"
+                      alt=""
+                      class="card__neto-img"
+                    />
+                    <div class="mass__info">
+                      <p class="card__mass-text card__mass-text--first">Масса:</p>
+                      <p class="card__mass-number">40г.</p>
+                    </div>
+                  </div>
+                  <div class="card__package">
+                    <img src="img/home/products/bag.webp" alt="bag" class="card__package-img" />
+                    <div class="package__info">
+                      <p class="package__info-text">Упаковка</p>
+                      <p class="package__info-caption">вакуумная</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__footer card__footer--third">
+                  <div class="card__price">
+                    <p class="card__price-text">Цена:</p>
+                    <p class="card__price-cost card__price-cost--count">
+                      <span>от</span> 21<span class="price-ua">грн.</span>
+                    </p>
+                  </div>
+                  <a href="" class="card__buy">Купить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="shop__item">
+          <a class="shop__item-link" href="">Перейти в магазин</a>
+        </div>
+        <section class="about__company">
+          <div class="about__column about__column--title">
+            <h2 class="about__column-title">О производителе</h2>
+            <p class="about__column-text">
+              <span>Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья”</span>
+              выращивает смешанные сады ореха грецкого с фундуком, а также ореха грецкого с
+              шиповником, на площади более 150 гектаров.
+            </p>
+            <p class="about__column-text">
+              Помимо этого кооператив занимается выращиванием посадочного материала, саженцов
+              привитого и непривитого грецкого ореха, фундука и шиповника.
+            </p>
+            <a class="about__column-link" href="">Подробнее</a>
+          </div>
+          <div class="about__column about__column-swiper">
+            <div class="swiper about__swiper">
+              <div class="swiper-wrapper about-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="img/home/aboutCompany/imgAbout.webp"
+                    alt="aboutCompany"
+                    class="about__img"
+                  />
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/home/aboutCompany/imgAbout.webp"
+                    alt="aboutCompany"
+                    class="about__img"
+                  />
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/home/aboutCompany/imgAbout.webp"
+                    alt="aboutCompany"
+                    class="about__img"
+                  />
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="background__about-arrow">
+                <div class="swiper-button-prev about__arrow-left">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="about__arrow" />
+                </div>
+                <div class="swiper-button-next about__arrow-right">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="about__arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="info__company">
+          <div class="info__body info__body--240">
+            <h2 class="info__body-number">240</h2>
+            <p class="info__body-text">Cмешанных садов</p>
+          </div>
+          <div class="info__body info__body--1">
+            <h2 class="info__body-number">1</h2>
+            <p class="info__body-text">Тепличного комплекса</p>
+          </div>
+          <div class="info__body info__body--10">
+            <h2 class="info__body-number">10</h2>
+            <p class="info__body-text info__body-text--width">
+              Первая промышленная плантация шиповника в Украине
+            </p>
+          </div>
+          <div class="info__body info__body--80">
+            <h2 class="info__body-number">80</h2>
+            <p class="info__body-text info__body-text--last">Приживаемости саженцев</p>
+          </div>
+        </section>
+        <section class="target">
+          <div class="overlay__target"></div>
+          <img src="img/home/target/imgHero.webp" alt="imgHero" class="target__img" />
+          <img src="img/home/hero/play.webp" alt="" class="play__target" />
+          <h2 class="target__title">
+            Наша главная цель - получить максимальную прибыль с одного гектара
+          </h2>
+          <p class="target__text">Cмотреть видео о производстве</p>
+        </section>
+        <section class="usefull">
+          <div class="usefull__body">
+            <div class="usefull__title">
+              <h2 class="usefull__title-title">О пользе продукта</h2>
+              <p class="usefull__title-text">
+                Каждый вид ореха содержит свой неповторимый уникальный баланс витаминов, и
+                микроэлементов
+              </p>
+            </div>
+            <div class="usefull__cards">
+              <div class="usefull__card">
+                <div class="usefull__overlay usefull__overlay--green"></div>
+                <img src="img/usefull/nuts.webp" alt="img" class="usefull__card-img" />
+                <img
+                  src="img/usefull/nut.webp"
+                  alt="icon"
+                  class="usefull__card-icon usefull__card-icon--nuts"
+                />
+                <h3 class="usefull__card-title usefull__card-title--nuts">Грецкий орех</h3>
+                <p class="usefull__card-text">
+                  Дерево жизни - так часто величают грецкий орех, поскольку с давних пор он кормил,
+                  восстанавливал силы и лечил человека.
+                </p>
+                <p class="usefull__card-text usefull__card-text--second">
+                  Даже небольшая горсть грецких орехов - это кладезь витаминов и хорошая
+                  профилактика многих заболеваний
+                </p>
+              </div>
+              <div class="usefull__card">
+                <div class="usefull__overlay usefull__overlay--black"></div>
+                <img src="img/usefull/funduk.webp" alt="img" class="usefull__card-img" />
+                <img src="img/usefull/fund.webp" alt="icon" class="usefull__card-icon" />
+                <h3 class="usefull__card-title">Фундук</h3>
+              </div>
+              <div class="usefull__card">
+                <div class="usefull__overlay usefull__overlay--black"></div>
+                <img src="img/usefull/shipov.webp" alt="img" class="usefull__card-img" />
+                <img
+                  src="img/usefull/ship.webp"
+                  alt="icon"
+                  class="usefull__card-icon usefull__card-icon--ship"
+                />
+                <h3 class="usefull__card-title">Шиповник</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="eco">
+          <div class="overlay__eco"></div>
+          <img src="img/eco/backEco.webp" alt="imgHero" class="eco__img" />
+          <img src="img/eco/eco.webp" alt="" class="play__eco" />
+          <h2 class="eco__title">Эко продукция</h2>
+          <p class="eco__text">
+            Выращиваем каждое деревцо с любовью, на экологически чистой земле, без использования
+            пестицидов и химии
+          </p>
+        </section>
+        <section class="section__news">
+          <div class="swiper swiper__news">
+            <div class="news__body">
+              <div class="news__info">
+                <h2 class="news__body-title">Новости</h2>
+                <p class="news__body-text">Свежие новости и полезная информация</p>
+              </div>
+              <div class="background__about-arrow background__news-arrow">
+                <div class="swiper-button-prev news__arrow-left">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="news__arrow" />
+                </div>
+                <div class="swiper-button-next news__arrow-right">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="news__arrow" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-wrapper cards__news">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="news__all">
+            <a href="" class="news__all-link">Смотреть все новости</a>
+          </div>
+        </section>
+        <section class="map">
+          <div class="map__body">
+            <div class="map__column map__column--contact">
+              <h2 class="map__title">Контакты</h2>
+              <div class="map__number">
+                <img src="../img/map/phone.png" alt="" class="map__number-img" />
+                <div class="number__body">
+                  <p class="map__number-number">+38 (095) 711 11 11</p>
+                  <p class="map__number-number">+38 (095) 711 11 11</p>
+                </div>
+                <div class="map__social">
+                  <div class="map__social-background">
+                    <img src="img/map/viber.webp" alt="viber" class="map__social-img" />
+                    <img src="img/map/telegram.webp" alt="telegram" class="map__social-img" />
+                    <img src="img/map/whatsapp.webp" alt="whatsapp" class="map__social-img" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="map__email">
+                <img src="img/map/email.webp" alt="tree" class="map__email-img" />
+                <p class="map__email-text">nuts@nbsc.com.ua</p>
+              </div>
+              <div class="map__office">
+                <img src="img/map/house.webp" alt="" class="office__img" />
+                <h3 class="office__title">Офис и отдел продаж</h3>
+              </div>
+              <p class="office__text">
+                Украина, г. Одесса, <br />
+                ул. Космонавтов, 32
+              </p>
+              <div class="map__tree">
+                <img src="img/map/tree.webp" alt="" class="tree__img" />
+                <h3 class="tree__title">Производство</h3>
+              </div>
+              <p class="tree__text">
+                Украина, Одесская обл, <br />
+                с. Яськи, ул. Центральная, 232
+              </p>
+            </div>
+
+            <div class="map__column map__column--map">
+              <iframe
+                class="google__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086324064974!2d-122.41941568468195!3d37.77492977975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064bfb8f2d1%3A0xa6b3c3a2d5f6e9ab!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1696789368571!5m2!1sen!2s"
+                width="739"
+                height="518"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__header">
+          <div class="footer__logo">
+            <img src="img/footer/logoFooter.webp" alt="footerLogo" class="footer__logo-img" />
+            <h2 class="footer__logo-tittle">ОРЕХ ПРИЧЕРНОМОРЬЯ</h2>
+          </div>
+          <div class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Магазин</a>
+                <a href="" class="footer__link footer__link--client">Корпоративным клиентам</a>
+                <a href="" class="footer__link footer__link--delivery">Оплата и доставка</a>
+                <a href="" class="footer__link footer__link--about">О производстве</a>
+                <a href="" class="footer__link footer__link--news">Новости и статьи</a>
+                <a href="" class="footer__link footer__link--gallery">Галерея</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <p class="footer__footer-text">
+            Разработано <span class="avada">AVADA</span> <span class="media">MEDIA</span>
+          </p>
+          <p class="footer__footer-copyright">Copyright © 2019. Все права защищены</p>
+          <div class="footer__footer-social">
+            <img src="../img/footer/facebook.png" alt="" class="footer__social-img" />
+            <img src="../img/footer/instagram.png" alt="" class="footer__social-img" />
+            <img
+              src="../img/footer/utube.png"
+              alt=""
+              class="footer__social-img footer__social-img--utube"
+            />
+          </div>
+        </div>
+      </footer>
     </div>
+
     <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/products.bundle.js"></script>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/news.bundle.js"></script>
   </body>
 </html>

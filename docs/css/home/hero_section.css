@@ -1,0 +1,150 @@
+.hero {
+  position: relative;
+  padding-block-start: 1.0625rem;
+}
+@media (max-width: 600px) {
+  .hero {
+    padding-block-start: 0.6875rem;
+  }
+}
+
+.hero__video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 992.99px) {
+  .hero__video {
+    height: 28.125rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero__video {
+    height: inherit;
+    height: 100vh;
+  }
+}
+
+.play__img {
+  position: absolute;
+  top: 26.0625rem;
+  left: 50%;
+  transform: translate(-50%);
+  width: 3.8125rem;
+  height: 3.8125rem;
+}
+@media (max-width: 1600px) {
+  .play__img {
+    top: inherit;
+    bottom: 3.125rem;
+  }
+}
+@media (max-width: 992.99px) {
+  .play__img {
+    bottom: 11.25rem;
+  }
+}
+@media (max-width: 800px) {
+  .play__img {
+    width: 2.8125rem;
+    height: 2.8125rem;
+  }
+}
+@media (max-width: 600px) {
+  .play__img {
+    top: 16.125rem;
+  }
+}
+
+.hero__tittle {
+  position: absolute;
+  top: 13.625rem;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  white-space: nowrap;
+  z-index: 10;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 3.875rem;
+  line-height: 100%;
+  letter-spacing: 0.0125rem;
+  line-height: 100%;
+}
+@media (max-width: 1600px) {
+  .hero__tittle {
+    font-size: 3rem;
+    top: 6.25rem;
+  }
+}
+@media (max-width: 1200px) {
+  .hero__tittle {
+    top: 3.125rem;
+  }
+}
+@media (max-width: 800px) {
+  .hero__tittle {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 414px) {
+  .hero__tittle {
+    top: 7.8125rem;
+    left: 11.375rem;
+  }
+}
+@media (max-width: 350px) {
+  .hero__tittle {
+    top: 7.8125rem;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.hero__text {
+  position: absolute;
+  top: 19.6875rem;
+  left: 49.8%;
+  transform: translate(-50%);
+  color: white;
+  text-align: center;
+  max-width: 34.375rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1.5625rem;
+  line-height: 100%;
+  letter-spacing: -0.01875rem;
+  line-height: 130%;
+}
+@media (max-width: 1600px) {
+  .hero__text {
+    font-size: 1.25rem;
+    top: 12.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .hero__text {
+    top: 9.375rem;
+  }
+}
+@media (max-width: 992.99px) {
+  .hero__text {
+    top: 6.875rem;
+  }
+}
+@media (max-width: 800px) {
+  .hero__text {
+    font-size: 1.0625rem;
+  }
+}
+@media (max-width: 600px) {
+  .hero__text {
+    top: 10.5625rem;
+    width: 100%;
+    left: 49.9%;
+    max-width: 15.625rem;
+    line-height: 135%;
+  }
+}
+/*# sourceMappingURL=hero_section.css.map */

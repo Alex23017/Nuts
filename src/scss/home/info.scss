@@ -1,0 +1,105 @@
+@use "../variables/variables" as *;
+
+.info__company {
+  padding-inline-start: 395px;
+  padding-inline-end: 350px;
+  display: flex;
+  gap: 50px;
+  padding-block-start: 145px;
+  padding-block-end: 70px;
+  @media (max-width: 1900px) {
+    padding-inline: 100px;
+    justify-content: center;
+  }
+  @media (max-width: 1250px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  @media (max-width: 992.99px) {
+    padding-inline: 30px;
+  }
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+.info__body-number {
+  @include font($Montserrat72);
+  padding-block-end: 5px;
+  @media (max-width: 1400px) {
+    font-size: 48px;
+  }
+}
+.info__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.info__body-text {
+  @include font($Raleway18);
+  font-weight: 400;
+  max-width: 100px;
+  line-height: 20px;
+}
+.info__body-text--width {
+  max-width: 350px;
+}
+.info__body-text--last {
+  max-width: 150px;
+}
+.info__body--1 {
+  margin-inline-start: 155px;
+  @media (max-width: 1250px) {
+    margin: 0;
+  }
+}
+.info__body--10 {
+  margin-inline-start: 56px;
+  @media (max-width: 1250px) {
+    margin: 0;
+  }
+}
+.info__body--80 {
+  position: relative;
+  margin-inline-start: 30px;
+  &::before {
+    position: absolute;
+    content: "%";
+    top: 6px;
+    right: 7px;
+    @include font($Raleway18);
+    font-weight: 900;
+  }
+  @media (max-width: 1250px) {
+    margin: 0;
+  }
+}
+
+.info__body--240,
+.info__body--1,
+.info__body--10 {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "Га";
+    top: 0;
+    right: 0;
+    @include font($Raleway18);
+    font-weight: 900;
+  }
+}
+.info__body--240::before {
+  top: 6px;
+  right: -27px;
+}
+.info__body--1::before {
+  top: 6px;
+  right: 10px;
+}
+.info__body--10::before {
+  top: 6px;
+  right: 110px;
+}
