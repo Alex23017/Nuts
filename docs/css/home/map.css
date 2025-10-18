@@ -13,11 +13,6 @@
     padding-block-start: 6.25rem;
   }
 }
-@media (max-width: 600px) {
-  .map {
-    display: none;
-  }
-}
 
 .map__body {
   width: 100%;

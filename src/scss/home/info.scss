@@ -21,14 +21,20 @@
     padding-inline: 30px;
   }
   @media (max-width: 600px) {
-    display: none;
+    padding-block: 40px;
   }
+  // @media (max-width: 600px) {
+  //   display: none;
+  // }
 }
 .info__body-number {
   @include font($Montserrat72);
   padding-block-end: 5px;
   @media (max-width: 1400px) {
     font-size: 48px;
+  }
+  @media (max-width: 600px) {
+    font-size: 34px;
   }
 }
 .info__body {
@@ -72,6 +78,10 @@
     right: 7px;
     @include font($Raleway18);
     font-weight: 900;
+    @media (max-width: 600px) {
+      position: static;
+      font-size: 8px;
+    }
   }
   @media (max-width: 1250px) {
     margin: 0;
@@ -89,6 +99,10 @@
     right: 0;
     @include font($Raleway18);
     font-weight: 900;
+    @media (max-width: 600px) {
+      position: static;
+      font-size: 8px;
+    }
   }
 }
 .info__body--240::before {

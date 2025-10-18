@@ -35,7 +35,7 @@
 }
 @media (max-width: 600px) {
   .about__company {
-    display: none;
+    padding-block-start: 4.375rem;
   }
 }
 

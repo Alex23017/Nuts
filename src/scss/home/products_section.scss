@@ -2,9 +2,9 @@
 
 .products {
   padding-block-start: 87px;
-  @media (max-width: 600px) {
-    display: none;
-  }
+  // @media (max-width: 600px) {
+  //   display: none;
+  // }
 }
 .products__title {
   display: flex;

@@ -29,8 +29,12 @@
     padding-inline: 30px;
   }
   @media (max-width: 600px) {
-    display: none;
+      padding-block-start: 70px;
+  
   }
+  // @media (max-width: 600px) {
+  //   display: none;
+  // }
 }
 .about__column--title {
   padding-block-start: 51px;

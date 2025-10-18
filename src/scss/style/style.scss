@@ -12,4 +12,6 @@
 @use "../home/eco" as *;
 @use "../home/news" as *;
 @use "../home/map" as *;
-@use "../components/preload" as * ;
+@use "../delivery/delivery" as *;
+@use "../clients/clients" as *;
+@use "../components/preload" as *;

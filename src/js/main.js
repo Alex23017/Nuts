@@ -71,16 +71,128 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //LANGUAGE
+  //LANGUAGES
   const dropdownBtn = document.getElementById("dropdownMenuButton1");
+  const dropdownBtn2 = document.getElementById("dropdownMenuButton2");
   const dropdownItems = document.querySelectorAll(".dropdown-item");
 
-  dropdownItems.forEach((item) => {
-    item.addEventListener("click", (e) => {
-      const selectedLang = item.textContent;
-      dropdownBtn.textContent = selectedLang;
+  dropdownItems.forEach((el) => {
+    el.addEventListener("click", () => {
+      const selectLang = el.textContent;
+      dropdownBtn.textContent = selectLang;
+      dropdownBtn2.textContent = selectLang;
+      setLanguage(selectLang);
     });
   });
+
+  function setLanguage(language) {
+    const element = document.querySelectorAll("[data-lang-ua], [data-lang-ru]");
+    element.forEach((lang) => {
+      const translation = lang.getAttribute(`data-lang-${language}`);
+      if (translation) {
+        lang.textContent = translation;
+      }
+    });
+  }
+
+  // PAY
+
+  const payArray = [
+    `   <h2 class="pay__column-title">Способы оплаты</h2>
+              <div class="pay__method">
+                <div class="pay__img pay__img--bank">
+                  <img src="img/delivery/bank.webp" alt="" class="pay__method-img" />
+                  <h2 class="pay__method-title">Безналичный расчет</h2>
+                </div>
+                <p class="pay__method-text pay__method--bank">
+                  Вы можете выбрать “получить реквизиты” <br />
+                  для дальнейшей оплаты на карту, или в терминалах.
+                </p>
+              </div>
+              <div class="pay__method">
+                <div class="pay__img pay__img--car">
+                  <img src="img/delivery/card.webp" alt="card" class="pay__method-img" />
+                  <h2 class="pay__method-title">Оплата с помощью банковской карты</h2>
+                </div>
+                <p class="pay__method-text">
+                  Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+                </p>
+              </div>
+              <div class="pay__method">
+                <div class="pay__img pay__img--wallet">
+                  <img src="img/delivery/wallet.webp" alt="" class="pay__method-img" />
+                  <h2 class="pay__method-title">Наличный расчет</h2>
+                </div>
+                <p class="pay__method-text">
+                  Оплата заказов наложенным платежом в отделении Новой Почты, или наличными
+                  курьерами
+                </p>
+              </div>`,
+    `Доставка партии`,
+    `Возврат товара`,
+  ];
+
+  const btnSelect = document.querySelectorAll(".pay__select");
+  const renderContext = document.querySelector(".pay__column-pay");
+  const svgSelect = document.querySelectorAll(".pay__select-img");
+
+  if (renderContext) {
+    renderContext.innerHTML = `<h2 class="pay__column-title">Способы оплаты</h2>
+              <div class="pay__method">
+                <div class="pay__img pay__img--bank">
+                  <img src="img/delivery/bank.webp" alt="" class="pay__method-img" />
+                  <h2 class="pay__method-title">Безналичный расчет</h2>
+                </div>
+                <p class="pay__method-text pay__method--bank">
+                  Вы можете выбрать “получить реквизиты” <br />
+                  для дальнейшей оплаты на карту, или в терминалах.
+                </p>
+              </div>
+              <div class="pay__method">
+                <div class="pay__img pay__img--car">
+                  <img src="img/delivery/card.webp" alt="card" class="pay__method-img" />
+                  <h2 class="pay__method-title">Оплата с помощью банковской карты</h2>
+                </div>
+                <p class="pay__method-text">
+                  Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
+                </p>
+              </div>
+              <div class="pay__method">
+                <div class="pay__img pay__img">
+                  <img src="img/delivery/wallet.webp" alt="" class="pay__method-img" />
+                  <h2 class="pay__method-title">Наличный расчет</h2>
+                </div>
+                <p class="pay__method-text">
+                  Оплата заказов наложенным платежом в отделении Новой Почты, или наличными
+                  курьерами
+                </p>
+              </div>`;
+  }
+
+  btnSelect.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+      if (renderContext) {
+        renderContext.innerHTML = payArray[index];
+      }
+      btnSelect.forEach((b) => b.classList.remove("active"));
+      svgSelect.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const svg = btn.querySelector(".pay__select-img");
+      if (svg) {
+        svg.classList.add("active");
+      }
+    });
+  });
+
+  //LOCATION
+
+  const location = document.querySelector(".location__delivery-page");
+  if (window.location.pathname === "/delivery.html") {
+    location.textContent = "Оплата и доставка";
+  }
+  if (window.location.pathname === "/clients.html") {
+    location.textContent = "Оптовым и корпоративным клиентам";
+  }
 
   //BURGER MENU
   const burger = document.querySelector(".burger");

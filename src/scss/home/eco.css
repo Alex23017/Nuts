@@ -2,11 +2,6 @@
   position: relative;
   max-height: 740px;
 }
-@media (max-width: 600px) {
-  .eco {
-    display: none;
-  }
-}
 
 .overlay__eco {
   position: absolute;

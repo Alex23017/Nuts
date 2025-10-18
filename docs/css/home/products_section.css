@@ -1,11 +1,6 @@
 .products {
   padding-block-start: 5.4375rem;
 }
-@media (max-width: 600px) {
-  .products {
-    display: none;
-  }
-}
 
 .products__title {
   display: flex;

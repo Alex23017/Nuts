@@ -13,11 +13,6 @@
     padding-inline: 1.875rem;
   }
 }
-@media (max-width: 600px) {
-  .footer {
-    display: none;
-  }
-}
 
 .footer__logo {
   display: flex;

@@ -8,11 +8,6 @@
     padding-inline: 30px;
   }
 }
-@media (max-width: 600px) {
-  .usefull {
-    display: none;
-  }
-}
 
 .usefull__overlay {
   position: absolute;

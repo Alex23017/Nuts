@@ -16,11 +16,6 @@
     padding-inline: 30px;
   }
 }
-@media (max-width: 600px) {
-  .footer {
-    display: none;
-  }
-}
 
 .footer__logo {
   display: -webkit-box;

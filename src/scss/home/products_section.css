@@ -2,11 +2,6 @@
   -webkit-padding-before: 87px;
           padding-block-start: 87px;
 }
-@media (max-width: 600px) {
-  .products {
-    display: none;
-  }
-}
 
 .products__title {
   display: -webkit-box;

@@ -10,11 +10,6 @@
     padding-inline: 30px;
   }
 }
-@media (max-width: 600px) {
-  .section__news {
-    display: none;
-  }
-}
 
 .swiper__news {
   max-width: 1286px;

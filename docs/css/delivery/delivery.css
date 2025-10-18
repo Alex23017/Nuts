@@ -1,0 +1,350 @@
+.hero__delivery {
+  padding-block-start: 1.125rem;
+}
+.hero__delivery p {
+  margin: 0;
+}
+
+.overlay__delivery-img {
+  position: relative;
+  min-height: 9.375rem;
+}
+
+.hero__delivery-img {
+  min-height: 9.375rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.overlay__delivery {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4509803922);
+}
+
+.hero__delivery-title {
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 3.875rem;
+  line-height: 100%;
+  color: white;
+  top: 41%;
+  white-space: nowrap;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 20;
+}
+@media (max-width: 1280px) {
+  .hero__delivery-title {
+    font-size: 2rem;
+    top: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .hero__delivery-title {
+    font-size: 1.75rem;
+  }
+}
+
+.location__body {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 100%;
+  position: absolute;
+  color: white;
+  top: 2.25rem;
+  left: 19.625rem;
+  z-index: 20;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.625rem;
+}
+@media (max-width: 1600px) {
+  .location__body {
+    left: 1.25rem;
+    top: 1.25rem;
+  }
+}
+
+.pay {
+  padding-block-start: 5rem;
+}
+
+.pay__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.875rem;
+  padding-block-start: 3.75rem;
+  padding-inline: 1.875rem;
+}
+@media (max-width: 992.99px) {
+  .pay__body {
+    flex-direction: column;
+  }
+}
+
+.pay__column-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 100%;
+  font-weight: 800;
+  padding-block-end: 1.1875rem;
+  margin-inline-start: -0.0625rem;
+}
+
+.pay__method-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+}
+
+.pay__img {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-inline-start: -0.0625rem;
+}
+
+.pay__method-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
+  font-weight: 500;
+  max-width: 25.625rem;
+  line-height: 1.5rem;
+  margin: 0;
+  margin-inline-end: -0.1875rem;
+  letter-spacing: -0.0125rem;
+}
+
+.pay__method-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.pay__column-img {
+  width: 100%;
+  max-width: 48.125rem;
+  height: 100%;
+}
+
+.pay__select-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 100%;
+  margin: 0;
+}
+@media (max-width: 992.99px) {
+  .pay__select-text {
+    font-size: 0.875rem;
+  }
+}
+
+.pay__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-inline-start: 27rem;
+}
+@media (max-width: 1900px) {
+  .pay__header {
+    justify-content: center;
+    padding-inline: 1.875rem;
+    gap: 1.875rem;
+  }
+}
+@media (max-width: 700px) {
+  .pay__header {
+    gap: 0.9375rem;
+  }
+}
+@media (max-width: 600px) {
+  .pay__header {
+    flex-direction: column;
+    align-items: flex-center;
+  }
+}
+.pay__header::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.0625rem;
+  background-color: rgba(0, 0, 0, 0.0784313725);
+  bottom: -0.5rem;
+  left: -0.5625rem;
+}
+@media (max-width: 600px) {
+  .pay__header::after {
+    left: 0;
+  }
+}
+
+.pay__select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.pay__select:hover::after {
+  position: absolute;
+  content: "";
+  width: 107%;
+  height: 0.1875rem;
+  background-color: #337d5a;
+  bottom: -0.8125rem;
+  left: -0.5625rem;
+}
+@media (max-width: 600px) {
+  .pay__select:hover::after {
+    bottom: -0.625rem;
+    width: 12.5rem;
+  }
+}
+.pay__select.active::after {
+  position: absolute;
+  content: "";
+  width: 107%;
+  height: 0.1875rem;
+  background-color: #337d5a;
+  bottom: -0.8125rem;
+  left: -0.5625rem;
+}
+@media (max-width: 600px) {
+  .pay__select.active::after {
+    bottom: -0.625rem;
+    width: 12.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .pay__select {
+    width: 15.625rem;
+  }
+}
+
+.pay__select--delivery.active::after {
+  position: absolute;
+  content: "";
+  width: 107%;
+  height: 0.1875rem;
+  background-color: #337d5a;
+  bottom: -0.5rem;
+  left: -0.5625rem;
+}
+@media (max-width: 600px) {
+  .pay__select--delivery.active::after {
+    bottom: -0.625rem;
+    width: 12.5rem;
+  }
+}
+
+.pay__select--paid {
+  gap: 0.6875rem;
+  margin-inline-start: 0.1875rem;
+}
+
+.pay__select--delivery {
+  margin-inline-start: 13.625rem;
+  gap: 1.1875rem;
+}
+@media (max-width: 1200px) {
+  .pay__select--delivery {
+    margin-inline-start: 0;
+  }
+}
+@media (max-width: 600px) {
+  .pay__select--delivery {
+    gap: 0.625rem;
+  }
+}
+
+.pay__select--return {
+  gap: 0.875rem;
+  margin-inline-start: 12.25rem;
+}
+@media (max-width: 1200px) {
+  .pay__select--return {
+    margin-inline-start: 0;
+  }
+}
+
+.pay__select-img {
+  position: relative;
+  color: #8a8a8a;
+}
+.pay__select-img.active {
+  color: #337d5a;
+}
+@media (max-width: 700px) {
+  .pay__select-img {
+    min-width: 2.25rem;
+  }
+}
+
+@media (max-width: 992.99px) {
+  .pay__column-pay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.pay__img--bank {
+  padding-block-end: 0.625rem;
+}
+
+.pay__method--bank {
+  letter-spacing: -0.0125rem;
+}
+
+.pay__column-pay {
+  align-self: flex-start;
+  padding-block-start: 0.6875rem;
+}
+
+.pay__img--car {
+  padding-block-start: 2.375rem;
+  padding-block-end: 0.5rem;
+  letter-spacing: -0.0125rem;
+}
+
+.pay__img--wallet {
+  padding-block-start: 2.3125rem;
+  padding-block-end: 0.625rem;
+}
+
+.info__delivery {
+  padding-block-start: 9.6875rem;
+  padding-block-end: 4.5rem;
+}
+@media (max-width: 600px) {
+  .info__delivery {
+    padding-block-start: 3.125rem;
+  }
+}
+
+.map__delivery {
+  padding-block-start: 7.125rem;
+}
+@media (max-width: 600px) {
+  .map__delivery {
+    padding-block-start: 1.25rem;
+  }
+}
+/*# sourceMappingURL=delivery.css.map */

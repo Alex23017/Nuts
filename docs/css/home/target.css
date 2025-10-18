@@ -128,11 +128,6 @@
     font-size: 0.875rem;
   }
 }
-@media (max-width: 600px) {
-  .target__text {
-    display: none;
-  }
-}
 
 .overlay__target {
   position: absolute;

@@ -11,6 +11,7 @@ export default {
     products: "./src/js/products.js",
     about: "./src/js/about.js",
     news: "./src/js/news.js",
+    clients: "./src/js/clients.js",
   },
   output: {
     filename: "[name].bundle.js",
