@@ -193,6 +193,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (window.location.pathname === "/clients.html") {
     location.textContent = "Оптовым и корпоративным клиентам";
   }
+  if (window.location.pathname === "/basket.html") {
+    location.textContent = "Корзина";
+  }
 
   //BURGER MENU
   const burger = document.querySelector(".burger");
@@ -205,5 +208,12 @@ document.addEventListener("DOMContentLoaded", () => {
   menuClose.addEventListener("click", () => {
     menuMob.classList.remove("open");
     document.body.classList.remove("open");
+  });
+
+  const cardBuy = document.querySelectorAll(".card__buy");
+  cardBuy.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+    });
   });
 });

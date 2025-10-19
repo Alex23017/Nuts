@@ -120,7 +120,7 @@
     padding-inline-start: 15px !important;
   }
   @media (max-width: 357px) {
-     padding-inline-start: 10px !important;
+    padding-inline-start: 10px !important;
   }
 }
 
@@ -224,6 +224,9 @@
     width: 29px;
     height: 28px;
   }
+}
+.basket__link {
+  cursor: pointer;
 }
 .header__logo-text {
   @include font($Raleway15);
