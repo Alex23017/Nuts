@@ -722,6 +722,12 @@
   -webkit-padding-after: 52px;
           padding-block-end: 52px;
 }
+@media (max-width: 768px) {
+  .map__basket {
+    -webkit-padding-before: 80px;
+            padding-block-start: 80px;
+  }
+}
 
 .basket__overlay {
   position: absolute;
@@ -797,4 +803,10 @@
 .footer_basket {
   -webkit-padding-before: 78px;
           padding-block-start: 78px;
+}
+@media (max-width: 600px) {
+  .footer_basket {
+    -webkit-padding-before: 20px;
+            padding-block-start: 20px;
+  }
 }/*# sourceMappingURL=basket.css.map */

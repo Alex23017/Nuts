@@ -469,6 +469,9 @@
 .map__basket {
   padding-block-start: 199px;
   padding-block-end: 52px;
+  @media (max-width: 768px) {
+   padding-block-start: 80px;
+  }
 }
 .basket__overlay {
   position: absolute;
@@ -533,4 +536,7 @@
 }
 .footer_basket {
   padding-block-start: 78px;
+  @media (max-width: 600px) {
+   padding-block-start: 20px;
+  }
 }
