@@ -212,16 +212,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const location = document.querySelector(".location__delivery-page");
-  if (window.location.pathname === "delivery.html") {
+
+  function isPage(host) {
+    return window.location.pathname.includes(host);
+  }
+  if (isPage("delivery.html")) {
     location.textContent = "Оплата и доставка";
   }
-  if (window.location.pathname === "clients.html") {
+  if (isPage("clients.html")) {
     location.textContent = "Оптовым и корпоративным клиентам";
   }
-  if (window.location.pathname === "basket.html") {
+  if (isPage("basket.html")) {
     location.textContent = "Корзина";
   }
-  if (window.location.pathname === "cart.html") {
+  if (isPage("cart.html")) {
     location.textContent = "Карточка товара";
   }
 
