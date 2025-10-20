@@ -76,6 +76,13 @@ $fonts: (
     line-height: 100%,
     weight: 800,
   ),
+  "Raleway30": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 30px,
+    line-height: 100%,
+    weight: 800,
+  ),
   "Raleway40": (
     family: "Raleway",
     fallback: sans-serif,
@@ -132,6 +139,13 @@ $fonts: (
     line-height: 100%,
     weight: 600,
   ),
+  "Montserrat18": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 18px,
+    line-height: 100%,
+    weight: 600,
+  ),
   "Montserrat20": (
     family: "Montserrat",
     fallback: sans-serif,
@@ -145,6 +159,13 @@ $fonts: (
     font-size: 22px,
     line-height: 100%,
     weight: 700,
+  ),
+  "Montserrat24": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 24px,
+    line-height: 100%,
+    weight: 600,
   ),
   "Montserrat13": (
     family: "Montserrat",
@@ -191,8 +212,10 @@ $Raleway13: map.get($fonts, "Raleway13");
 $Raleway14: map.get($fonts, "Raleway14");
 $Raleway16: map.get($fonts, "Raleway16");
 $Montserrat72: map.get($fonts, "Montserrat72");
+$Montserrat24: map.get($fonts, "Montserrat24");
 $Montserrat22: map.get($fonts, "Montserrat22");
 $Montserrat20: map.get($fonts, "Montserrat20");
+$Montserrat18: map.get($fonts, "Montserrat18");
 $Montserrat16: map.get($fonts, "Montserrat16");
 $Montserrat15: map.get($fonts, "Montserrat15");
 $Montserrat14: map.get($fonts, "Montserrat14");
@@ -206,6 +229,7 @@ $Raleway62: map.get($fonts, "Raleway62");
 $Raleway25: map.get($fonts, "Raleway25");
 $Raleway24: map.get($fonts, "Raleway24");
 $Raleway28: map.get($fonts, "Raleway28");
+$Raleway30: map.get($fonts, "Raleway30");
 $Raleway32: map.get($fonts, "Raleway32");
 $Raleway45: map.get($fonts, "Raleway45");
 $Raleway40: map.get($fonts, "Raleway40");

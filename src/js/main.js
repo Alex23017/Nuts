@@ -71,6 +71,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const productCards = document.querySelectorAll(".product__card");
+
+  productCards.forEach((card, index) => {
+    card.addEventListener("click", (e) => {
+      if (e.target.closest(".card__buy")) return;
+
+      const productData = {
+        name: card.dataset.name,
+        price: card.dataset.price,
+        oldPrice: card.dataset.oldPrice,
+        art: card.dataset.art,
+        img: card.querySelector(".card__img-img").src,
+        index: index,
+      };
+      localStorage.setItem("selectedProduct", JSON.stringify(productData));
+      window.location.href = "cart.html";
+    });
+  });
+
   //LANGUAGES
   const dropdownBtn = document.getElementById("dropdownMenuButton1");
   const dropdownBtn2 = document.getElementById("dropdownMenuButton2");
@@ -185,6 +204,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //LOCATION
+  const locationMain = document.querySelector(".location__delivery");
+  if (locationMain) {
+    locationMain.addEventListener("click", () => {
+      window.location.href = "index.html";
+    });
+  }
 
   const location = document.querySelector(".location__delivery-page");
   if (window.location.pathname === "/delivery.html") {
@@ -195,6 +220,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (window.location.pathname === "/basket.html") {
     location.textContent = "Корзина";
+  }
+  if (window.location.pathname === "/cart.html") {
+    location.textContent = "Карточка товара";
   }
 
   //BURGER MENU

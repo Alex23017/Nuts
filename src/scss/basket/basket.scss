@@ -241,20 +241,20 @@
 
 .input__body-name {
   margin: 0;
-  max-width: 140px;
+  width: 140px;
   white-space: wrap;
   @media (max-width: 1900px) {
     line-height: 100%;
   }
   @media (max-width: 600px) {
     font-size: 10px;
-    max-width: 80px;
+    width: 80px;
     white-space: nowrap; /* не переносим на новую строку */
     overflow: hidden; /* обрезаем текст, выходящий за блок */
     text-overflow: ellipsis; /* показываем "..." в конце */
   }
   @media (max-width: 400px) {
-    min-width: 60px;
+    width: 60px;
   }
 }
 .input__price {

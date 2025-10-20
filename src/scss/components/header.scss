@@ -71,6 +71,7 @@
 }
 .header__user {
   margin-block-start: 1px;
+  margin-inline-end: 2px;
   @media (max-width: 600px) {
     display: none;
   }
@@ -78,9 +79,10 @@
 
 .header__count-text {
   margin: 0;
+  padding-inline-end: 2px;
   @include font($Montserrat14);
   color: $primaryColor;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.2px;
   @media (max-width: 1500px) {
     text-align: center;
   }

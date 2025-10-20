@@ -299,7 +299,7 @@
 
 .input__body-name {
   margin: 0;
-  max-width: 8.75rem;
+  width: 8.75rem;
   white-space: wrap;
 }
 @media (max-width: 1900px) {
@@ -310,7 +310,7 @@
 @media (max-width: 600px) {
   .input__body-name {
     font-size: 0.625rem;
-    max-width: 5rem;
+    width: 5rem;
     white-space: nowrap; /* не переносим на новую строку */
     overflow: hidden; /* обрезаем текст, выходящий за блок */
     text-overflow: ellipsis; /* показываем "..." в конце */
@@ -318,7 +318,7 @@
 }
 @media (max-width: 400px) {
   .input__body-name {
-    min-width: 3.75rem;
+    width: 3.75rem;
   }
 }
 

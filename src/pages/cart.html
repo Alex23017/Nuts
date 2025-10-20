@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,400;1,500;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+
+  <body class="loading1">
+    <!-- <div class="preload">
+      <div class="preload__items">
+        <img class="load__img" src="img/preload/nutsPreload.webp" alt="nutsPreload" />
+        <p class="preload__text">Загрузка...</p>
+      </div>
+    </div> -->
+    <div class="wrapper wrapper__clients">
+      <header class="header header__clients">@@include("../components/header/header.html")</header>
+
+      <main class="main main__clients">
+        <section class="hero__clients">
+          <div class="location__body location__body location__body--cart">
+            <p class="location__delivery">Главная</p>
+            <img src="../img/cart/arrow.png" alt="" class="location__img location__img--cart" />
+            <p class="location__delivery-page"></p>
+          </div>
+          <section class="select__nuts">
+            <div class="swiper product__swiper cart__swiper">
+              <div class="swiper-wrapper cart-wrapper">
+                <div class="swiper-slide cart-slide">
+                  <a href="cart.html">
+                    <img
+                      src="img/cart/product.webp"
+                      alt="product"
+                      class="cart__img-img cart__img cart__img-img--count"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide cart-slide">
+                  <a href="cart.html">
+                    <img
+                      src="img/cart/product.webp"
+                      alt="product"
+                      class="cart__img-img cart__img-img--count"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide cart-slide">
+                  <a href="cart.html">
+                    <img
+                      src="img/cart/product.webp"
+                      alt="product"
+                      class="cart__img-img cart__img-img--count"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev swiper-button-prev--cart">
+                <img
+                  src="img/home/products/rightArrow.webp"
+                  alt="rightArrow"
+                  class="button__next-img"
+                />
+              </div>
+              <div class="swiper-button-next swiper-button-next--cart">
+                <img
+                  src="img/home/products/rightArrow.webp"
+                  alt="rightArrow"
+                  class="button__next-img"
+                />
+              </div>
+
+              <img src="img/home/products/zoom.webp" alt="" class="card__zoom cart__zoom" />
+            </div>
+
+            <div class="nuts__info">
+              <div class="nuts__header">
+                <p class="nuts__header-title" data-name="Грецкий орех">Грецкий орех</p>
+                <p class="nuts__header-art" data-art="Арт: 0091">Арт: 0091</p>
+              </div>
+              <h2 class="nuts__title" data-title="Орех соленый кондитерский очищенный">
+                Орех соленый кондитерский очищенный
+              </h2>
+              <div class="cart__info">
+                <div class="composition">
+                  <h3 class="composition__title">Состав:</h3>
+                  <p
+                    class="composition__text"
+                    data-compostion="  Ядро грецкого ореха, вымытого очищенного от кожуры, соль экстра (раствор 7%)"
+                  >
+                    Ядро грецкого ореха, вымытого очищенного от кожуры, соль экстра (раствор 7%)
+                  </p>
+                </div>
+
+                <div class="mass">
+                  <h3 class="mass__title">Масса нетто:</h3>
+                  <p class="mass__text" data-mass="40г.">40г.</p>
+                </div>
+                <div class="energy">
+                  <h3 class="energy__title">Энергетическая ценность:</h3>
+                  <p class="energy__text" data-energy="654 Ккал.">654 Ккал.</p>
+                </div>
+                <div class="expiration">
+                  <h3 class="expiration__title">Срок годности:</h3>
+                  <p class="expiration__text">
+                    12 месяцев, с даты расфасовки <br />
+                    (указана на упаковке)
+                  </p>
+                </div>
+              </div>
+              <div class="warning">
+                <img src="../img/cart/warning.png" alt="warning" class="warning__img" />
+                <p class="warning__text">
+                  Хранить в помещениях, защищенных от попадания прямых, солнечных лучей, при
+                  температуре от +3 °C до +20 °C, и относительной влажности воздуха не более 75 %
+                </p>
+              </div>
+              <div class="cart__price">
+                <h3 class="cart__price-title">Ваша цена:</h3>
+                <p class="cart__price-text">19<span>грн.</span></p>
+                <p class="cart__price-text--old">21<span>грн</span></p>
+                <a class="cart__price-link" href="">Заказать</a>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="cart cart__card">
+          <div class="cart__header">
+            <div class="cart__select-card cart__select-card--paid">
+              <p class="cart__select-text">Описание</p>
+            </div>
+            <div class="cart__select-card cart__select-card--pack">
+              <p class="cart__select-text">Упаковка</p>
+            </div>
+            <div class="cart__select-card cart__select-card--pay">
+              <p class="cart__select-text">Оплата</p>
+            </div>
+            <div class="cart__select-card cart__select-card--del">
+              <p class="cart__select-text">Доставка</p>
+            </div>
+          </div>
+          <div class="cart__select"></div>
+        </section>
+
+        <section class="map map__cart">@@include("../components/map/map.html")</section>
+      </main>
+
+      <footer class="footer footer__cart">@@include("../components/footer/footer.html")</footer>
+    </div>
+
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/clients.bundle.js"></script>
+    <script defer src="js/cart.bundle.js"></script>
+  </body>
+</html>

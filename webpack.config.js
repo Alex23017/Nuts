@@ -13,6 +13,7 @@ export default {
     news: "./src/js/news.js",
     clients: "./src/js/clients.js",
     basket: "./src/js/basket.js",
+    cart: "./src/js/cart.js",
   },
   output: {
     filename: "[name].bundle.js",

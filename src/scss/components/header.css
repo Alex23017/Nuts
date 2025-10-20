@@ -124,6 +124,8 @@
 .header__user {
   -webkit-margin-before: 1px;
           margin-block-start: 1px;
+  -webkit-margin-end: 2px;
+          margin-inline-end: 2px;
 }
 @media (max-width: 600px) {
   .header__user {
@@ -133,12 +135,14 @@
 
 .header__count-text {
   margin: 0;
+  -webkit-padding-end: 2px;
+          padding-inline-end: 2px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 100%;
   color: #337d5a;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.2px;
 }
 @media (max-width: 1500px) {
   .header__count-text {
