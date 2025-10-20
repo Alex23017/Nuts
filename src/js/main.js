@@ -82,8 +82,9 @@ document.addEventListener("DOMContentLoaded", () => {
         price: card.dataset.price,
         oldPrice: card.dataset.oldPrice,
         art: card.dataset.art,
-        img: card.querySelector(".card__img-img").src,
+        img: card.querySelector(".card__img-img"),
         index: index,
+        description: card.dataset.description,
       };
       localStorage.setItem("selectedProduct", JSON.stringify(productData));
       window.location.href = "cart.html";

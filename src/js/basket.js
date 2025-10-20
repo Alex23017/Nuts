@@ -16,9 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const basketOverlay = document.querySelector(".basket__overlay");
 
   function renderCart() {
-    const cartDiv = [document.querySelector(".cart"), document.querySelector(".cart__bag")].filter(
-      Boolean,
-    );
+    const cartDiv = [
+      document.querySelector(".cart__basket"),
+      document.querySelector(".cart__bag"),
+    ].filter(Boolean);
     const cartBag = document.querySelectorAll(".cart__bag");
     const totalSpan = document.querySelectorAll(".total");
     const countSpan = document.querySelector(".count");
@@ -85,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
       const productDiv = e.target.closest(".product");
+      if (!productDiv) return;
       const name = productDiv.dataset.name;
       const price = parseFloat(productDiv.dataset.price);
 
@@ -119,13 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCart();
   }
 
-
   renderCart();
 
   orderBasket.addEventListener("click", (e) => {
-    basketOverlay.classList.toggle("active");
-    if (window.location.pathname === "/basket.html") {
-      e.preventDefault();
+    if (basketOverlay) {
+      basketOverlay.classList.toggle("active");
+      if (window.location.pathname === "/basket.html") {
+        e.preventDefault();
+      }
     }
   });
 });
