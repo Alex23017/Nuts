@@ -85,6 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   const cartPriceLink = document.querySelector(".cart__price-link");
   cartPriceLink.addEventListener("click", () => {
-    window.location.pathname = "basket.html";
+    window.location.href = "basket.html";
   });
 });
