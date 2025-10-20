@@ -415,28 +415,26 @@
 }
 
 .location__body--basket {
-  top: 17%;
-  color: #8a8a8a;
+  top: 13.5rem;
+  left: 19.625rem;
 }
-.location__body--basket p {
-  margin: 0;
-}
-@media (max-width: 1600px) {
+@media (max-width: 1240px) {
   .location__body--basket {
-    top: 15%;
-    left: 10%;
-  }
-}
-@media (max-width: 1200px) {
-  .location__body--basket {
-    top: 20%;
-    left: 5%;
+    left: 3.125rem;
+    top: 16.25rem;
   }
 }
 @media (max-width: 600px) {
   .location__body--basket {
-    top: 15%;
+    left: 1.875rem;
+    top: 13.125rem;
   }
+}
+.location__body--basket {
+  color: #8a8a8a;
+}
+.location__body--basket p {
+  margin: 0;
 }
 
 @media (max-width: 600px) {

@@ -329,22 +329,20 @@
 }
 
 .location__body--basket {
-  top: 17%;
+  top: 216px;
+  left: 314px;
+  @media (max-width: 1240px) {
+    left: 50px;
+    top: 260px;
+  }
+  @media (max-width: 600px) {
+    left: 30px;
+    top: 210px;
+  }
+
   color: $greyColor;
   p {
     margin: 0;
-  }
-
-  @media (max-width: 1600px) {
-    top: 15%;
-    left: 10%;
-  }
-  @media (max-width: 1200px) {
-    top: 20%;
-    left: 5%;
-  }
-  @media (max-width: 600px) {
-    top: 15%;
   }
 }
 .basket__back-img {

@@ -499,28 +499,24 @@
 }
 
 .location__body--basket {
-  top: 17%;
+  top: 216px;
+  left: 314px;
   color: #8a8a8a;
 }
-.location__body--basket p {
-  margin: 0;
-}
-@media (max-width: 1600px) {
+@media (max-width: 1240px) {
   .location__body--basket {
-    top: 15%;
-    left: 10%;
-  }
-}
-@media (max-width: 1200px) {
-  .location__body--basket {
-    top: 20%;
-    left: 5%;
+    left: 50px;
+    top: 260px;
   }
 }
 @media (max-width: 600px) {
   .location__body--basket {
-    top: 15%;
+    left: 30px;
+    top: 210px;
   }
+}
+.location__body--basket p {
+  margin: 0;
 }
 
 @media (max-width: 600px) {
