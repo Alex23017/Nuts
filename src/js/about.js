@@ -46,4 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const basketLink = document.querySelector(".basket__link");
+  basketLink.addEventListener("click", (e) => {
+    if (window.location.href.includes("basket.html")) {
+      e.preventDefault();
+    }
+  });
 });
