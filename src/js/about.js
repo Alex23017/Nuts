@@ -49,8 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const basketLink = document.querySelector(".basket__link");
   basketLink.addEventListener("click", (e) => {
-    if (window.location.href.includes("basket.html")) {
+    const currentPage = window.location.pathname.split("/").pop();
+    if (currentPage === "basket.html") {
       e.preventDefault();
+      console.log("Переход заблокирован");
     }
   });
 });
