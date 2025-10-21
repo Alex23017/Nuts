@@ -142,18 +142,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.addEventListener("click", (e) => {
-    if (!basketOverlay) return;
+  // document.addEventListener("click", (e) => {
+  //   if (!basketOverlay) return;
 
-    if (
-      basketOverlay.contains(e.target) ||
-      e.target.closest(".remove, .input__img--left, .input__img--right")
-    ) {
-      return;
-    }
+  //   if (
+  //     basketOverlay.contains(e.target) ||
+  //     e.target.closest(".remove, .input__img--left, .input__img--right")
+  //   ) {
+  //     return;
+  //   }
 
-    basketOverlay.classList.remove("active");
-  });
+  //   basketOverlay.classList.remove("active");
+  // });
   window.addEventListener("scroll", () => {
     if (basketOverlay && window.scrollY > 400) {
       basketOverlay.classList.remove("active");
