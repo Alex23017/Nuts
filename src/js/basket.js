@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
   orderBasket.addEventListener("click", (e) => {
     if (basketOverlay) {
       basketOverlay.classList.toggle("active");
-      if (window.location.pathname === "basket.html") {
+      if (window.location.href.includes("basket.html")) {
         e.preventDefault();
         e.stopPropagation();
       }
