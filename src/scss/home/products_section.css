@@ -545,6 +545,15 @@
   z-index: 50;
 }
 
+.card__zoom:hover {
+  -webkit-transform: translate(-50%) scale(0.9);
+          transform: translate(-50%) scale(0.9);
+}
+.card__zoom:active {
+  -webkit-transform: translate(-60%) translateX(5px);
+          transform: translate(-60%) translateX(5px);
+}
+
 .card__zoom {
   position: absolute;
   width: 55px;
@@ -552,11 +561,16 @@
   top: 117px;
   opacity: 0;
   left: 176px;
+  cursor: pointer;
   z-index: 100 !important;
 }
-.card__zoom:active {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media (max-width: 1919px) {
+  .card__zoom {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
 }
 
 .swiper-slide {

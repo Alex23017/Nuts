@@ -137,7 +137,21 @@ document.addEventListener("DOMContentLoaded", () => {
       basketOverlay.classList.toggle("active");
       if (window.location.pathname === "/basket.html") {
         e.preventDefault();
+        e.stopPropagation();
       }
+    }
+  });
+
+  document.addEventListener("click", (e) => {
+    if (basketOverlay) {
+      if (!basketOverlay.contains(e.target) && !orderBasket.contains(e.target)) {
+        basketOverlay.classList.remove("active");
+      }
+    }
+  });
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      basketOverlay.classList.remove("active");
     }
   });
 });

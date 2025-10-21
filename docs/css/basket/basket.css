@@ -618,6 +618,7 @@
   right: 19.9375rem;
   z-index: 999;
   top: 7.625rem;
+  transition: 0.3s ease-in-out;
 }
 .basket__overlay.active {
   visibility: visible;
@@ -694,6 +695,19 @@
 .cart__bag .remove {
   margin-inline-end: 1.75rem;
   font-size: 1.25rem;
+}
+.cart__bag .cart-item {
+  position: relative;
+}
+.cart__bag .cart-item::after {
+  content: "";
+  position: absolute;
+  background-color: #8a8a8a;
+  height: 0.0625rem;
+  opacity: 0.2;
+  width: 100%;
+  left: 0;
+  bottom: 0.3125rem;
 }
 @media (max-width: 992.99px) {
   .cart__bag .cart-item .input__body {

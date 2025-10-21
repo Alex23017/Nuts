@@ -443,6 +443,13 @@
   z-index: 50;
 }
 
+.card__zoom:hover {
+  transform: translate(-50%) scale(0.9);
+}
+.card__zoom:active {
+  transform: translate(-60%) translateX(0.3125rem);
+}
+
 .card__zoom {
   position: absolute;
   width: 3.4375rem;
@@ -450,10 +457,15 @@
   top: 7.3125rem;
   opacity: 0;
   left: 11rem;
+  cursor: pointer;
   z-index: 100 !important;
 }
-.card__zoom:active {
-  transform: scale(1.1);
+@media (max-width: 1919px) {
+  .card__zoom {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 .swiper-slide {

@@ -116,12 +116,12 @@
 }
 
 .arrowup__img {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .arrowup__img {
-    width: 30px;
-    height: 30px;
+    width: 90px;
+    height: 90px;
   }
 }/*# sourceMappingURL=addProduct.css.map */

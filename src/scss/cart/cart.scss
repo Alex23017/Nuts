@@ -108,7 +108,7 @@
   height: 27px !important;
   top: 280px !important;
   @media (max-width: 600px) {
-   top: 180px !important;
+    top: 180px !important;
   }
 }
 .swiper-button-next--cart {
@@ -426,10 +426,15 @@
   width: 100%;
   max-width: 850px;
   @include font($Montserrat15);
+
   line-height: 25px;
   span {
     font-weight: 600;
     color: $primaryColor;
+  }
+  @media (max-width: 992.99px) {
+    padding-inline: 30px;
+    font-size: 12px;
   }
 }
 .cart__method-text--4000 {

@@ -484,6 +484,7 @@
   right: 319px;
   z-index: 999;
   top: 122px;
+  transition: 0.3s ease-in-out;
   &.active {
     visibility: visible;
     opacity: 1;
@@ -556,7 +557,19 @@
     margin-inline-end: 28px;
     font-size: 20px;
   }
+
   .cart-item {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: $greyColor;
+      height: 1px;
+      opacity: 0.2;
+      width: 100%;
+      left: 0;
+      bottom: 5px;
+    }
     .input__body {
       @media (max-width: 992.99px) {
         gap: 20px;

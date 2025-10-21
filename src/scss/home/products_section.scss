@@ -347,15 +347,28 @@
 }
 
 .card__zoom {
+  &:hover {
+    transform: translate(-50%) scale(0.9);
+  }
+  &:active {
+    transform: translate(-60%) translateX(5px);
+  }
+}
+
+.card__zoom {
   position: absolute;
   width: 55px;
   height: 55px;
   top: 117px;
   opacity: 0;
   left: 176px;
+  cursor: pointer;
   z-index: 100 !important;
-  &:active {
-    transform: scale(1.1);
+
+  @media (max-width: 1919px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 

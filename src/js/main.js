@@ -117,7 +117,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
   function setLanguage(language) {
     localStorage.setItem("selectedLanguage", language);
 
@@ -248,13 +247,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".burger");
   const menuMob = document.querySelector(".menu__mob");
   const menuClose = document.querySelector(".mob__close");
-  burger.addEventListener("click", () => {
+  burger.addEventListener("click", (e) => {
     menuMob.classList.add("open");
     document.body.classList.add("open");
+    e.stopPropagation();
   });
   menuClose.addEventListener("click", () => {
     menuMob.classList.remove("open");
     document.body.classList.remove("open");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!menuMob.contains(e.target)) {
+      menuMob.classList.remove("open");
+      document.body.classList.remove("open");
+    }
   });
 
   //ARROWUP

@@ -92,13 +92,13 @@
 }
 
 .arrowup__img {
-  width: 3.75rem;
-  height: 3.75rem;
+  width: 7.5rem;
+  height: 7.5rem;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .arrowup__img {
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 5.625rem;
+    height: 5.625rem;
   }
 }
 /*# sourceMappingURL=addProduct.css.map */

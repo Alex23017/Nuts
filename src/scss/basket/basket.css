@@ -731,6 +731,8 @@
   right: 319px;
   z-index: 999;
   top: 122px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .basket__overlay.active {
   visibility: visible;
@@ -825,6 +827,19 @@
   -webkit-margin-end: 28px;
           margin-inline-end: 28px;
   font-size: 20px;
+}
+.cart__bag .cart-item {
+  position: relative;
+}
+.cart__bag .cart-item::after {
+  content: "";
+  position: absolute;
+  background-color: #8a8a8a;
+  height: 1px;
+  opacity: 0.2;
+  width: 100%;
+  left: 0;
+  bottom: 5px;
 }
 @media (max-width: 992.99px) {
   .cart__bag .cart-item .input__body {
