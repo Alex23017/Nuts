@@ -1224,6 +1224,7 @@ body.open {
 }
 
 .mob__item {
+  position: relative;
   padding-block: 11.5px;
 }
 .mob__item:hover {
@@ -1231,6 +1232,18 @@ body.open {
 }
 .mob__item:hover .mob__link {
   color: white;
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .mob__item::after {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    background-color: rgba(0, 0, 0, 0.0392156863);
+    width: 94%;
+    height: 1px;
+    left: 12px;
+  }
 }
 
 .mob__link {
@@ -1553,8 +1566,7 @@ body.open {
 }
 @media (max-width: 600px) {
   .hero__video {
-    height: inherit;
-    height: 100vh;
+    height: 417px;
   }
 }
 
@@ -5452,6 +5464,11 @@ body.loading {
   top: 216px;
   left: 314px;
   color: #8a8a8a;
+}
+@media (min-width: 1930px) {
+  .location__body--basket {
+    left: 22%;
+  }
 }
 @media (max-width: 1240px) {
   .location__body--basket {

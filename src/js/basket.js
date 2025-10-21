@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const orderLink = document.querySelector(".basket__link");
   if (orderLink) {
     orderLink.addEventListener("click", (e) => {
-      if (window.location.pathname.endsWith("basket.html")) {
+      if (window.location.href.includes("basket.html")) {
         e.preventDefault();
       }
     });
