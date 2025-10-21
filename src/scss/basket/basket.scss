@@ -332,6 +332,9 @@
 .location__body--basket {
   top: 216px;
   left: 314px;
+  @media (min-width: 1930px) {
+    left: 22%;
+  }
   @media (max-width: 1240px) {
     left: 50px;
     top: 260px;

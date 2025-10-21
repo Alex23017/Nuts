@@ -914,6 +914,7 @@
 }
 
 .mob__item {
+  position: relative;
   padding-block: 0.71875rem;
 }
 .mob__item:hover {
@@ -921,6 +922,18 @@
 }
 .mob__item:hover .mob__link {
   color: white;
+}
+
+@media (max-width: 600px) and (max-width: 600px) {
+  .mob__item::after {
+    position: absolute;
+    content: "";
+    bottom: -0.0625rem;
+    background-color: rgba(0, 0, 0, 0.0392156863);
+    width: 94%;
+    height: 0.0625rem;
+    left: 0.75rem;
+  }
 }
 
 .mob__link {

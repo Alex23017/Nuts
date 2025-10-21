@@ -727,11 +727,26 @@
   margin: 0;
 }
 .mob__item {
+  position: relative;
   padding-block: 11.5px;
   &:hover {
     background-color: $primaryColor;
     .mob__link {
       color: white;
+    }
+  }
+}
+
+.mob__item::after {
+  @media (max-width: 600px) {
+    @media (max-width: 600px) {
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      background-color: #0000000a;
+      width: 94%;
+      height: 1px;
+      left: 12px;
     }
   }
 }

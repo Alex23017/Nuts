@@ -23,8 +23,7 @@
 }
 @media (max-width: 600px) {
   .hero__video {
-    height: inherit;
-    height: 100vh;
+    height: 417px;
   }
 }
 

@@ -143,14 +143,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("click", (e) => {
-    if (basketOverlay) {
-      if (!basketOverlay.contains(e.target) && !orderBasket.contains(e.target)) {
-        basketOverlay.classList.remove("active");
-      }
+    if (!basketOverlay) return;
+
+    if (
+      basketOverlay.contains(e.target) ||
+      e.target.closest(".remove, .input__img--left, .input__img--right")
+    ) {
+      return;
     }
+
+    basketOverlay.classList.remove("active");
   });
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 400) {
+    if (basketOverlay && window.scrollY > 400) {
       basketOverlay.classList.remove("active");
     }
   });

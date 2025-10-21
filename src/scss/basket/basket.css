@@ -498,6 +498,11 @@
   left: 314px;
   color: #8a8a8a;
 }
+@media (min-width: 1930px) {
+  .location__body--basket {
+    left: 22%;
+  }
+}
 @media (max-width: 1240px) {
   .location__body--basket {
     left: 50px;

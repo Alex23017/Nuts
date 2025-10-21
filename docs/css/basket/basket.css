@@ -413,6 +413,11 @@
   top: 13.5rem;
   left: 19.625rem;
 }
+@media (min-width: 1930px) {
+  .location__body--basket {
+    left: 22%;
+  }
+}
 @media (max-width: 1240px) {
   .location__body--basket {
     left: 3.125rem;
