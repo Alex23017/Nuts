@@ -123,10 +123,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   renderCart();
 
+  const orderLink = document.querySelector(".basket__link");
+  if (orderLink) {
+    orderLink.addEventListener("click", (e) => {
+      if (window.location.pathname.endsWith("basket.html")) {
+        e.preventDefault();
+      }
+    });
+  }
+
   orderBasket.addEventListener("click", (e) => {
     if (basketOverlay) {
       basketOverlay.classList.toggle("active");
-      if (window.location.pathname === "basket.html") {
+      if (window.location.pathname === "/basket.html") {
         e.preventDefault();
       }
     }
