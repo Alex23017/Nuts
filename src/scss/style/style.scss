@@ -16,4 +16,5 @@
 @use "../clients/clients" as *;
 @use "../components/preload" as *;
 @use "../basket/basket" as *;
-@use "../cart/cart"  as *;
+@use "../addProduct/addProduct" as *;
+@use "../cart/cart" as *;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,800,italic&display=swap"
       rel="stylesheet"
@@ -17,22 +18,42 @@
   </head>
   <body class="loading1">
     <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/addProduct/addProduct.html")
+    @@include("../components/arrowUp/arrowUp.html")
     <div class="wrapper">
       <header class="header">@@include("../components/header/header.html")</header>
 
       <main class="main">
         <section class="hero">
           <img src="img/home/hero/pic.webp" alt="hero" class="hero__video" />
-          <h2 class="hero__tittle">Орех Причерноморья</h2>
-          <p class="hero__text">
+          <h2
+            class="hero__tittle"
+            data-lang-ua="Горіх Причорномор'я"
+            data-lang-ru="Орех Причерноморья"
+          >
+            Орех Причерноморья
+          </h2>
+          <p
+            class="hero__text"
+            data-lang-ua="Єдиний в Україні сад спільного вирощування фундука та грецького горіха."
+            data-lang-ru="Единственный в Украине сад совместного выращивание фундука и грецкого ореха"
+          >
             Единственный в Украине сад совместного выращивание фундука и грецкого ореха
           </p>
           <img src="img/home/hero/play.webp" alt="" class="play__img" />
         </section>
         <section class="products">
           <div class="products__title">
-            <h2 class="products__title-title">Продукция</h2>
-            <p class="products__title-text">
+            <h2 class="products__title-title" data-lang-ua="Продукція" data-lang-ru="Продукция">
+              Продукция
+            </h2>
+            <p
+              class="products__title-text"
+              class="products__title-title"
+              data-lang-ua="Екологічно чисті, якісні ядра грецького горіха та фундука, а також плоди шипшини в зручній, надійній, вакуумній упаковці різного об'єму."
+              data-lang-ru="Экологически чистые, качественные ядра грецкого ореха и фундука, а также плоды
+              шиповника в удобной, надежной, вакуумной упаковке разного объема"
+            >
               Экологически чистые, качественные ядра грецкого ореха и фундука, а также плоды
               шиповника в удобной, надежной, вакуумной упаковке разного объема
             </p>
@@ -95,35 +116,59 @@
               </div>
 
               <div class="card__info card__info--first">
-                <h3 class="card__name">Грецкий орех</h3>
+                <h3 class="card__name" data-lang-ua="Грецький горіх" data-lang-ru="Грецкий орех">
+                  Грецкий орех
+                </h3>
                 <p class="card__art">Арт: 0091</p>
-                <p class="card__description">Орех сладкий, классический, очищенный</p>
+                <p
+                  class="card__description"
+                  data-lang-ua="Горіх солодкий, класичний, очищений."
+                  data-lang-ru="Орех сладкий, классический, очищенный"
+                >
+                  Орех сладкий, классический, очищенный
+                </p>
               </div>
 
               <div class="card__neto card__neto--first">
                 <div class="card__mass card__mass--count">
                   <img src="img/home/products/food-scale-tool.webp" alt="" class="card__neto-img" />
                   <div class="mass__info">
-                    <p class="card__mass-text card__mass-text--first">Масса:</p>
+                    <p
+                      class="card__mass-text card__mass-text--first"
+                      data-lang-ua="Вага:"
+                      data-lang-ru="Масса:"
+                    >
+                      Масса:
+                    </p>
                     <p class="card__mass-number">40г.</p>
                   </div>
                 </div>
                 <div class="card__package">
                   <img src="img/home/products/bag.webp" alt="bag" class="card__package-img" />
                   <div class="package__info">
-                    <p class="package__info-text">Упаковка</p>
-                    <p class="package__info-caption">вакуумная</p>
+                    <p class="package__info-text" data-lang-ua="Упаковка" data-lang-ru="Упаковка">
+                      Упаковка
+                    </p>
+                    <p
+                      class="package__info-caption"
+                      data-lang-ua="вакуумнаа"
+                      data-lang-ru="вакуумная"
+                    >
+                      вакуумная
+                    </p>
                   </div>
                 </div>
               </div>
 
               <div class="card__footer card__footer--first">
                 <div class="card__price">
-                  <p class="card__price-text">Цена:</p>
+                  <p class="card__price-text" data-lang-ua="Ціна:" data-lang-ru="Цена:">Цена:</p>
                   <p class="card__price-cost card__price-cost--count">19<span> грн.</span></p>
                   <p class="card__price-cost--old">21<span> грн.</span></p>
                 </div>
-                <a href="#" class="card__buy add-to-cart">Купить</a>
+                <a href="#" class="card__buy add-to-cart" data-lang-ua="Купити" data-lang-ru="Купить"
+                  >Купить</a
+                >
               </div>
             </div>
             <div

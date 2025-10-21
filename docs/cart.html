@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,400;1,500;1,800&display=swap"
       rel="stylesheet"
@@ -22,19 +23,31 @@
         <p class="preload__text">Загрузка...</p>
       </div>
     </div> -->
+    <div class="arrowup">
+  <img src="img/arrowUp/arrowUp.webp" alt="" class="arrowup__img" />
+</div>
+
     <div class="wrapper wrapper__clients">
       <header class="header header__clients"><div class="menu__mob">
   <div class="mob__header">
     <div class="mob__logo">
       <img src="img/header/logo.webp" alt="logo" class="mob__logo-img" />
-      <p class="mob__logo-text">ОРЕХ ПРИЧЕРНОМОРЬЯ</p>
+      <p
+        class="mob__logo-text"
+        data-lang-ua="ГОРІХ ПРИЧОРНОМОР'Я"
+        data-lang-ru="ОРЕХ ПРИЧЕРНОМОРЬЯ"
+      >
+        ОРЕХ ПРИЧЕРНОМОРЬЯ
+      </p>
     </div>
     <img src="img/header/closeBtn.webp" alt="closeBtn" class="mob__close" />
   </div>
   <div class="mob__login">
     <img src="img/header/man-user.webp" alt="user" class="login__img" />
-    <p class="mob__login-sign">Вход</p>
-    <p class="mob__login-signup">Регистрация</p>
+    <p class="mob__login-sign" data-lang-ua="Вхід" data-lang-ru="Вход">Вход</p>
+    <p class="mob__login-signup" data-lang-ua="Регистрація" data-lang-ru="Регистрация">
+      Регистрация
+    </p>
     <div class="login__social">
       <img src="img/header/facebook.webp" alt="face" class="login__social-img" />
       <img src="img/header/instagram.webp" alt="inst" class="login__social-img" />
@@ -43,16 +56,36 @@
   </div>
   <div class="mob__items">
     <ul class="mob__list">
-      <li class="mob__item mob__item--shop"><a href="index.html" class="mob__link">Магазин</a></li>
-      <li class="mob__item"><a href="" class="mob__link">О производстве</a></li>
+      <li class="mob__item mob__item--shop">
+        <a href="index.html" class="mob__link" data-lang-ua="Магазин" data-lang-ru="Магазин"
+          >Магазин</a
+        >
+      </li>
+      <li class="mob__item">
+        <a href="" class="mob__link" data-lang-ua="Про виробництво" data-lang-ru="производстве"
+          >О производстве</a
+        >
+      </li>
       <li class="mob__item">
         <a href="delivery.html" class="mob__link">Оплата и доставка</a>
       </li>
       <li class="mob__item">
-        <a href="clients.html" class="mob__link">Оптовым и корпоративным клиентам</a>
+        <a
+          href="clients.html"
+          class="mob__link"
+          data-lang-ua="Оптовим та кортопаривним клієнтам"
+          data-lang-ru="Оптовым и корпоративным клиентам"
+          >Оптовым и корпоративным клиентам</a
+        >
       </li>
-      <li class="mob__item"><a href="" class="mob__link">Новости и статьи</a></li>
-      <li class="mob__item"><a href="" class="mob__link">Контакты</a></li>
+      <li class="mob__item">
+        <a href="" class="mob__link" data-lang-ua="Новини та статті" data-lang-ru="Новости и статьи"
+          >Новости и статьи</a
+        >
+      </li>
+      <li class="mob__item">
+        <a href="" class="mob__link" data-lang-ua="Контакти" data-lang-ru="Контакты">Контакты</a>
+      </li>
     </ul>
   </div>
 </div>
@@ -60,7 +93,9 @@
   <div class="header__number--mob">
     <img class="header__img--mob" src="img/header/phone.webp" alt="phone" />
     <p class="header__text--mob"><span>+38 (044)</span> 750-50-11</p>
-    <p class="header__call--mob">Заказать звонок</p>
+    <p class="header__call--mob" data-lang-ua="Замовити звінок" data-lang-ru="Заказать звонок">
+      Заказать звонок
+    </p>
     <div class="header__language dropdown">
       <button
         class="btn-secondary"
@@ -169,16 +204,50 @@
   </div>
 </div>
 <div class="header__links">
-  <p class="mob__count">Ваша персональная скидка - 5%</p>
+  <p
+    class="mob__count"
+    data-lang-ua="Ваша персональна знижка - 5%"
+    data-lang-ru="Ваша персональная скидка - 5%"
+  >
+    Ваша персональная скидка - 5%
+  </p>
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="index.html" class="nav__link">Магазин</a>
-        <a href="" class="nav__link nav__about">О производстве</a>
-        <a href="delivery.html" class="nav__link nav__delivery">Оплата и доставка</a>
-        <a href="clients.html" class="nav__link nav__clients">Оптовым и корпоративным клиентам</a>
-        <a href="" class="nav__link nav__news">Новости и статьи</a>
-        <a href="" class="nav__link nav__contacts">Контакты</a>
+        <a href="index.html" class="nav__link" data-lang-ua="Магазин" data-lang-ru="Магазин"
+          >Магазин</a
+        >
+        <a
+          href=""
+          class="nav__link nav__about"
+          data-lang-ua="Про виробництво"
+          data-lang-ru="производстве"
+          >О производстве</a
+        >
+        <a
+          href="delivery.html"
+          class="nav__link nav__delivery"
+          data-lang-ua="Оплата та доставка"
+          data-lang-ru="Оплата и доставка"
+          >Оплата и доставка</a
+        >
+        <a
+          href="clients.html"
+          class="nav__link nav__clients"
+          data-lang-ua="Оптовим та кортопаривним клієнтам"
+          data-lang-ru="Оптовым и корпоративным клиентам"
+          >Оптовым и корпоративным клиентам</a
+        >
+        <a
+          href=""
+          class="nav__link nav__news"
+          data-lang-ua="Новини та статті"
+          data-lang-ru="Новости и статьи"
+          >Новости и статьи</a
+        >
+        <a href="" class="nav__link nav__contacts" data-lang-ua="Контакти" data-lang-ru="Контакты"
+          >Контакты</a
+        >
       </li>
     </ul>
   </nav>
@@ -248,9 +317,7 @@
                 <p class="nuts__header-title" data-name="Грецкий орех">Грецкий орех</p>
                 <p class="nuts__header-art" data-art="Арт: 0091">Арт: 0091</p>
               </div>
-              <h2 class="nuts__title">
-                Орех соленый кондитерский очищенный
-              </h2>
+              <h2 class="nuts__title">Орех соленый кондитерский очищенный</h2>
               <div class="cart__info">
                 <div class="composition">
                   <h3 class="composition__title">Состав:</h3>

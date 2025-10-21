@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,800,italic&display=swap"
       rel="stylesheet"
@@ -16,14 +17,15 @@
     <link rel="stylesheet" href="css/style/style.css" />
   </head>
   <body class="loading1">
-     <!-- @@include(("../components/preload/preload.html")) -->
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/arrowUp/arrowUp.html")
     <div class="wrapper">
       <header class="header">
         @@include("../components/header/header.html")
+
         <div class="basket__overlay">
           <div class="cart__bag"></div>
           <div class="basket__footer basket__footer-bag">
-     
             <div class="basket__order">
               <p>Всего <span class="total">0</span> <span class="total__value"> грн.</span></p>
               <a href="" class="basket__back basket__back-order">Перейти в корзину</a>
@@ -94,7 +96,6 @@
       </main>
       <footer class="footer footer_basket">@@include("../components/footer/footer.html")</footer>
     </div>
-
 
     <script defer src="js/main.bundle.js"></script>
     <script defer src="js/basket.bundle.js"></script>

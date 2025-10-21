@@ -365,6 +365,16 @@
     padding-inline: 20px;
   }
 }
+.card__buy:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #93b474;
+}
+.card__buy:active {
+  -webkit-transform: scale(0.9) translateY(3px);
+          transform: scale(0.9) translateY(3px);
+  background-color: #93b474;
+}
 
 .card__mass--count {
   gap: 8px;
@@ -543,6 +553,10 @@
   opacity: 0;
   left: 176px;
   z-index: 100 !important;
+}
+.card__zoom:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .swiper-slide {

@@ -29,6 +29,18 @@ import "swiper/css/pagination";
 // });
 
 document.addEventListener("DOMContentLoaded", () => {
+  const dropdownBtn = document.getElementById("dropdownMenuButton1");
+  const dropdownBtn2 = document.getElementById("dropdownMenuButton2");
+  const savedLanguage = localStorage.getItem("selectedLanguage");
+
+  if (savedLanguage) {
+    setLanguage(savedLanguage);
+    dropdownBtn.textContent = savedLanguage;
+    dropdownBtn2.textContent = savedLanguage;
+
+    setLanguage(savedLanguage);
+  }
+
   const productSwipers = document.querySelectorAll(".product__swiper");
 
   productSwipers.forEach((swiperEl) => {
@@ -85,6 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         img: card.querySelector(".card__img-img"),
         index: index,
         description: card.dataset.description,
+        nameUa: card.dataset.langUa,
       };
       localStorage.setItem("selectedProduct", JSON.stringify(productData));
       window.location.href = "cart.html";
@@ -92,8 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //LANGUAGES
-  const dropdownBtn = document.getElementById("dropdownMenuButton1");
-  const dropdownBtn2 = document.getElementById("dropdownMenuButton2");
+
   const dropdownItems = document.querySelectorAll(".dropdown-item");
 
   dropdownItems.forEach((el) => {
@@ -105,7 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
   function setLanguage(language) {
+    localStorage.setItem("selectedLanguage", language);
+
     const element = document.querySelectorAll("[data-lang-ua], [data-lang-ru]");
     element.forEach((lang) => {
       const translation = lang.getAttribute(`data-lang-${language}`);
@@ -116,7 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // PAY
-
   const payArray = [
     `   <h2 class="pay__column-title">Способы оплаты</h2>
               <div class="pay__method">
@@ -243,10 +257,36 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.remove("open");
   });
 
+  //ARROWUP
+  const constarrowUp = document.querySelector(".arrowup");
+  if (constarrowUp) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        constarrowUp.classList.add("active");
+      } else {
+        constarrowUp.classList.remove("active");
+      }
+    });
+  }
+
+  constarrowUp.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+  });
+
+  const addProduct = document.querySelector(".add");
   const cardBuy = document.querySelectorAll(".card__buy");
   cardBuy.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
+      addProduct.classList.add("active");
+      setTimeout(() => {
+        addProduct.classList.remove("active");
+      }, 2000);
     });
   });
+  if (addProduct) {
+    addProduct.addEventListener("click", () => {
+      window.location.href = "basket.html";
+    });
+  }
 });

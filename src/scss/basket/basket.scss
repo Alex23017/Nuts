@@ -151,6 +151,7 @@
   }
   @media (max-width: 600px) {
     gap: 10px;
+    padding-inline: 20px;
   }
   @media (max-width: 360px) {
     flex-direction: column-reverse;
@@ -248,13 +249,13 @@
   }
   @media (max-width: 600px) {
     font-size: 10px;
-    width: 80px;
-    white-space: nowrap; /* не переносим на новую строку */
-    overflow: hidden; /* обрезаем текст, выходящий за блок */
-    text-overflow: ellipsis; /* показываем "..." в конце */
+    width: 100%;
+    min-width: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   @media (max-width: 400px) {
-    width: 60px;
   }
 }
 .input__price {
@@ -473,7 +474,7 @@
   }
 }
 .basket__overlay {
-  position: absolute;
+  position: fixed;
   width: auto;
   height: auto;
   background-color: white;
@@ -481,10 +482,19 @@
   visibility: hidden;
   opacity: 0;
   right: 319px;
+  z-index: 999;
   top: 122px;
   &.active {
     visibility: visible;
     opacity: 1;
+  }
+  @media (max-width: 1700px) {
+    right: 50px;
+  }
+  @media (max-width: 992.99px) {
+    right: inherit;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
 
@@ -492,10 +502,17 @@
   padding-inline: 5px;
   padding-block: 15px;
   padding-block-end: 17px;
+
   .input__count {
     margin-inline-start: 45px;
+    @media (max-width: 992.99px) {
+      margin-inline-start: 5px;
+      justify-content: center;
+      width: 40px;
+    }
   }
 }
+
 .basket__footer-bag {
   margin: 0;
   padding-block-start: 0px;
@@ -518,6 +535,9 @@
     p {
       margin-inline-end: 6px;
     }
+    @media (max-width: 992.99px) {
+      padding-block-end: 5px;
+    }
   }
 }
 
@@ -527,10 +547,32 @@
   }
   .input__price-all {
     margin-inline-start: 40px;
+
+    @media (max-width: 992.99px) {
+      margin-inline-start: 5px;
+    }
   }
   .remove {
     margin-inline-end: 28px;
     font-size: 20px;
+  }
+  .cart-item {
+    .input__body {
+      @media (max-width: 992.99px) {
+        gap: 20px;
+      }
+    }
+  }
+  .remove {
+    @media (max-width: 992.99px) {
+      margin-inline-end: 5px;
+    }
+  }
+  .input__body-name {
+    @media (max-width: 992.99px) {
+      width: 100%;
+      max-width: 100px;
+    }
   }
 }
 .footer_basket {

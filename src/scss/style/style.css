@@ -2051,6 +2051,11 @@ body.open {
     padding-inline: 20px;
   }
 }
+.card__buy:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: #93b474;
+}
 
 .card__mass--count {
   gap: 8px;
@@ -2229,6 +2234,10 @@ body.open {
   opacity: 0;
   left: 176px;
   z-index: 100 !important;
+}
+.card__zoom:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .swiper-slide {
@@ -5425,28 +5434,24 @@ body.loading {
 }
 
 .location__body--basket {
-  top: 17%;
+  top: 216px;
+  left: 314px;
   color: #8a8a8a;
 }
-.location__body--basket p {
-  margin: 0;
-}
-@media (max-width: 1600px) {
+@media (max-width: 1240px) {
   .location__body--basket {
-    top: 15%;
-    left: 10%;
-  }
-}
-@media (max-width: 1200px) {
-  .location__body--basket {
-    top: 20%;
-    left: 5%;
+    left: 50px;
+    top: 260px;
   }
 }
 @media (max-width: 600px) {
   .location__body--basket {
-    top: 15%;
+    left: 30px;
+    top: 210px;
   }
+}
+.location__body--basket p {
+  margin: 0;
 }
 
 @media (max-width: 600px) {

@@ -223,8 +223,15 @@
   @media (max-width: 360px) {
     padding-inline: 20px;
   }
+  &:hover {
+    transform: scale(0.9);
+    background-color: $secondaryColor;
+  }
+  &:active {
+    transform: scale(0.9) translateY(3px);
+    background-color: $secondaryColor;
+  }
 }
-
 .card__mass--count {
   gap: 8px;
 }
@@ -318,7 +325,6 @@
   justify-content: center;
   @media (max-width: 600px) {
     display: none;
-  
   }
 }
 .shop__item-link {
@@ -348,6 +354,9 @@
   opacity: 0;
   left: 176px;
   z-index: 100 !important;
+  &:active {
+    transform: scale(1.1);
+  }
 }
 
 .swiper-slide {

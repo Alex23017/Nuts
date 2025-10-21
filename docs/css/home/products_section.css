@@ -301,6 +301,14 @@
     padding-inline: 1.25rem;
   }
 }
+.card__buy:hover {
+  transform: scale(0.9);
+  background-color: #93b474;
+}
+.card__buy:active {
+  transform: scale(0.9) translateY(0.1875rem);
+  background-color: #93b474;
+}
 
 .card__mass--count {
   gap: 0.5rem;
@@ -443,6 +451,9 @@
   opacity: 0;
   left: 11rem;
   z-index: 100 !important;
+}
+.card__zoom:active {
+  transform: scale(1.1);
 }
 
 .swiper-slide {
