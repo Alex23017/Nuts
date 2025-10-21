@@ -617,14 +617,14 @@
   left: 0;
   width: 100%;
   height: auto;
-  z-index: 1000;
+
   background-color: white;
   transition: 0.3s ease-in-out;
   opacity: 0;
 
   &.open {
     visibility: visible;
-
+    z-index: 1000;
     opacity: 1;
   }
 }

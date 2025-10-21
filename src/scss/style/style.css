@@ -1064,7 +1064,6 @@ body.open {
   left: 0;
   width: 100%;
   height: auto;
-  z-index: 150;
   background-color: white;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
@@ -1072,6 +1071,7 @@ body.open {
 }
 .menu__mob.open {
   visibility: visible;
+  z-index: 1000;
   opacity: 1;
 }
 
