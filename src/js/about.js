@@ -46,13 +46,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-
-  const basketLink = document.querySelector(".basket__link");
-  basketLink.addEventListener("click", (e) => {
-    const currentPage = window.location.pathname.split("/").pop();
-    if (currentPage === "basket.html") {
-      e.preventDefault();
-      console.log("Переход заблокирован");
-    }
-  });
 });
