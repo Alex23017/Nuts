@@ -2244,12 +2244,12 @@ body.open {
 }
 
 .card__zoom:hover {
-  -webkit-transform: translate(-50%) scale(0.9);
-          transform: translate(-50%) scale(0.9);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 .card__zoom:active {
-  -webkit-transform: translate(-60%) translateX(5px);
-          transform: translate(-60%) translateX(5px);
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .card__zoom {

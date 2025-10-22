@@ -203,8 +203,19 @@
 }
 
 .location__body--cart {
+  position: absolute;
+  display: flex;
+  @include font($Raleway14);
+  font-weight: 500;
+  align-items: center;
+  gap: 10px;
   color: $greyColor;
   top: 216px;
+  left: 315px;
+  @media (min-width: 1921px) {
+    left: 500px;
+  
+  }
   @media (max-width: 1600px) {
     left: 150px;
   }

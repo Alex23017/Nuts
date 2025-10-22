@@ -324,8 +324,27 @@
 }
 
 .location__body--cart {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
   color: #8a8a8a;
   top: 216px;
+  left: 315px;
+}
+@media (min-width: 1921px) {
+  .location__body--cart {
+    left: 500px;
+  }
 }
 @media (max-width: 1600px) {
   .location__body--cart {
