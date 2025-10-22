@@ -444,10 +444,10 @@
 }
 
 .card__zoom:hover {
-  transform: translate(-50%) scale(0.9);
+  transform: scale(0.9);
 }
 .card__zoom:active {
-  transform: translate(-60%) translateX(0.3125rem);
+  transform: translateY(0.3125rem);
 }
 
 .card__zoom {

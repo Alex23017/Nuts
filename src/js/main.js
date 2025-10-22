@@ -12,23 +12,24 @@ window.addEventListener("load", () => {
   const texts = ["Собираем орехи...", "Подготовка завершена!"];
   let textMaxWidth = 50;
   let index = 0;
-
-  preloadText.style.width = textMaxWidth + "px";
-  const textInterval = setInterval(() => {
-
-    preloadText.textContent = texts[index];
-    textMaxWidth += 120;
+  if (preloadText) {
     preloadText.style.width = textMaxWidth + "px";
-    index++;
-    if (index >= texts.length) {
-      clearInterval(textInterval);
 
-      setTimeout(() => {
-        preload.classList.add("loaded");
-        document.body.classList.remove("loading");
-      }, 300);
-    }
-  }, 600);
+    const textInterval = setInterval(() => {
+      preloadText.textContent = texts[index];
+      textMaxWidth += 120;
+      preloadText.style.width = textMaxWidth + "px";
+      index++;
+      if (index >= texts.length) {
+        clearInterval(textInterval);
+
+        setTimeout(() => {
+          preload.classList.add("loaded");
+          document.body.classList.remove("loading");
+        }, 300);
+      }
+    }, 600);
+  }
 });
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -348,10 +348,10 @@
 
 .card__zoom {
   &:hover {
-    transform: translate(-50%) scale(0.9);
+    transform: scale(0.9);
   }
   &:active {
-    transform: translate(-60%) translateX(5px);
+    transform: translateY(5px);
   }
 }
 
