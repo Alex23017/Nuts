@@ -211,5 +211,11 @@
 .footer__social-img--utube {
   width: 1rem;
   height: 0.8125rem;
+  margin-inline-end: -0.125rem;
+}
+
+.footer__social-img--instagram {
+  margin-inline-end: 0.125rem;
+  margin-block-start: -0.0625rem;
 }
 /*# sourceMappingURL=footer.css.map */

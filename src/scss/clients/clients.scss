@@ -472,16 +472,26 @@
   margin-block-start: 14px;
 }
 .info__clients {
-  padding-block-start: 170px;
-  padding-block-end: 72px;
+  padding-block-start: 173px;
+  padding-block-end: 70px;
+  padding-inline-start: 394px;
+  @media (max-width: 1900px) {
+    padding-inline: 100px;
+  }
   @media (max-width: 600px) {
     padding-block-start: 70px;
   }
 }
 
 .map__clients {
-  padding-block-start: 117px;
+  padding-block-start: 116px;
   @media (max-width: 600px) {
     padding-block-start: 40px;
+  }
+}
+.footer__clients {
+  .footer__footer {
+    padding-block-start: 47px;
+
   }
 }

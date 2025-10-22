@@ -1306,6 +1306,12 @@ body.open {
 .footer__social-img--utube {
   width: 1rem;
   height: 0.8125rem;
+  margin-inline-end: -0.125rem;
+}
+
+.footer__social-img--instagram {
+  margin-inline-end: 0.125rem;
+  margin-block-start: -0.0625rem;
 }
 
 .hero {
@@ -3161,6 +3167,14 @@ body.open {
   .google__map {
     width: 17.5rem;
   }
+}
+
+.map__social-img--telegram {
+  margin-inline-start: -0.125rem;
+}
+
+.map__social-img--whatsapp {
+  margin-inline-start: 0.125rem;
 }
 
 .hero__delivery {
@@ -5736,8 +5750,14 @@ body.loading {
 }
 
 .info__clients {
-  padding-block-start: 10.625rem;
-  padding-block-end: 4.5rem;
+  padding-block-start: 10.8125rem;
+  padding-block-end: 4.375rem;
+  padding-inline-start: 24.625rem;
+}
+@media (max-width: 1900px) {
+  .info__clients {
+    padding-inline: 6.25rem;
+  }
 }
 @media (max-width: 600px) {
   .info__clients {
@@ -5746,11 +5766,15 @@ body.loading {
 }
 
 .map__clients {
-  padding-block-start: 7.3125rem;
+  padding-block-start: 7.25rem;
 }
 @media (max-width: 600px) {
   .map__clients {
     padding-block-start: 2.5rem;
   }
+}
+
+.footer__clients .footer__footer {
+  padding-block-start: 2.9375rem;
 }
 /*# sourceMappingURL=style.css.map */

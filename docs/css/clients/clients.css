@@ -600,8 +600,14 @@
 }
 
 .info__clients {
-  padding-block-start: 10.625rem;
-  padding-block-end: 4.5rem;
+  padding-block-start: 10.8125rem;
+  padding-block-end: 4.375rem;
+  padding-inline-start: 24.625rem;
+}
+@media (max-width: 1900px) {
+  .info__clients {
+    padding-inline: 6.25rem;
+  }
 }
 @media (max-width: 600px) {
   .info__clients {
@@ -610,11 +616,15 @@
 }
 
 .map__clients {
-  padding-block-start: 7.3125rem;
+  padding-block-start: 7.25rem;
 }
 @media (max-width: 600px) {
   .map__clients {
     padding-block-start: 2.5rem;
   }
+}
+
+.footer__clients .footer__footer {
+  padding-block-start: 2.9375rem;
 }
 /*# sourceMappingURL=clients.css.map */

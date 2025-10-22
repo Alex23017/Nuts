@@ -162,4 +162,9 @@
 .footer__social-img--utube {
   width: 16px;
   height: 13px;
+  margin-inline-end: -2px;
+}
+.footer__social-img--instagram {
+  margin-inline-end: 2px;
+  margin-block-start: -1px;
 }

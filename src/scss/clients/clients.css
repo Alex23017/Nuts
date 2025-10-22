@@ -709,10 +709,17 @@
 }
 
 .info__clients {
-  -webkit-padding-before: 170px;
-          padding-block-start: 170px;
-  -webkit-padding-after: 72px;
-          padding-block-end: 72px;
+  -webkit-padding-before: 173px;
+          padding-block-start: 173px;
+  -webkit-padding-after: 70px;
+          padding-block-end: 70px;
+  -webkit-padding-start: 394px;
+          padding-inline-start: 394px;
+}
+@media (max-width: 1900px) {
+  .info__clients {
+    padding-inline: 100px;
+  }
 }
 @media (max-width: 600px) {
   .info__clients {
@@ -722,12 +729,17 @@
 }
 
 .map__clients {
-  -webkit-padding-before: 117px;
-          padding-block-start: 117px;
+  -webkit-padding-before: 116px;
+          padding-block-start: 116px;
 }
 @media (max-width: 600px) {
   .map__clients {
     -webkit-padding-before: 40px;
             padding-block-start: 40px;
   }
+}
+
+.footer__clients .footer__footer {
+  -webkit-padding-before: 47px;
+          padding-block-start: 47px;
 }/*# sourceMappingURL=clients.css.map */

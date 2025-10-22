@@ -5,6 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+
+
+// PRELOAD + BACKGROUND TEXT
 window.addEventListener("load", () => {
   const preload = document.querySelector(".preload");
   const preloadText = document.querySelector(".preload__text");
@@ -32,6 +35,8 @@ window.addEventListener("load", () => {
   }
 });
 
+
+// LANGUAGES
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownBtn = document.getElementById("dropdownMenuButton1");
   const dropdownBtn2 = document.getElementById("dropdownMenuButton2");
@@ -46,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const productSwipers = document.querySelectorAll(".product__swiper");
-
+  // SWIPPER
+  
   productSwipers.forEach((swiperEl) => {
     const swiper = new Swiper(swiperEl, {
       slidesPerView: 1,

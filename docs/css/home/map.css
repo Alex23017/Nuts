@@ -211,4 +211,12 @@
     width: 17.5rem;
   }
 }
+
+.map__social-img--telegram {
+  margin-inline-start: -0.125rem;
+}
+
+.map__social-img--whatsapp {
+  margin-inline-start: 0.125rem;
+}
 /*# sourceMappingURL=map.css.map */

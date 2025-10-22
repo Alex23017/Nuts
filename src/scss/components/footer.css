@@ -247,4 +247,13 @@
 .footer__social-img--utube {
   width: 16px;
   height: 13px;
+  -webkit-margin-end: -2px;
+          margin-inline-end: -2px;
+}
+
+.footer__social-img--instagram {
+  -webkit-margin-end: 2px;
+          margin-inline-end: 2px;
+  -webkit-margin-before: -1px;
+          margin-block-start: -1px;
 }/*# sourceMappingURL=footer.css.map */

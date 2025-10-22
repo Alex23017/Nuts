@@ -272,4 +272,14 @@
   .google__map {
     width: 280px;
   }
+}
+
+.map__social-img--telegram {
+  -webkit-margin-start: -2px;
+          margin-inline-start: -2px;
+}
+
+.map__social-img--whatsapp {
+  -webkit-margin-start: 2px;
+          margin-inline-start: 2px;
 }/*# sourceMappingURL=map.css.map */
