@@ -1,3 +1,5 @@
+@use "../variables/variables" as *;
+
 body.loading {
   overflow: hidden;
 }
@@ -19,22 +21,35 @@ body.loading {
 }
 
 .preload__text {
-  bottom: 30px;
+  bottom: 10px;
   left: 0;
   position: absolute;
-  font-size: 32px;
-  width: 100%;
-  padding-block-start: 20px;
+  font-size: 24px;
+  width: 50px;
+  white-space: nowrap;
+  padding-block: 20px;
   margin: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  padding-inline: 10px;
+  border-radius: 50px;
+  text-align: center;
+  background: linear-gradient(rgba(0, 128, 0, 0.24), green, rgba(0, 128, 0, 0.405));
   @media (max-width: 600px) {
-    font-size: 24px;
+    font-size: 2px;
+    left: -50px;
+    padding: 10px;
+  }
+  @media (max-width: 400px) {
+    font-size: 18px;
+    left: -20px;
   }
 }
 
 .load__img {
   position: absolute;
   top: 120px;
-  left: 70px;
+  left: 60px;
   animation: rotate 2s infinite;
   width: 100%;
   max-width: 200px;

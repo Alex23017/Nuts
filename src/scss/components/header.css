@@ -575,8 +575,8 @@
 .order__call-basket {
   -webkit-margin-before: -4px;
           margin-block-start: -4px;
-  -webkit-margin-start: 15px;
-          margin-inline-start: 15px;
+  -webkit-margin-start: 12px;
+          margin-inline-start: 12px;
 }
 @media (max-width: 600px) {
   .order__call-basket {

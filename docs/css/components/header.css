@@ -463,7 +463,7 @@
 
 .order__call-basket {
   margin-block-start: -0.25rem;
-  margin-inline-start: 0.9375rem;
+  margin-inline-start: 0.75rem;
 }
 @media (max-width: 600px) {
   .order__call-basket {

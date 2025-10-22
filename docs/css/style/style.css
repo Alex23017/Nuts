@@ -584,7 +584,7 @@ body.open {
 
 .order__call-basket {
   margin-block-start: -0.25rem;
-  margin-inline-start: 0.9375rem;
+  margin-inline-start: 0.75rem;
 }
 @media (max-width: 600px) {
   .order__call-basket {
@@ -4154,24 +4154,39 @@ body.loading {
 }
 
 .preload__text {
-  bottom: 1.875rem;
+  bottom: 0.625rem;
   left: 0;
   position: absolute;
-  font-size: 2rem;
-  width: 100%;
-  padding-block-start: 1.25rem;
+  font-size: 1.5rem;
+  width: 3.125rem;
+  white-space: nowrap;
+  padding-block: 1.25rem;
   margin: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 0.125rem 0.125rem 0.3125rem rgb(0, 0, 0);
+  padding-inline: 0.625rem;
+  border-radius: 3.125rem;
+  text-align: center;
+  background: linear-gradient(rgba(0, 128, 0, 0.24), green, rgba(0, 128, 0, 0.405));
 }
 @media (max-width: 600px) {
   .preload__text {
-    font-size: 1.5rem;
+    font-size: 0.125rem;
+    left: -3.125rem;
+    padding: 0.625rem;
+  }
+}
+@media (max-width: 400px) {
+  .preload__text {
+    font-size: 1.125rem;
+    left: -1.25rem;
   }
 }
 
 .load__img {
   position: absolute;
   top: 7.5rem;
-  left: 4.375rem;
+  left: 3.75rem;
   animation: rotate 2s infinite;
   width: 100%;
   max-width: 12.5rem;
