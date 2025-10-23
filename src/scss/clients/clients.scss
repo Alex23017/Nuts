@@ -11,6 +11,9 @@
   position: relative;
   min-height: 150px;
 }
+.overlay__clients--client {
+  height: inherit;
+}
 .hero__clients-img {
   min-height: 150px;
   object-fit: cover;
@@ -492,6 +495,5 @@
 .footer__clients {
   .footer__footer {
     padding-block-start: 47px;
-
   }
 }

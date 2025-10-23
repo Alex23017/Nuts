@@ -5818,6 +5818,10 @@ body.loading {
   min-height: 9.375rem;
 }
 
+.overlay__clients--client {
+  height: inherit;
+}
+
 .hero__clients-img {
   min-height: 9.375rem;
   -o-object-fit: cover;
