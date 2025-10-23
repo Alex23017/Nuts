@@ -519,11 +519,6 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media (max-width: 600px) {
-  .shop__item {
-    display: none;
-  }
-}
 
 .shop__item-link {
   text-decoration: none;
