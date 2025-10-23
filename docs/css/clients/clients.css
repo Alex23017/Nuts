@@ -10,6 +10,10 @@
   min-height: 9.375rem;
 }
 
+.overlay__catalog-img {
+  max-height: 18.75rem;
+}
+
 .overlay__clients--client {
   height: inherit;
 }

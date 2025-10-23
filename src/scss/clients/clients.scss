@@ -11,6 +11,9 @@
   position: relative;
   min-height: 150px;
 }
+.overlay__catalog-img {
+  max-height: 300px;
+}
 .overlay__clients--client {
   height: inherit;
 }
