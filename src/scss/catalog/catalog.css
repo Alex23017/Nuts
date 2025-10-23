@@ -5,6 +5,10 @@
   display: block;
 }
 
+.hero__catalog {
+  max-height: 300px;
+}
+
 .filter__name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +20,8 @@
   padding-inline: 314px;
   -webkit-padding-end: 150px;
           padding-inline-end: 150px;
+  -webkit-padding-before: 17px;
+          padding-block-start: 17px;
   -webkit-padding-after: 33px;
           padding-block-end: 33px;
 }
@@ -472,14 +478,13 @@
   opacity: 1 !important;
 }
 
-.about__column--title {
-  -webkit-padding-end: 61px;
-          padding-inline-end: 61px;
-}
-
 .about__column--catalog {
   -webkit-margin-before: -23px;
           margin-block-start: -23px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-padding-end: 61px;
+          padding-inline-end: 61px;
 }
 
 .catalog__arrow-left,

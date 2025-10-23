@@ -342,9 +342,100 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000);
     });
   });
+
   if (addProduct) {
     addProduct.addEventListener("click", () => {
       window.location.href = "basket.html";
+    });
+  }
+
+  const playBtnAbout = document.querySelector(".about__player");
+  const stopBtnSmall = document.querySelector(".about__stop");
+  const imgHideSmall = document.querySelector(".about__img-wrapper--img");
+  const videoOpenSmall = document.querySelector(".about__video-wrapper");
+  const paginationHiddenSmall = document.querySelector(".background__about--none");
+
+  const aboutSwipers = document.querySelectorAll(".about__swiper");
+
+  aboutSwipers.forEach((swiperEl) => {
+    const swiper = new Swiper(swiperEl, {
+      slidesPerView: 1,
+      navigation: {
+        nextEl: swiperEl.querySelector(".swiper-button-next"),
+        prevEl: swiperEl.querySelector(".swiper-button-prev"),
+      },
+      pagination: {
+        el: swiperEl.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+    });
+
+    swiperEl.swiperInstance = swiper;
+  });
+
+  if (playBtnAbout) {
+    playBtnAbout.addEventListener("click", () => {
+      imgHideSmall.classList.add("hidden");
+      playBtnAbout.classList.add("hidden");
+      paginationHiddenSmall.classList.add("hidden");
+      stopBtnSmall.classList.add("open");
+      videoOpenSmall.classList.add("open");
+      videoOpenSmall.src = "https://www.youtube.com/embed/zo7i8VTpfNM?autoplay=1&mute=0&controls=1";
+
+      aboutSwipers.forEach((el) => {
+        el.swiperInstance.allowSlideNext = false;
+        el.swiperInstance.allowSlidePrev = false;
+      });
+    });
+  }
+
+  if (stopBtnSmall) {
+    stopBtnSmall.addEventListener("click", () => {
+      imgHideSmall.classList.remove("hidden");
+      playBtnAbout.classList.remove("hidden");
+      paginationHiddenSmall.classList.remove("hidden");
+      stopBtnSmall.classList.remove("open");
+      videoOpenSmall.classList.remove("open");
+      videoOpenSmall.src = "";
+
+  
+      aboutSwipers.forEach((el) => {
+        el.swiperInstance.allowSlideNext = true;
+        el.swiperInstance.allowSlidePrev = true;
+      });
+    });
+  }
+
+  const playBtn = document.querySelector(".play__img");
+  const stopBtn = document.querySelector(".stop__img");
+  const imgHide = document.querySelector(".hero__img-wrapper--img");
+  const videoOpen = document.querySelector(".hero__video-wrapper");
+  const heroTittle = document.querySelector(".hero__tittle");
+  const heroText = document.querySelector(".hero__text");
+  const overlayWrapper = document.querySelector(".overlay__clients-img");
+
+  if (playBtn) {
+    playBtn.addEventListener("click", () => {
+      imgHide.classList.add("hidden");
+      playBtn.classList.add("hidden");
+      heroTittle.classList.add("hidden");
+      heroText.classList.add("hidden");
+      overlayWrapper.classList.add("hidden");
+      videoOpen.classList.add("open");
+      stopBtn.classList.add("open");
+      videoOpen.src = "https://www.youtube.com/embed/zo7i8VTpfNM?autoplay=1&mute=0&controls=1";
+    });
+  }
+  if (stopBtn) {
+    stopBtn.addEventListener("click", () => {
+      imgHide.classList.remove("hidden");
+      playBtn.classList.remove("hidden");
+      heroTittle.classList.remove("hidden");
+      heroText.classList.remove("hidden");
+      overlayWrapper.classList.remove("hidden");
+      videoOpen.classList.remove("open");
+      stopBtn.classList.remove("open");
+      videoOpen.src = "";
     });
   }
 });

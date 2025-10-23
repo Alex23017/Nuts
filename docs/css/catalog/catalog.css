@@ -5,12 +5,17 @@
   display: block;
 }
 
+.hero__catalog {
+  max-height: 18.75rem;
+}
+
 .filter__name {
   display: flex;
   align-items: center;
   gap: 0.625rem;
   padding-inline: 19.625rem;
   padding-inline-end: 9.375rem;
+  padding-block-start: 1.0625rem;
   padding-block-end: 2.0625rem;
 }
 @media (max-width: 1800px) {
@@ -386,12 +391,10 @@
   opacity: 1 !important;
 }
 
-.about__column--title {
-  padding-inline-end: 3.8125rem;
-}
-
 .about__column--catalog {
   margin-block-start: -1.4375rem;
+  margin-inline-start: 0;
+  padding-inline-end: 3.8125rem;
 }
 
 .catalog__arrow-left,

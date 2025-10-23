@@ -20,14 +20,8 @@
 
     <link rel="stylesheet" href="css/style/style.css" />
   </head>
-  <body class="loading">
-    <div class="preload">
-  <div class="preload__items">
-    <img class="load__img" src="img/preload/nutsPreload.webp" alt="nutsPreload" />
-    <p class="preload__text">Загрузка...</p>
-  </div>
-</div>
-
+  <body class="loadin1g">
+    
     <div class="add">
     <img src="img/preload/nutsPreload.webp" alt="" class="add__img">
     <p class="add__img__text">Товар успешно добавлен в корзину!</p>
@@ -265,7 +259,21 @@
 
       <main class="main">
         <section class="hero">
-          <img src="img/home/hero/pic.webp" alt="hero" class="hero__video" />
+          <div class="hero__img-wrapper">
+            <div class="overlay__clients-img">
+              <div class="overlay__clients"></div>
+              <img src="img/home/hero/heroPreviev.webp" alt="" class="hero__img-wrapper--img" />
+            </div>
+            <iframe
+              class="hero__video-wrapper"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
           <h2
             class="hero__tittle"
             data-lang-ua="Горіх Причорномор'я"
@@ -281,6 +289,7 @@
             Единственный в Украине сад совместного выращивание фундука и грецкого ореха
           </p>
           <img src="img/home/hero/play.webp" alt="" class="play__img" />
+          <img src="img/home/hero/stop.webp" alt="" class="stop__img" />
         </section>
         <section class="products">
           <div class="products__title">
@@ -813,7 +822,7 @@
           <a class="shop__item-link" href="catalog.html">Перейти в магазин</a>
         </div>
         <section class="about__company">
-          <div class="about__column about__column--title">
+          <div class="about__column about__column--title about__column--hero">
             <h2 class="about__column-title">О производителе</h2>
             <p class="about__column-text">
               <span>Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья”</span>
@@ -829,13 +838,25 @@
           <div class="about__column about__column-swiper">
             <div class="swiper about__swiper">
               <div class="swiper-wrapper about-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="img/home/aboutCompany/imgAbout.webp"
-                    alt="aboutCompany"
-                    class="about__img"
-                  />
-                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                <div class="swiper-slide swipper-">
+                  <div class="hero__img-wrapper hero__img-wrapper--small">
+                    <img
+                      src="img/home/hero/heroPreviev.webp"
+                      alt=""
+                      class="about__img-wrapper--img"
+                    />
+                    <iframe
+                      class="about__video-wrapper"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player " />
+                  <img src="img/home/hero/stop.webp" alt="" class="about__stop" />
                 </div>
                 <div class="swiper-slide">
                   <img
@@ -855,7 +876,7 @@
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-              <div class="background__about-arrow">
+              <div class="background__about-arrow background__about--none">
                 <div class="swiper-button-prev about__arrow-left">
                   <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="about__arrow" />
                 </div>

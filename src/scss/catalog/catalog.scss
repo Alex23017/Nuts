@@ -6,12 +6,16 @@
   }
 }
 
+.hero__catalog {
+  max-height: 300px;
+}
 .filter__name {
   display: flex;
   align-items: center;
   gap: 10px;
   padding-inline: 314px;
   padding-inline-end: 150px;
+  padding-block-start: 17px;
   padding-block-end: 33px;
   @media (max-width: 1800px) {
     justify-content: center;
@@ -304,11 +308,11 @@
   border-radius: 3px;
   opacity: 1 !important;
 }
-.about__column--title {
-  padding-inline-end: 61px;
-}
+
 .about__column--catalog {
   margin-block-start: -23px;
+  margin-inline-start: 0px;
+  padding-inline-end: 61px;
 }
 
 .catalog__arrow-left,
