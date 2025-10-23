@@ -88,6 +88,7 @@
 .card__img-img {
   width: 6.8125rem;
   height: 14.6875rem;
+  transition: 0.3s ease-in-out;
 }
 
 .card__info {
@@ -433,6 +434,11 @@
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.00625rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.shop__item-link:hover {
+  transform: scale(0.9);
 }
 
 .card__count-new,
@@ -441,13 +447,6 @@
   top: 1.25rem;
   left: -0.25rem;
   z-index: 50;
-}
-
-.card__zoom:hover {
-  transform: scale(0.9);
-}
-.card__zoom:active {
-  transform: translateY(0.3125rem);
 }
 
 .card__zoom {

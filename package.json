@@ -50,6 +50,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "simplebar": "^6.3.2",
     "swiper": "^12.0.2"
   }
 }

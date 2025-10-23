@@ -14,6 +14,7 @@ export default {
     clients: "./src/js/clients.js",
     basket: "./src/js/basket.js",
     cart: "./src/js/cart.js",
+    catalog: "./src/js/catalog.js",
   },
   output: {
     filename: "[name].bundle.js",

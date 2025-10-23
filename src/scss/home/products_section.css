@@ -112,6 +112,8 @@
 .card__img-img {
   width: 109px;
   height: 235px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .card__info {
@@ -535,6 +537,13 @@
   line-height: 100%;
   font-weight: 700;
   letter-spacing: 0.1px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.shop__item-link:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .card__count-new,
@@ -543,15 +552,6 @@
   top: 20px;
   left: -4px;
   z-index: 50;
-}
-
-.card__zoom:hover {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-.card__zoom:active {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
 }
 
 .card__zoom {

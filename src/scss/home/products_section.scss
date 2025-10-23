@@ -76,6 +76,7 @@
 .card__img-img {
   width: 109px;
   height: 235px;
+  transition: 0.3s ease-in-out;
 }
 .card__info {
   padding-block-start: 20px;
@@ -336,6 +337,13 @@
   @include font($Raleway15);
   font-weight: 700;
   letter-spacing: 0.1px;
+  cursor: pointer;
+
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(0.9);
+  }
 }
 
 .card__count-new,
@@ -344,15 +352,6 @@
   top: 20px;
   left: -4px;
   z-index: 50;
-}
-
-.card__zoom {
-  &:hover {
-    transform: scale(0.9);
-  }
-  &:active {
-    transform: translateY(5px);
-  }
 }
 
 .card__zoom {

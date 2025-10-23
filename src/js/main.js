@@ -5,8 +5,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-
-
 // PRELOAD + BACKGROUND TEXT
 window.addEventListener("load", () => {
   const preload = document.querySelector(".preload");
@@ -35,7 +33,6 @@ window.addEventListener("load", () => {
   }
 });
 
-
 // LANGUAGES
 document.addEventListener("DOMContentLoaded", () => {
   const dropdownBtn = document.getElementById("dropdownMenuButton1");
@@ -52,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const productSwipers = document.querySelectorAll(".product__swiper");
   // SWIPPER
-  
+
   productSwipers.forEach((swiperEl) => {
     const swiper = new Swiper(swiperEl, {
       slidesPerView: 1,
@@ -68,11 +65,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const prevBtn = swiperEl.querySelector(".swiper-button-prev");
-    prevBtn.addEventListener("click", () => {
+    prevBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
       swiper.slidePrev();
     });
     const nextBtn = swiperEl.querySelector(".swiper-button-next");
-    nextBtn.addEventListener("click", () => {
+    nextBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
       swiper.slideNext();
     });
 
@@ -227,6 +226,45 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  //ZOOM PROPOGATION + CARD ZOOM
+
+  const cardZoom = document.querySelectorAll(".card__zoom, .cart__zoom");
+  cardZoom.forEach((img) => {
+    const zoom = img
+      .closest(".product__swiper")
+      .querySelectorAll(".card__img-img, .cart__img-img--count");
+
+    img.addEventListener("mouseenter", () => {
+      zoom.forEach((el) => {
+        el.style.transform = "scale(1.15)";
+      });
+    });
+    img.addEventListener("mouseleave", () => {
+      zoom.forEach((el) => {
+        el.style.transform = "scale(1)";
+      });
+    });
+  });
+
+  // const cardZoom = document.querySelectorAll(".card__zoom, .cart__zoom");
+
+  // cardZoom.forEach((zoom) => {
+  //   const imgs = zoom
+  //     .closest(".product__swiper")
+  //     .querySelectorAll(".card__img-img, .cart__img-img--count");
+
+  //   zoom.addEventListener("mouseenter", () => {
+  //     imgs.forEach((img) => {
+  //       img.style.transform = "scale(1.15)";
+  //     });
+  //   });
+
+  //   zoom.addEventListener("mouseleave", () => {
+  //     imgs.forEach((img) => {
+  //       img.style.transform = "scale(1)";
+  //     });
+  //   });
+  // });
   //LOCATION
   const locationMain = document.querySelector(".location__delivery");
   if (locationMain) {
@@ -251,6 +289,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (isPage("cart.html")) {
     location.textContent = "Карточка товара";
+  }
+  if (isPage("catalog.html")) {
+    location.textContent = "Магазин";
   }
 
   //BURGER MENU
