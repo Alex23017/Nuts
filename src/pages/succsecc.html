@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,400;1,500;1,800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800,900&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loading1">
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/arrowUp/arrowUp.html")
+    <div class="wrapper wrapper__delivery">
+      <header class="header header__delivery">@@include("../components/header/header.html")</header>
+
+      <main class="main">
+        <section class="succsecc">
+          <div class="overlay__clients-img overlay__clients--client overlay__succsecc">
+            <div class="overlay__clients overlay__clients-client"></div>
+            <img src="img/clients/imgHero.webp" alt="imgHero" class="hero__clients-img" />
+            <h2 class="hero__clients-title hero__success-title">Благодарим Вас за заказ!</h2>
+            <p class="hero__clients-text hero__success-text">Наши менеджеры свяжутся с Вами в ближайшее время</p>
+          </div>
+        </section>
+
+        <section class="map map__succsecc">@@include("../components/map/map.html")</section>
+      </main>
+      <footer class="footer footer__succsecc">@@include("../components/footer/footer.html")</footer>
+    </div>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+    <script defer src="js/main.bundle.js"></script>
+  </body>
+</html>

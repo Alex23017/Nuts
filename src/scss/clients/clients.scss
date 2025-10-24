@@ -500,3 +500,37 @@
     padding-block-start: 47px;
   }
 }
+
+// SUCCSECC
+
+.succsecc {
+  margin-block-start: 18px;
+}
+
+.hero__success-title {
+  font-size: 45px;
+  margin-block-start: -3px;
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+}
+.hero__success-text {
+  font-weight: 500;
+  font-size: 24px;
+  top: 53.5%;
+  left: 50.4%;
+  @media (max-width: 992.99px) {
+    top: 50%;
+  }
+  @media (max-width: 768px) {
+    line-height: 120%;
+    font-size: 14px;
+  }
+}
+.overlay__succsecc {
+  max-height: 518px;
+  img {
+    max-height: 518px;
+    width: 100%;
+  }
+}

@@ -635,4 +635,44 @@
 .footer__clients .footer__footer {
   padding-block-start: 2.9375rem;
 }
+
+.succsecc {
+  margin-block-start: 1.125rem;
+}
+
+.hero__success-title {
+  font-size: 2.8125rem;
+  margin-block-start: -0.1875rem;
+}
+@media (max-width: 768px) {
+  .hero__success-title {
+    font-size: 1.125rem;
+  }
+}
+
+.hero__success-text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  top: 53.5%;
+  left: 50.4%;
+}
+@media (max-width: 992.99px) {
+  .hero__success-text {
+    top: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .hero__success-text {
+    line-height: 120%;
+    font-size: 0.875rem;
+  }
+}
+
+.overlay__succsecc {
+  max-height: 32.375rem;
+}
+.overlay__succsecc img {
+  max-height: 32.375rem;
+  width: 100%;
+}
 /*# sourceMappingURL=clients.css.map */
