@@ -1,0 +1,243 @@
+@use "../variables/variables" as *;
+.article__title {
+  @include font($Raleway32);
+  margin-inline-start: -2px;
+  letter-spacing: -0.3px;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.article {
+  display: flex;
+  gap: 40px;
+  padding-inline-start: 315px;
+  padding-inline-end: 315px;
+  padding-block-start: 128px;
+  @media (max-width: 1800px) {
+    padding-inline: 100px;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-inline: 30px;
+  }
+}
+
+.article__data {
+  color: $greyColor;
+  @include font($Montserrat15);
+  padding-block-start: 11px;
+  margin-inline-start: -2px;
+  padding-block-end: 16px;
+}
+
+.article__img,
+.article__subtitle-img {
+  width: 100%;
+  max-width: 990px;
+  max-height: 595px;
+}
+.article__img {
+}
+
+.article__text {
+  @include font($Raleway16);
+  font-weight: 500;
+  margin-block-start: 29px;
+  line-height: 25px;
+  max-width: 990px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.article__text--margin {
+  margin-block-start: -3px;
+}
+.article__title--second {
+  margin-block-start: 36px;
+  @include font($Raleway24);
+  font-weight: 700;
+  line-height: 30px;
+  margin-inline-start: 1px;
+}
+
+.article__text--second {
+  margin-block-start: 20px;
+}
+
+.article__subtitle--second {
+  @include font($Raleway16);
+  font-weight: 700;
+  margin-block-start: 25px;
+  margin-block-end: 24px;
+}
+
+.article__subtitle-text--second {
+  position: relative;
+  margin-block-start: 21px;
+  @include font($Raleway16);
+  font-weight: 500;
+  margin-inline-start: 28px;
+  line-height: 8px;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: $primaryColor;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    left: -28px;
+    top: 1px;
+  }
+  @media (max-width: 1440px) {
+    line-height: 100%;
+  }
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.article__subtitle-img--second {
+  margin-block-start: 36px;
+}
+
+.article__title--third {
+  @include font($Raleway24);
+  font-weight: 700;
+  margin-block-start: 26px;
+  line-height: 28px;
+  margin-inline-start: 1px;
+}
+
+.article__text--third {
+  @include font($Raleway16);
+  font-weight: 500;
+  line-height: 25px;
+  max-width: 990px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.article__text--third {
+  margin-block-start: 20px;
+  margin-inline-start: 1px;
+}
+
+.article__text--footer {
+  margin-block-start: -3px;
+}
+
+.map__select {
+  padding-block-start: 194.5px;
+}
+
+// SIDE
+.article__column--side {
+  margin-block-start: 154px;
+  max-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  @media (max-width: 768px) {
+    margin-block-start: 20px;
+    max-width: 100%;
+  }
+}
+.side__article {
+  padding-inline: 20px;
+  @media (max-width: 768px) {
+    padding-inline: 5px;
+  }
+}
+.side__title {
+  @include font($Raleway24);
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.side__info-data {
+  color: $greyColor;
+  @include font($Montserrat13);
+  font-weight: 500;
+  margin-block-start: 20px;
+  margin-block-end: 11px;
+  @media (max-width: 768px) {
+    font-size: 8px;
+    margin-block: 10px;
+  }
+}
+
+.side__info-title {
+  @include font($Raleway15);
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: -0.2px;
+  @media (max-width: 768px) {
+    font-size: 10px;
+    line-height: 100%;
+  }
+}
+
+.side__info-link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  @include font($Raleway13);
+  font-weight: 700;
+  gap: 2px;
+  padding-block-end: 39px;
+  @media (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+.side__info-img {
+  margin-block-start: -5px;
+  @media (max-width: 768px) {
+    margin-block-start: -3px;
+    width: 14px;
+    height: 14px;
+  }
+}
+.side__body {
+  background-color: #fcfcfc;
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.side__social {
+  background-color: $primaryColor;
+  color: white;
+  text-align: center;
+  margin-block-start: -5px;
+}
+.side__social-title {
+  @include font($Raleway20);
+  font-weight: 800;
+  padding-block-start: 45px;
+  padding-inline: 20px;
+  margin-inline-start: -4px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+}
+.side__social-text {
+  @include font($Raleway17);
+  font-weight: 500;
+  padding-block-start: 12px;
+  margin-inline-start: -4px;
+  line-height: 20px;
+}
+.side__social-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-block-end: 30px;
+  margin-inline-start: 5px;
+  padding-block-start: 15px;
+}

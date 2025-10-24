@@ -296,6 +296,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isPage("news.html")) {
     location.textContent = "Новости и статьи";
   }
+  if (isPage("selectNews.html")) {
+    location.textContent = "Новости и статьи";
+  }
 
   //BURGER MENU
   const burger = document.querySelector(".burger");

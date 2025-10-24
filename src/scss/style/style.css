@@ -7665,6 +7665,14 @@ body.loading {
 .news__hero h3 {
   margin: 0;
 }
+@media (max-width: 768px) {
+  .news__hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .news__header-title {
   font-family: "Raleway", sans-serif;
@@ -7674,6 +7682,11 @@ body.loading {
   -webkit-padding-before: 85px;
           padding-block-start: 85px;
 }
+@media (max-width: 768px) {
+  .news__header-title {
+    font-size: 28px;
+  }
+}
 
 .news__header-text {
   font-family: "Raleway", sans-serif;
@@ -7682,6 +7695,11 @@ body.loading {
   line-height: 100%;
   -webkit-padding-before: 17px;
           padding-block-start: 17px;
+}
+@media (max-width: 768px) {
+  .news__header-text {
+    font-size: 14px;
+  }
 }
 
 .news__info {
@@ -7763,6 +7781,12 @@ body.loading {
           padding-block-start: 52px;
   gap: 52px;
 }
+@media (max-width: 768px) {
+  .news__hero {
+    padding: 0;
+    gap: 20px;
+  }
+}
 
 .news__header {
   display: -webkit-box;
@@ -7809,4 +7833,155 @@ body.loading {
   padding-inline: 0px;
   -webkit-margin-start: -1px;
           margin-inline-start: -1px;
+}
+
+.meeting__play,
+.meeting__title,
+.meeting__text {
+  position: absolute;
+  z-index: 15;
+  color: white;
+}
+
+.meeting__play {
+  top: 43%;
+}
+
+.meeting__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  top: 59.5%;
+}
+
+.meeting__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  font-weight: 500;
+  text-align: center;
+  max-width: 550px;
+  top: 66.2%;
+  line-height: 21px;
+  -webkit-margin-start: -6px;
+          margin-inline-start: -6px;
+}
+
+.meeting {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-padding-start: 314px;
+          padding-inline-start: 314px;
+  -webkit-padding-end: 316px;
+          padding-inline-end: 316px;
+}
+
+.meeting__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  max-height: 556px;
+}
+
+.overlay__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 556px;
+}
+
+.overlay__news {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.meeting__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-padding-before: 71px;
+          padding-block-start: 71px;
+  -webkit-padding-after: 93px;
+          padding-block-end: 93px;
+}
+
+.meeting__link {
+  text-decoration: none;
+  color: #337d5a;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 700;
+  padding-block: 18px;
+  padding-inline: 34px;
+  border: 1.5px solid #337d5a;
+}
+
+.footer__news {
+  -webkit-padding-before: 129px;
+          padding-block-start: 129px;
+}
+
+.section__news-page,
+.swiper__card-news {
+  background-color: white;
+}
+
+.location__body-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 19.7%;
+  z-index: 15;
+  color: #8a8a8a;
+}
+.location__body-page p {
+  margin: 0;
+}
+@media (min-width: 1930px) {
+  .location__body-page {
+    top: 15%;
+    left: 25%;
+  }
+}
+@media (max-width: 1600px) {
+  .location__body-page {
+    left: 5%;
+    top: 32%;
+  }
+}
+@media (max-width: 1024px) {
+  .location__body-page {
+    top: 32%;
+  }
+}
+@media (max-width: 600px) {
+  .location__body-page {
+    top: 22%;
+  }
 }/*# sourceMappingURL=style.css.map */
