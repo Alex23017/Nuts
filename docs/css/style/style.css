@@ -6541,6 +6541,14 @@ body.loading {
   width: 100%;
 }
 
+.map__succsecc {
+  padding-block-start: 7.25rem;
+}
+
+.footer__succsecc {
+  padding-block-start: 8.125rem;
+}
+
 .news__hero a {
   margin: 0;
 }

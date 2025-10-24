@@ -675,4 +675,12 @@
   max-height: 32.375rem;
   width: 100%;
 }
+
+.map__succsecc {
+  padding-block-start: 7.25rem;
+}
+
+.footer__succsecc {
+  padding-block-start: 8.125rem;
+}
 /*# sourceMappingURL=clients.css.map */

@@ -792,4 +792,14 @@
 .overlay__succsecc img {
   max-height: 518px;
   width: 100%;
+}
+
+.map__succsecc {
+  -webkit-padding-before: 116px;
+          padding-block-start: 116px;
+}
+
+.footer__succsecc {
+  -webkit-padding-before: 130px;
+          padding-block-start: 130px;
 }/*# sourceMappingURL=clients.css.map */
