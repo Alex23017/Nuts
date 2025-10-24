@@ -1,0 +1,222 @@
+@use "../variables/variables" as *;
+
+.news__hero {
+  a {
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.news__header-title {
+  @include font($Raleway45);
+  padding-block-start: 85px;
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
+
+.news__header-text {
+  @include font($Raleway18);
+  padding-block-start: 17px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+.news__info {
+  margin-block-start: -2px;
+}
+
+.news__info-data {
+  color: $greyColor;
+  @include font($Montserrat13);
+  font-weight: 500;
+  padding-block-end: 24px;
+}
+
+.news__info-tittle {
+  @include font($Raleway22);
+  font-weight: 700;
+  padding-block-end: 20px;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+}
+
+.news__info-text {
+  @include font($Raleway16);
+  font-weight: 500;
+  max-width: 420px;
+  line-height: 25px;
+  padding-block-end: 13px;
+  letter-spacing: -0.3px;
+}
+.news__info-link {
+  @include font($Raleway14);
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.news__items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-inline-start: -1px;
+}
+
+.news__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline-start: 30px;
+  padding-block-start: 52px;
+  gap: 52px;
+  @media (max-width: 768px) {
+    padding: 0;
+    gap: 20px;
+  }
+}
+
+.news__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section__news-page {
+  padding-block-start: 0px;
+}
+
+.news__info-text--second {
+  padding-block-end: 31px;
+}
+
+.news__cloumn-img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards__news-page {
+  padding-block-start: 41px;
+}
+
+.news__card-info--page {
+  padding-inline-start: 0px;
+}
+
+.cards__news-page {
+  .news__card-info {
+    padding-inline: 0px;
+    margin-inline-start: -1px;
+  }
+}
+.meeting__play,
+.meeting__title,
+.meeting__text {
+  position: absolute;
+  z-index: 15;
+  color: white;
+}
+.meeting__play {
+  top: 43%;
+}
+.meeting__title {
+  @include font($Montserrat22);
+  top: 59.5%;
+}
+.meeting__text {
+  @include font($Montserrat14);
+  font-weight: 500;
+  text-align: center;
+  max-width: 550px;
+  top: 66.2%;
+  line-height: 21px;
+  margin-inline-start: -6px;
+}
+.meeting {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 314px;
+  padding-inline-end: 316px;
+}
+.meeting__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  max-height: 556px;
+}
+
+.meeting__img {
+}
+.overlay__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 556px;
+}
+
+.overlay__news {
+  position: absolute;
+  inset: 0;
+  background-color: #00000066;
+}
+.meeting__item {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 71px;
+  padding-block-end: 93px;
+}
+.meeting__link {
+  text-decoration: none;
+  color: $primaryColor;
+  @include font($Raleway15);
+  font-weight: 700;
+  padding-block: 18px;
+  padding-inline: 34px;
+  border: 1.5px solid $primaryColor;
+}
+
+.footer__news {
+  padding-block-start: 129px;
+}
+
+.section__news-page,
+.swiper__card-news {
+  background-color: white;
+}
+
+.location__body-page {
+  display: flex;
+  align-items: center;
+  top: 15.5%;
+  z-index: 15;
+  color: $greyColor;
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: 1930px) {
+    top: 15%;
+    left: 25%;
+  }
+  @media (max-width: 1600px) {
+    left: 5%;
+    top: 32%;
+  }
+  @media (max-width: 1024px) {
+    top: 32%;
+  }
+  @media (max-width: 600px) {
+    top: 22%;
+  }
+}

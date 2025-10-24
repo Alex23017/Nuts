@@ -69,6 +69,13 @@ $fonts: (
     line-height: 100%,
     weight: 800,
   ),
+  "Raleway22": (
+    family: "Raleway",
+    fallback: sans-serif,
+    font-size: 22px,
+    line-height: 100%,
+    weight: 800,
+  ),
   "Raleway28": (
     family: "Raleway",
     fallback: sans-serif,
@@ -225,6 +232,7 @@ $Raleway15: map.get($fonts, "Raleway15");
 $Raleway17: map.get($fonts, "Raleway17");
 $Raleway18: map.get($fonts, "Raleway18");
 $Raleway20: map.get($fonts, "Raleway20");
+$Raleway22: map.get($fonts, "Raleway22");
 $Raleway62: map.get($fonts, "Raleway62");
 $Raleway25: map.get($fonts, "Raleway25");
 $Raleway24: map.get($fonts, "Raleway24");

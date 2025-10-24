@@ -95,27 +95,37 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const prevBtn = swiperEl.querySelector(".swiper-button-prev");
-    prevBtn.addEventListener("click", () => {
-      swiper.slidePrev();
-    });
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        swiper.slidePrev();
+      });
+    }
+
     const nextBtn = swiperEl.querySelector(".swiper-button-next");
-    nextBtn.addEventListener("click", () => {
-      swiper.slideNext();
-    });
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        swiper.slideNext();
+      });
+    }
 
     swiper.on("slideChange", () => {
       const prevArrow = swiperEl.querySelector(".swiper-button-prev");
       const nextArrow = swiperEl.querySelector(".swiper-button-next");
 
-      if (swiper.activeIndex >= 1) {
-        prevArrow.classList.add("active");
-      } else {
-        prevArrow.classList.remove("active");
+      if (prevArrow) {
+        if (swiper.activeIndex >= 1) {
+          prevArrow.classList.add("active");
+        } else {
+          prevArrow.classList.remove("active");
+        }
       }
-      if (swiper.activeIndex + swiper.params.slidesPerView >= swiper.slides.length) {
-        nextArrow.classList.add("active");
-      } else {
-        nextArrow.classList.remove("active");
+
+      if (nextArrow) {
+        if (swiper.activeIndex + swiper.params.slidesPerView >= swiper.slides.length) {
+          nextArrow.classList.add("active");
+        } else {
+          nextArrow.classList.remove("active");
+        }
       }
     });
   });

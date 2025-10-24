@@ -293,6 +293,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isPage("catalog.html")) {
     location.textContent = "Магазин";
   }
+  if (isPage("news.html")) {
+    location.textContent = "Новости и статьи";
+  }
 
   //BURGER MENU
   const burger = document.querySelector(".burger");

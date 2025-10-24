@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,400;1,500;1,800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loading1">
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/arrowUp/arrowUp.html")
+    <div class="wrapper wrapper__delivery">
+      <header class="header header__delivery">@@include("../components/header/header.html")</header>
+
+      <main class="main main__delivery">
+        <div class="location__body location__body-page">
+          <p class="location__delivery">Главная</p>
+          <img src="img/newsPages/arrowLocation.webp" alt="" class="location__img" />
+          <p class="location__delivery-page"></p>
+        </div>
+
+        <section class="section__news section__news-page">
+          <div class="news__header">
+            <h3 class="news__header-title">Новости и статьи</h3>
+            <p class="news__header-text">Свежие новости и полезная информация</p>
+          </div>
+          <div class="news__hero">
+            <div class="news__cloumn news__cloumn--img">
+              <img src="img/newsPages/hero.webp" alt="hero" class="news__cloumn-img" />
+            </div>
+            <div class="news__cloumn news__cloumn--info">
+              <div class="news__info">
+                <p class="news__info-data">12.04.2019</p>
+                <h3 class="news__info-tittle">
+                  Центр поддержки экспорта, <br />
+                  в студии Павел Тулба
+                </h3>
+                <p class="news__info-text">
+                  Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья” предлагает
+                  своим клиентам выгодные условия сотрудничества.
+                </p>
+                <p class="news__info-text news__info-text--second">
+                  Ореховый бизнес – один из наиболее перспективных <br />
+                  в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас
+                  есть возможность зарабатывать десятки тысяч долларов в год всего <br />
+                  на нескольких гектарах земли.
+                </p>
+
+                <div class="news__items">
+                  <a href="" class="news__info-link">Читать</a>
+                  <img src="img/newsPages/arrow.webp" alt="" class="news__items-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper swiper__news swiper__news-page swiper-initialized swiper-horizontal swiper-backface-hidden"
+          >
+            <div class="swiper-wrapper cards__news cards__news-page">
+              <div
+                class="swiper-slide swiper__card-news swiper-slide-active"
+                data-index="0"
+                style="width: 408px; margin-right: 31px"
+              >
+                <article class="card__news">
+                  <img src="img/news/news_1.webp" alt="imgNews" class="card__news-img" />
+                  <div class="news__card-info">
+                    <p class="card__news-data">12.04.2019</p>
+                    <h2 class="card__news-title">Центр поддержки экспорта, в студии Павел Тулба</h2>
+                    <p class="card__news-text">
+                      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена
+                      среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+                    </p>
+                    <a href="" class="card__news-link"
+                      >Читать
+                      <img class="card__arrow-img" src="img/news/rightArrowLink.webp" alt="arrow" />
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="swiper-slide swiper__card-news swiper-slide-next"
+                data-index="1"
+                style="width: 408px; margin-right: 31px"
+              >
+                <article class="card__news">
+                  <img src="img/news/news_2.webp" alt="imgNews" class="card__news-img" />
+                  <div class="news__card-info">
+                    <p class="card__news-data">12.04.2019</p>
+                    <h2 class="card__news-title">
+                      В Одесской области состоялся масштабный торгово - экспортный форум
+                    </h2>
+                    <p class="card__news-text">
+                      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена
+                      среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+                    </p>
+                    <a href="" class="card__news-link"
+                      >Читать
+                      <img class="card__arrow-img" src="img/news/rightArrowLink.webp" alt="arrow" />
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="swiper-slide swiper__card-news"
+                data-index="2"
+                style="width: 408px; margin-right: 31px"
+              >
+                <article class="card__news">
+                  <img src="img/news/news_3.webp" alt="imgNews" class="card__news-img" />
+                  <div class="news__card-info">
+                    <p class="card__news-data">12.04.2019</p>
+                    <h2 class="card__news-title">Сертификация органического производителя</h2>
+                    <p class="card__news-text">
+                      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена
+                      среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+                    </p>
+                    <a href="" class="card__news-link"
+                      >Читать
+                      <img class="card__arrow-img" src="img/news/rightArrowLink.webp" alt="arrow" />
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="swiper-slide swiper__card-news"
+                data-index="3"
+                style="width: 408px; margin-right: 31px"
+              >
+                <article class="card__news">
+                  <img src="img/news/news_1.webp" alt="imgNews" class="card__news-img" />
+                  <div class="news__card-info">
+                    <p class="card__news-data">12.04.2019</p>
+                    <h2 class="card__news-title">Центр поддержки экспорта, в студии Павел Тулба</h2>
+                    <p class="card__news-text">
+                      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена
+                      среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+                    </p>
+                    <a href="" class="card__news-link"
+                      >Читать
+                      <img class="card__arrow-img" src="img/news/rightArrowLink.webp" alt="arrow" />
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="swiper-slide swiper__card-news"
+                data-index="4"
+                style="width: 408px; margin-right: 31px"
+              >
+                <article class="card__news">
+                  <img src="img/news/news_2.webp" alt="imgNews" class="card__news-img" />
+                  <div class="news__card-info">
+                    <p class="card__news-data">12.04.2019</p>
+                    <h2 class="card__news-title">Центр поддержки экспорта, в студии Павел Тулба</h2>
+                    <p class="card__news-text">
+                      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена
+                      среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+                    </p>
+                    <a href="" class="card__news-link"
+                      >Читать
+                      <img class="card__arrow-img" src="img/news/rightArrowLink.webp" alt="arrow" />
+                    </a>
+                  </div>
+                </article>
+              </div>
+              <div
+                class="swiper-slide swiper__card-news"
+                data-index="5"
+                style="width: 408px; margin-right: 31px"
+              >
+                <article class="card__news">
+                  <img src="img/news/news_3.webp" alt="imgNews" class="card__news-img" />
+                  <div class="news__card-info">
+                    <p class="card__news-data">12.04.2019</p>
+                    <h2 class="card__news-title">Центр поддержки экспорта, в студии Павел Тулба</h2>
+                    <p class="card__news-text">
+                      Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура очень недооценена
+                      среди наших садоводов, не смотря на большой спрос в Европе и отличную...
+                    </p>
+                    <a href="" class="card__news-link"
+                      >Читать
+                      <img class="card__arrow-img" src="img/news/rightArrowLink.webp" alt="arrow" />
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="meeting">
+          <div class="overlay__wrapper">
+            <div class="overlay__news"></div>
+            <img src="img/newsPages/meetImg.webp" alt="meeting" class="meeting__img" />
+          </div>
+          <img src="img/home/hero/play.webp" alt="meeting" class="meeting__play" />
+          <h3 class="meeting__title">Проект UBHDP</h3>
+          <p class="meeting__text">
+            Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту UBHDP
+            за возможность получить консультацию <br />
+            от мировых специалистов!
+          </p>
+        </section>
+        <div class="meeting__item"><a href="" class="meeting__link">Посмотреть еще</a></div>
+
+        <section class="map map__delivery">@@include("../components/map/map.html")</section>
+      </main>
+      <footer class="footer footer__news">@@include("../components/footer/footer.html")</footer>
+    </div>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/news.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+    <script defer src="js/main.bundle.js"></script>
+  </body>
+</html>
