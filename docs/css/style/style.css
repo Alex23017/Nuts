@@ -7090,4 +7090,60 @@ body.loading {
   margin-inline-start: 0.3125rem;
   padding-block-start: 0.9375rem;
 }
+
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 5.9375rem;
+  justify-content: center;
+}
+
+.notfound__items {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding-block: 0.98125rem;
+  padding-inline: 1.4375rem;
+  border: solid 0.09375rem #337d5a;
+}
+
+.notfound__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
+  text-decoration: none;
+  color: #337d5a;
+  font-weight: 700;
+}
+
+.notfound__title {
+  font-size: 15.25rem;
+  letter-spacing: 0.1875rem;
+  font-family: "Montserrat";
+  line-height: 1;
+  font-weight: 900;
+  background-image: url("../../img/404/404.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: center;
+  color: transparent;
+}
+
+.notfound__text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 100%;
+  font-weight: 500;
+  line-height: 1.875rem;
+  margin-block-start: -0.375rem;
+  margin-inline-start: 0.25rem;
+  margin-block-end: 1.0625rem;
+}
+
+.map__404 {
+  padding-block-start: 13.375rem;
+}
 /*# sourceMappingURL=style.css.map */

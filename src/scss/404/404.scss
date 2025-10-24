@@ -1,0 +1,52 @@
+@use "../variables/variables" as *;
+
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 95px;
+  justify-content: center;
+}
+
+.notfound__items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-block: 15.7px;
+  padding-inline: 23px;
+  border: solid 1.5px $primaryColor;
+}
+.notfound__img {
+}
+.notfound__link {
+  @include font($Raleway16);
+  text-decoration: none;
+  color: $primaryColor;
+  font-weight: 700;
+}
+
+.notfound__title {
+  font-size: 244px;
+  letter-spacing: 3px;
+  font-family: "Montserrat";
+  line-height: 1;
+  font-weight: 900;
+  background-image: url("../../img/404/404.png");
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: center;
+  color: transparent;
+}
+
+.notfound__text {
+  @include font($Raleway18);
+  font-weight: 500;
+  line-height: 30px;
+  margin-block-start: -6px;
+  margin-inline-start: 4px;
+  margin-block-end: 17px;
+}
+
+.map__404{
+    padding-block-start: 214px;
+}
