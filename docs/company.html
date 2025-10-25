@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,800,italic&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loadin1g">
+    
+    <div class="add">
+    <img src="img/preload/nutsPreload.webp" alt="" class="add__img">
+    <p class="add__img__text">Товар успешно добавлен в корзину!</p>
+</div>
+    <div class="arrowup">
+  <img src="img/arrowUp/arrowUp.webp" alt="" class="arrowup__img" />
+</div>
+
+    <div class="wrapper">
+      <header class="header"><div class="menu__mob">
+  <div class="mob__header">
+    <div class="mob__logo">
+      <img src="img/header/logo.webp" alt="logo" class="mob__logo-img" />
+      <p
+        class="mob__logo-text"
+        data-lang-ua="ГОРІХ ПРИЧОРНОМОР'Я"
+        data-lang-ru="ОРЕХ ПРИЧЕРНОМОРЬЯ"
+      >
+        ОРЕХ ПРИЧЕРНОМОРЬЯ
+      </p>
+    </div>
+    <img src="img/header/closeBtn.webp" alt="closeBtn" class="mob__close" />
+  </div>
+  <div class="mob__login">
+    <img src="img/header/man-user.webp" alt="user" class="login__img" />
+    <p class="mob__login-sign" data-lang-ua="Вхід" data-lang-ru="Вход">Вход</p>
+    <p class="mob__login-signup" data-lang-ua="Регистрація" data-lang-ru="Регистрация">
+      Регистрация
+    </p>
+    <div class="login__social">
+      <img src="img/header/facebook.webp" alt="face" class="login__social-img" />
+      <img src="img/header/instagram.webp" alt="inst" class="login__social-img" />
+      <img src="img/header/youtube.webp" alt="utube" class="login__social-img" />
+    </div>
+  </div>
+  <div class="mob__items">
+    <ul class="mob__list">
+      <li class="mob__item mob__item--shop">
+        <a href="index.html" class="mob__link" data-lang-ua="Магазин" data-lang-ru="Магазин"
+          >Магазин</a
+        >
+      </li>
+      <li class="mob__item">
+        <a href="company.html" class="mob__link" data-lang-ua="Про виробництво" data-lang-ru="О производстве"
+          >О производстве</a
+        >
+      </li>
+      <li class="mob__item">
+        <a href="delivery.html" class="mob__link">Оплата и доставка</a>
+      </li>
+      <li class="mob__item">
+        <a
+          href="clients.html"
+          class="mob__link"
+          data-lang-ua="Оптовим та кортопаривним клієнтам"
+          data-lang-ru="Оптовым и корпоративным клиентам"
+          >Оптовым и корпоративным клиентам</a
+        >
+      </li>
+      <li class="mob__item">
+        <a href="news.html" class="mob__link" data-lang-ua="Новини та статті" data-lang-ru="Новости и статьи"
+          >Новости и статьи</a
+        >
+      </li>
+      <li class="mob__item">
+        <a href="" class="mob__link" data-lang-ua="Контакти" data-lang-ru="Контакты">Контакты</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="header__profile">
+  <div class="header__number--mob">
+    <img class="header__img--mob" src="img/header/phone.webp" alt="phone" />
+    <p class="header__text--mob"><span>+38 (044)</span> 750-50-11</p>
+    <p class="header__call--mob" data-lang-ua="Замовити звінок" data-lang-ru="Заказать звонок">
+      Заказать звонок
+    </p>
+    <div class="header__language dropdown">
+      <button
+        class="btn-secondary"
+        type="button"
+        id="dropdownMenuButton2"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Ru
+      </button>
+      <img class="drop-arrow" src="img/header/arrow.webp" alt="arrow-Language" />
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">Ua</a></li>
+        <li><a class="dropdown-item" href="#">Ru</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__social">
+    <img src="img/header/facebook.webp" alt="faceboock" class="header__social-faceboock" />
+    <img src="img/header/instagram.webp" alt="instagram" class="header__social-instagram" />
+    <img src="img/header/youtube.webp" alt="youtube" class="header__social-youtube" />
+  </div>
+  <div class="header__count">
+    <p
+      class="header__count-text"
+      data-lang-ua="Ваша персональна знижка - 5%"
+      data-lang-ru="Ваша персональная скидка - 5%"
+    >
+      Ваша персональная скидка - 5%
+    </p>
+  </div>
+  <div class="header__user">
+    <div class="header__user-login">
+      <img src="img/header/man-user.webp" alt="userLogo" class="user__logo" />
+      <p class="user__text" data-lang-ua="Вхід" data-lang-ru="Вход">Вход</p>
+    </div>
+    <div class="header__user-reg">
+      <p class="user__reg" data-lang-ua="Регистрація" data-lang-ru="Регистрация">Регистрация</p>
+    </div>
+    <div class="header__language dropdown">
+      <button
+        class="btn-secondary"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Ru
+      </button>
+      <img class="drop-arrow" src="img/header/arrow.webp" alt="arrow-Language" />
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Ua</a></li>
+        <li><a class="dropdown-item" href="#">Ru</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="header__contacts">
+  <div class="burger">
+    <span></span>
+  </div>
+  <div class="header__logo">
+    <img src="img/header/logo.webp" alt="logo" class="header__logo-img" />
+    <p
+      class="header__logo-text"
+      data-lang-ua="ГОРІХ ПРИЧОРНОМОР'Я"
+      data-lang-ru="ОРЕХ ПРИЧЕРНОМОРЬЯ"
+    >
+      ОРЕХ ПРИЧЕРНОМОРЬЯ
+    </p>
+  </div>
+  <div class="social__background">
+    <div class="social__background--background">
+      <img src="img/header/viber.webp" alt="viber" class="social__background-viber" />
+    </div>
+    <div class="social__background--background social__background--margin">
+      <img src="img/header/telegram.webp" alt="telegram" class="social__background-telegram" />
+    </div>
+    <div class="social__background--background">
+      <img src="img/header/whatsApp.webp" alt="whatsaap" class="social__background-whatsaap" />
+    </div>
+    <div class="social__contact">
+      <p class="social__contact-number"><span>+38 (044) </span>750-50-11</p>
+      <p class="social__contact-number"><span>+38 (097) </span>775-50-51</p>
+    </div>
+  </div>
+  <div class="order__call">
+    <a
+      class="order__call-link"
+      href=""
+      data-lang-ua="Замовити звінок"
+      data-lang-ru="Заказать звонок"
+      >Заказать звонок</a
+    >
+    <p
+      class="order__call-text"
+      data-lang-ua="Чекаємо Вашого звінка кожного дня з 9 до 18"
+      data-lang-ru="Ждем Вашего звонка ежедневно с 9 до 18"
+    >
+      Ждем Вашего звонка ежедневно с 9 до 18
+    </p>
+    <a class="basket__link" href="basket.html">
+      <img src="img/header/bag.webp" alt="basket" class="order__call-basket" />
+    </a>
+    <div class="basket__count">0</div>
+  </div>
+</div>
+<div class="header__links">
+  <p
+    class="mob__count"
+    data-lang-ua="Ваша персональна знижка - 5%"
+    data-lang-ru="Ваша персональная скидка - 5%"
+  >
+    Ваша персональная скидка - 5%
+  </p>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="index.html" class="nav__link" data-lang-ua="Магазин" data-lang-ru="Магазин"
+          >Магазин</a
+        >
+        <a
+          href="company.html"
+          class="nav__link nav__about"
+          data-lang-ua="Про виробництво"
+          data-lang-ru="О производстве"
+          >О производстве</a
+        >
+        <a
+          href="delivery.html"
+          class="nav__link nav__delivery"
+          data-lang-ua="Оплата та доставка"
+          data-lang-ru="Оплата и доставка"
+          >Оплата и доставка</a
+        >
+        <a
+          href="clients.html"
+          class="nav__link nav__clients"
+          data-lang-ua="Оптовим та кортопаривним клієнтам"
+          data-lang-ru="Оптовым и корпоративным клиентам"
+          >Оптовым и корпоративным клиентам</a
+        >
+        <a
+          href="news.html"
+          class="nav__link nav__news"
+          data-lang-ua="Новини та статті"
+          data-lang-ru="Новости и статьи"
+          >Новости и статьи</a
+        >
+        <a href="news.html" class="nav__link nav__contacts" data-lang-ua="Контакти" data-lang-ru="Контакты"
+          >Контакты</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="hero__img-wrapper">
+            <div class="location__body location__body--company">
+              <p class="location__delivery">Главная</p>
+              <img src="img/delivery/arrow.webp" alt="" class="location__img" />
+              <p class="location__delivery-page">Оплата и доставка</p>
+            </div>
+            <div class="overlay__clients-img">
+              <div class="overlay__clients"></div>
+              <img src="img/home/hero/heroPreviev.webp" alt="" class="hero__img-wrapper--img" />
+            </div>
+            <iframe
+              class="hero__video-wrapper"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h2
+            class="hero__tittle"
+            data-lang-ua="Горіх Причорномор'я"
+            data-lang-ru="Орех Причерноморья"
+          >
+            Орех Причерноморья
+          </h2>
+          <p
+            class="hero__text"
+            data-lang-ua="Єдиний в Україні сад спільного вирощування фундука та грецького горіха."
+            data-lang-ru="Единственный в Украине сад совместного выращивание фундука и грецкого ореха"
+          >
+            Единственный в Украине сад совместного выращивание фундука и грецкого ореха
+          </p>
+          <img src="img/home/hero/play.webp" alt="" class="play__img" />
+          <img src="img/home/hero/stop.webp" alt="" class="stop__img" />
+        </section>
+
+        <section class="about__company about__company--padding">
+          <div class="about__column about__column--hero about__column-company">
+            <h2 class="about__column-title">О производителе</h2>
+            <p class="about__column-text">
+              <span
+                >Сельскохозяйственный обслуживающий кооператив <br />
+                “Орех Причерноморья”</span
+              >
+              выращивает смешанные сады <br />
+              ореха грецкого с фундуком, а также ореха грецкого с шиповником, на площади более 150
+              гектаров.
+            </p>
+            <p class="about__column-text">
+              Помимо этого кооператив занимается выращиванием посадочного материала, саженцов
+              привитого и непривитого грецкого ореха, фундука и шиповника.
+            </p>
+            <p class="about__column-text about__column-text--last">
+              Предприятие укомплектовано всей необходимой техникой <br />
+              и оборудованием для выращивания интенсивного сада, воспроизводства саженцев в
+              питомнике и выращивания.
+            </p>
+          </div>
+          <div class="about__column about__column-swiper">
+            <div class="swiper about__swiper">
+              <div class="swiper-wrapper about-wrapper">
+                <div class="swiper-slide swipper-">
+                  <div class="hero__img-wrapper hero__img-wrapper--small">
+                    <img
+                      src="img/home/hero/heroPreviev.webp"
+                      alt=""
+                      class="about__img-wrapper--img"
+                    />
+                    <iframe
+                      class="about__video-wrapper"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                  <img src="img/home/hero/stop.webp" alt="" class="about__stop" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/home/aboutCompany/imgAbout.webp"
+                    alt="aboutCompany"
+                    class="about__img"
+                  />
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/home/aboutCompany/imgAbout.webp"
+                    alt="aboutCompany"
+                    class="about__img"
+                  />
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="background__about-arrow background__about--none">
+                <div class="swiper-button-prev about__arrow-left">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="about__arrow" />
+                </div>
+                <div class="swiper-button-next about__arrow-right">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="about__arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="history">
+          <img src="img/gallery/pavel.webp" alt="pavel" class="history__img" />
+          <div class="history__pavel">
+            <h3 class="history__pavel-title">Павел Тулба</h3>
+            <p class="history__pavel-text">
+              Учередитель и владелец <br />
+              предприятия “Орех Причерноморья”
+            </p>
+            <blockquote class="history__pavel-caption">
+              <img src="img/gallery/quotes.webp" alt="" class="history__pavel--quotes" />
+              Главная наша цель – получить максимальную <br />
+              прибыль с одного гектара.
+            </blockquote>
+            <div class="history__pavel-item">
+              <a href="contact.html" class="history__pavel-link">Написать нам</a>
+            </div>
+          </div>
+          <div class="history__card">
+            <h3 class="history__card-title">История предприятия</h3>
+            <p class="history__card-text">
+              Наше предприятие основано в 2012 году <br />
+              для закладки смешанного сада грецкого ореха <br />
+              и фундука.
+            </p>
+            <p class="history__card-text">
+              На сегодня мы уже заложили более 100 гектаров сада и продолжаем расширять свои
+              насаждения. Кроме выращивания грецкого ореха и фундука, мы занимаемся выращиванием
+              саженцев, разведением и выращиванием овец, а также являемся первой в Украине
+              компанией, приступившей к промышленному выращиванию трюфелей на корнях фундука.
+            </p>
+            <p class="history__card-text">
+              Земля, которой пользуется кооператив, <br />
+              является собственностью членов нашего кооператива.
+            </p>
+            <img src="img/gallery/vector.webp" alt="vector" class="gallery__card-img" />
+          </div>
+        </section>
+
+        <section class="info__company info__company--about">
+          <div class="info__body info__body--240">
+  <h2 class="info__body-number">240</h2>
+  <p class="info__body-text">Cмешанных садов</p>
+</div>
+<div class="info__body info__body--1">
+  <h2 class="info__body-number">1</h2>
+  <p class="info__body-text">Тепличного комплекса</p>
+</div>
+<div class="info__body info__body--10">
+  <h2 class="info__body-number">10</h2>
+  <p class="info__body-text info__body-text--width">
+    Первая промышленная плантация шиповника в Украине
+  </p>
+</div>
+<div class="info__body info__body--80">
+  <h2 class="info__body-number">80</h2>
+  <p class="info__body-text info__body-text--last">Приживаемости саженцев</p>
+</div>
+
+        </section>
+
+        <section class="gallery gallery--company">
+          <h3 class="gallery__company-title">Галерея</h3>
+          <h3 class="gallery__company-text">Кадры социальной активности компании</h3>
+          <div class="gallery__column gallery__top gallery__column--reverse">
+            <img
+              src="img/gallery/pic_5.webp"
+              alt="place"
+              class="gallery__top-img gallery__top-img--first company__top-img--first"
+            />
+            <div class="gallery__card">
+              <img src="img/gallery/pic_1.webp" alt="men" class="gallery__card-img" />
+              <h3 class="gallery__card-title gallery__card-title--company">SIAL Paris 2018</h3>
+              <p class="gallery__card-text gallery__card-text--company">
+                В этом Году при поддержке проекта International Trade Centre Ukraine, и
+                финансировании правительства Швеции, мы побывали на крупнейшей продовольственной
+                выставке Европы <span>SIAL Paris 2018</span>
+              </p>
+            </div>
+          </div>
+          <div class="gallery__column gallery__middle">
+            <section class="meeting meeting__galery meeting__galery--company">
+              <div class="overlay__wrapper">
+                <div class="overlay__news"></div>
+                <img src="img/newsPages/meetImg.webp" alt="meeting" class="meeting__img" />
+              </div>
+              <img
+                src="img/home/hero/play.webp"
+                alt="meeting"
+                class="meeting__play meeting__play--galery"
+              />
+              <h3 class="meeting__title meeting__title--galery">Проект UBHDP</h3>
+              <p class="meeting__text meeting__text--galery">
+                Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
+                UBHDP за возможность получить консультацию <br />
+                от мировых специалистов!
+              </p>
+            </section>
+          </div>
+          <div class="gallery__column gallery__down gallery__down-copmany">
+            <img src="img/gallery/pic_2.webp" alt="first" class="gallery__down-first" />
+            <img src="img/gallery/pic_3.webp" alt="second" class="gallery__down-second" />
+            <div class="gallery__down-third">
+              <img src="img/gallery/pic_4.webp" alt="third" class="gallery__third-img" />
+
+              <img
+                src="img/home/hero/play.webp"
+                alt="meeting"
+                class="meeting__play meeting__play--galery"
+              />
+            </div>
+          </div>
+
+          <div class="gallery__item gallery__item-company">
+            <a href="gallery.html" class="gallery__link gallery__link-company"
+              >Смотреть всю галерею</a
+            >
+          </div>
+        </section>
+        <section class="eco eco__company">
+          <div class="overlay__eco"></div>
+          <img src="img/gallery/company.webp" alt="imgHero" class="eco__img" />
+          <img src="img/eco/eco.webp" alt="" class="play__eco" />
+          <h2 class="eco__title">Эко продукция</h2>
+          <p class="eco__text">
+            Выращиваем каждое деревцо с любовью, на экологически чистой земле, без использования
+            пестицидов и химии
+          </p>
+        </section>
+        <section class="section__news section__news--company">
+          <div class="swiper swiper__news">
+            <div class="news__body">
+              <div class="news__info">
+                <h2 class="news__body-title">Новости</h2>
+                <p class="news__body-text">Свежие новости и полезная информация</p>
+              </div>
+              <div class="background__about-arrow background__news-arrow">
+                <div class="swiper-button-prev news__arrow-left">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="news__arrow" />
+                </div>
+                <div class="swiper-button-next news__arrow-right">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="news__arrow" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-wrapper cards__news">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="news__all news__all--company">
+            <a href="news.html" class="news__all-link">Смотреть все новости</a>
+          </div>
+        </section>
+        <section class="map">
+  <div class="map__body">
+    <div class="map__column map__column--contact">
+      <h2 class="map__title">Контакты</h2>
+      <div class="map__number">
+        <img src="img/map/phone.webp" alt="" class="map__number-img" />
+        <div class="number__body">
+          <p class="map__number-number">+38 (095) 711 11 11</p>
+          <p class="map__number-number">+38 (095) 711 11 11</p>
+        </div>
+        <div class="map__social">
+          <div class="map__social-background">
+            <img src="img/map/viber.webp" alt="viber" class="map__social-img map__social-img--viber" />
+            <img src="img/map/telegram.webp" alt="telegram" class="map__social-img map__social-img--telegram" />
+            <img src="img/map/whatsapp.webp" alt="whatsapp" class="map__social-img map__social-img--whatsapp" />
+          </div>
+        </div>
+      </div>
+
+      <div class="map__email">
+        <img src="img/map/email.webp" alt="tree" class="map__email-img" />
+        <p class="map__email-text">nuts@nbsc.com.ua</p>
+      </div>
+      <div class="map__office">
+        <img src="img/map/house.webp" alt="" class="office__img" />
+        <h3 class="office__title">Офис и отдел продаж</h3>
+      </div>
+      <p class="office__text">
+        Украина, г. Одесса, <br />
+        ул. Космонавтов, 32
+      </p>
+      <div class="map__tree">
+        <img src="img/map/tree.webp" alt="" class="tree__img" />
+        <h3 class="tree__title">Производство</h3>
+      </div>
+      <p class="tree__text">
+        Украина, Одесская обл, <br />
+        с. Яськи, ул. Центральная, 232
+      </p>
+    </div>
+
+    <div class="map__column map__column--map">
+      <iframe
+        class="google__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086324064974!2d-122.41941568468195!3d37.77492977975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064bfb8f2d1%3A0xa6b3c3a2d5f6e9ab!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1696789368571!5m2!1sen!2s"
+        width="739"
+        height="518"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
+  </div>
+
+</section>
+      </main>
+      <footer class="footer"><div class="footer__header">
+  <div class="footer__logo">
+    <img src="img/footer/logoFooter.webp" alt="footerLogo" class="footer__logo-img" />
+    <h2 class="footer__logo-tittle">ОРЕХ ПРИЧЕРНОМОРЬЯ</h2>
+  </div>
+  <div class="footer__nav">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="" class="footer__link">Магазин</a>
+        <a href="clients.html" class="footer__link footer__link--client">Корпоративным клиентам</a>
+        <a href="delivery.html" class="footer__link footer__link--delivery">Оплата и доставка</a>
+        <a href="company.html" class="footer__link footer__link--about">О производстве</a>
+        <a href="news.html" class="footer__link footer__link--news">Новости и статьи</a>
+        <a href="" class="footer__link footer__link--gallery">Галерея</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="footer__footer">
+  <p class="footer__footer-text">
+    Разработано <span class="avada">AVADA</span> <span class="media">MEDIA</span>
+  </p>
+  <p class="footer__footer-copyright">Copyright © 2019. Все права защищены</p>
+  <div class="footer__footer-social">
+    <img src="img/footer/facebook.webp" alt="" class="footer__social-img" />
+    <img src="img/footer/instagram.webp" alt="" class="footer__social-img footer__social-img--instagram" />
+    <img src="img/footer/utube.webp" alt="" class="footer__social-img footer__social-img--utube" />
+  </div>
+</div>
+</footer>
+    </div>
+
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/news.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+  </body>
+</html>

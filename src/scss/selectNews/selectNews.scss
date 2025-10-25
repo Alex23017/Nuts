@@ -241,3 +241,15 @@
   margin-inline-start: 5px;
   padding-block-start: 15px;
 }
+
+.location__body-page--select {
+  @media (max-width: 1600px) {
+    top: 30%;
+  }
+  @media (max-width: 1200px) {
+    top: 35%;
+  }
+  @media (max-width: 600px) {
+    top: 25%;
+  }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,800,italic&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loadin1g">
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/addProduct/addProduct.html")
+    @@include("../components/arrowUp/arrowUp.html")
+    <div class="wrapper">
+      <header class="header">@@include("../components/header/header.html")</header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="hero__img-wrapper">
+            <div class="location__body location__body--company">
+              <p class="location__delivery">Главная</p>
+              <img src="img/delivery/arrow.webp" alt="" class="location__img" />
+              <p class="location__delivery-page">Оплата и доставка</p>
+            </div>
+            <div class="overlay__clients-img">
+              <div class="overlay__clients"></div>
+              <img src="img/home/hero/heroPreviev.webp" alt="" class="hero__img-wrapper--img" />
+            </div>
+            <iframe
+              class="hero__video-wrapper"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <h2
+            class="hero__tittle"
+            data-lang-ua="Горіх Причорномор'я"
+            data-lang-ru="Орех Причерноморья"
+          >
+            Орех Причерноморья
+          </h2>
+          <p
+            class="hero__text"
+            data-lang-ua="Єдиний в Україні сад спільного вирощування фундука та грецького горіха."
+            data-lang-ru="Единственный в Украине сад совместного выращивание фундука и грецкого ореха"
+          >
+            Единственный в Украине сад совместного выращивание фундука и грецкого ореха
+          </p>
+          <img src="img/home/hero/play.webp" alt="" class="play__img" />
+          <img src="img/home/hero/stop.webp" alt="" class="stop__img" />
+        </section>
+
+        <section class="about__company about__company--padding">
+          <div class="about__column about__column--hero about__column-company">
+            <h2 class="about__column-title">О производителе</h2>
+            <p class="about__column-text">
+              <span
+                >Сельскохозяйственный обслуживающий кооператив <br />
+                “Орех Причерноморья”</span
+              >
+              выращивает смешанные сады <br />
+              ореха грецкого с фундуком, а также ореха грецкого с шиповником, на площади более 150
+              гектаров.
+            </p>
+            <p class="about__column-text">
+              Помимо этого кооператив занимается выращиванием посадочного материала, саженцов
+              привитого и непривитого грецкого ореха, фундука и шиповника.
+            </p>
+            <p class="about__column-text about__column-text--last">
+              Предприятие укомплектовано всей необходимой техникой <br />
+              и оборудованием для выращивания интенсивного сада, воспроизводства саженцев в
+              питомнике и выращивания.
+            </p>
+          </div>
+          <div class="about__column about__column-swiper">
+            <div class="swiper about__swiper">
+              <div class="swiper-wrapper about-wrapper">
+                <div class="swiper-slide swipper-">
+                  <div class="hero__img-wrapper hero__img-wrapper--small">
+                    <img
+                      src="img/home/hero/heroPreviev.webp"
+                      alt=""
+                      class="about__img-wrapper--img"
+                    />
+                    <iframe
+                      class="about__video-wrapper"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                  <img src="img/home/hero/stop.webp" alt="" class="about__stop" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/home/aboutCompany/imgAbout.webp"
+                    alt="aboutCompany"
+                    class="about__img"
+                  />
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/home/aboutCompany/imgAbout.webp"
+                    alt="aboutCompany"
+                    class="about__img"
+                  />
+                  <img src="img/home/hero/play.webp" alt="play" class="about__player" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="background__about-arrow background__about--none">
+                <div class="swiper-button-prev about__arrow-left">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="about__arrow" />
+                </div>
+                <div class="swiper-button-next about__arrow-right">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="about__arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="history">
+          <img src="img/gallery/pavel.webp" alt="pavel" class="history__img" />
+          <div class="history__pavel">
+            <h3 class="history__pavel-title">Павел Тулба</h3>
+            <p class="history__pavel-text">
+              Учередитель и владелец <br />
+              предприятия “Орех Причерноморья”
+            </p>
+            <blockquote class="history__pavel-caption">
+              <img src="img/gallery/quotes.webp" alt="" class="history__pavel--quotes" />
+              Главная наша цель – получить максимальную <br />
+              прибыль с одного гектара.
+            </blockquote>
+            <div class="history__pavel-item">
+              <a href="contact.html" class="history__pavel-link">Написать нам</a>
+            </div>
+          </div>
+          <div class="history__card">
+            <h3 class="history__card-title">История предприятия</h3>
+            <p class="history__card-text">
+              Наше предприятие основано в 2012 году <br />
+              для закладки смешанного сада грецкого ореха <br />
+              и фундука.
+            </p>
+            <p class="history__card-text">
+              На сегодня мы уже заложили более 100 гектаров сада и продолжаем расширять свои
+              насаждения. Кроме выращивания грецкого ореха и фундука, мы занимаемся выращиванием
+              саженцев, разведением и выращиванием овец, а также являемся первой в Украине
+              компанией, приступившей к промышленному выращиванию трюфелей на корнях фундука.
+            </p>
+            <p class="history__card-text">
+              Земля, которой пользуется кооператив, <br />
+              является собственностью членов нашего кооператива.
+            </p>
+            <img src="img/gallery/vector.webp" alt="vector" class="gallery__card-img" />
+          </div>
+        </section>
+
+        <section class="info__company info__company--about">
+          @@include("../components/info/info.html")
+        </section>
+
+        <section class="gallery gallery--company">
+          <h3 class="gallery__company-title">Галерея</h3>
+          <h3 class="gallery__company-text">Кадры социальной активности компании</h3>
+          <div class="gallery__column gallery__top gallery__column--reverse">
+            <img
+              src="img/gallery/pic_5.webp"
+              alt="place"
+              class="gallery__top-img gallery__top-img--first company__top-img--first"
+            />
+            <div class="gallery__card">
+              <img src="img/gallery/pic_1.webp" alt="men" class="gallery__card-img" />
+              <h3 class="gallery__card-title gallery__card-title--company">SIAL Paris 2018</h3>
+              <p class="gallery__card-text gallery__card-text--company">
+                В этом Году при поддержке проекта International Trade Centre Ukraine, и
+                финансировании правительства Швеции, мы побывали на крупнейшей продовольственной
+                выставке Европы <span>SIAL Paris 2018</span>
+              </p>
+            </div>
+          </div>
+          <div class="gallery__column gallery__middle">
+            <section class="meeting meeting__galery meeting__galery--company">
+              <div class="overlay__wrapper">
+                <div class="overlay__news"></div>
+                <img src="img/newsPages/meetImg.webp" alt="meeting" class="meeting__img" />
+              </div>
+              <img
+                src="img/home/hero/play.webp"
+                alt="meeting"
+                class="meeting__play meeting__play--galery"
+              />
+              <h3 class="meeting__title meeting__title--galery">Проект UBHDP</h3>
+              <p class="meeting__text meeting__text--galery">
+                Вчера к нам приезжал американский агроном Рон , спасибо Мельнику Евгению и проекту
+                UBHDP за возможность получить консультацию <br />
+                от мировых специалистов!
+              </p>
+            </section>
+          </div>
+          <div class="gallery__column gallery__down gallery__down-copmany">
+            <img src="img/gallery/pic_2.webp" alt="first" class="gallery__down-first" />
+            <img src="img/gallery/pic_3.webp" alt="second" class="gallery__down-second" />
+            <div class="gallery__down-third">
+              <img src="img/gallery/pic_4.webp" alt="third" class="gallery__third-img" />
+
+              <img
+                src="img/home/hero/play.webp"
+                alt="meeting"
+                class="meeting__play meeting__play--galery"
+              />
+            </div>
+          </div>
+
+          <div class="gallery__item gallery__item-company">
+            <a href="gallery.html" class="gallery__link gallery__link-company"
+              >Смотреть всю галерею</a
+            >
+          </div>
+        </section>
+        <section class="eco eco__company">
+          <div class="overlay__eco"></div>
+          <img src="img/gallery/company.webp" alt="imgHero" class="eco__img" />
+          <img src="img/eco/eco.webp" alt="" class="play__eco" />
+          <h2 class="eco__title">Эко продукция</h2>
+          <p class="eco__text">
+            Выращиваем каждое деревцо с любовью, на экологически чистой земле, без использования
+            пестицидов и химии
+          </p>
+        </section>
+        <section class="section__news section__news--company">
+          <div class="swiper swiper__news">
+            <div class="news__body">
+              <div class="news__info">
+                <h2 class="news__body-title">Новости</h2>
+                <p class="news__body-text">Свежие новости и полезная информация</p>
+              </div>
+              <div class="background__about-arrow background__news-arrow">
+                <div class="swiper-button-prev news__arrow-left">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="news__arrow" />
+                </div>
+                <div class="swiper-button-next news__arrow-right">
+                  <img src="img/home/aboutCompany/rightArrow.webp" alt="" class="news__arrow" />
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-wrapper cards__news">
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="news__all news__all--company">
+            <a href="news.html" class="news__all-link">Смотреть все новости</a>
+          </div>
+        </section>
+        <section class="map">@@include("../components/map/map.html")</section>
+      </main>
+      <footer class="footer">@@include("../components/footer/footer.html")</footer>
+    </div>
+
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/news.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+  </body>
+</html>

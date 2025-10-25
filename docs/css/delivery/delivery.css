@@ -347,4 +347,12 @@
     padding-block-start: 1.25rem;
   }
 }
+
+.pay__value {
+  padding-block-start: 2.3125rem;
+}
+
+.pay__value-text {
+  padding-block-start: 0.5625rem;
+}
 /*# sourceMappingURL=delivery.css.map */

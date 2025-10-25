@@ -157,6 +157,7 @@
   display: flex;
   justify-content: center;
   padding-block-start: 2.8125rem;
+  padding-block-end: 5.625rem;
 }
 
 .news__all-link {

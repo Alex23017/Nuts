@@ -377,4 +377,20 @@
           margin-inline-start: 5px;
   -webkit-padding-before: 15px;
           padding-block-start: 15px;
+}
+
+@media (max-width: 1600px) {
+  .location__body-page--select {
+    top: 30%;
+  }
+}
+@media (max-width: 1200px) {
+  .location__body-page--select {
+    top: 35%;
+  }
+}
+@media (max-width: 600px) {
+  .location__body-page--select {
+    top: 25%;
+  }
 }/*# sourceMappingURL=selectNews.css.map */

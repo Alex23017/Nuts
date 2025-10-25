@@ -1,0 +1,285 @@
+@use "../variables/variables" as *;
+.gallery__column--reverse {
+  flex-direction: row-reverse;
+  .gallery__top-img--first {
+    max-width: 520px;
+  }
+  .gallery__card {
+    max-width: 100%;
+    position: relative;
+    img {
+      position: absolute;
+      inset: 0;
+      opacity: 0.04;
+    }
+  }
+  @media (max-width: 1240px) {
+    flex-direction: column;
+  }
+}
+.about__column-company {
+  padding-block-start: 53px;
+}
+.about__column--hero {
+  @media (max-width: 1200px) {
+    padding-inline-end: 0px;
+  }
+}
+.about__column-title {
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+
+.about__company--padding {
+  padding-block-start: 80px;
+  .about__column-title {
+    padding-block-end: 39px;
+  }
+  .about__column-text {
+    line-height: 150%;
+    margin-block-end: 25px;
+  }
+}
+.history__pavel {
+  padding-inline-start: 42px;
+  margin-block-start: 32px;
+  @media (max-width: 1300px) {
+    margin-block-start: 20px;
+    padding-inline-start: 20px;
+  }
+}
+.history__pavel-title {
+  @include font($Raleway32);
+  font-weight: 800;
+}
+
+.history__pavel-text {
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 500;
+  line-height: 21px;
+  margin-block-start: 13px;
+  margin-inline-start: 1px;
+  letter-spacing: 1.2px;
+}
+
+.history__pavel-caption {
+  display: flex;
+  @include font($Raleway15);
+  font-weight: 500;
+  font-style: oblique;
+  margin-block-start: 37px;
+  gap: 12px;
+  letter-spacing: 0.1px;
+  line-height: 21px;
+  margin-inline-start: 3px;
+  @media (max-width: 1240px) {
+    width: 100%;
+  }
+  @media (max-width: 360) {
+  }
+}
+
+.history__pavel-item {
+  margin-block-start: 70px;
+}
+.history__pavel-link {
+  text-decoration: none;
+  border: solid 1.5px $primaryColor;
+  color: $primaryColor;
+  @include font($Raleway14);
+  font-weight: 700;
+  padding-block: 16.35px;
+  padding-inline: 44.2px;
+}
+
+.history {
+  padding-block-start: 100px;
+  display: flex;
+  background-color: #fbfbfb;
+  padding-inline-start: 316px;
+  padding-block-end: 90px;
+  margin-block-start: 68px;
+  @media (max-width: 1919px) {
+    padding-inline: 100px;
+    justify-content: center;
+  }
+  @media (max-width: 1240px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    padding-inline: 30px;
+  }
+}
+
+.history__img {
+  width: 100%;
+  max-width: 342px;
+  max-height: 493px;
+}
+
+.history__pavel--quotes {
+  width: 26px;
+  height: 26px;
+  margin-block-start: -6px;
+  @media (max-width: 1300px) {
+  }
+}
+.history__card {
+  background-color: $primaryColor;
+  color: white;
+  position: relative;
+  max-width: 453px;
+  margin-inline-start: 73px;
+  .gallery__card-img {
+    bottom: -25px;
+    right: -25px;
+  }
+  @media (max-width: 1300px) {
+    margin-inline-start: 20px;
+  }
+  @media (max-width: 1200px) {
+    margin-inline-start: 0px;
+  }
+}
+
+.history__card-title {
+  @include font($Raleway32);
+  padding-block-start: 32px;
+  padding-inline: 47px;
+  margin-block-end: 34px;
+}
+
+.history__card-text {
+  @include font($Montserrat14);
+  font-weight: 500;
+  padding-inline: 47px;
+  padding-inline-end: 31px;
+  line-height: 22px;
+  @media (max-width: 1200px) {
+    padding-inline: 15px;
+  }
+}
+
+.info__company--about {
+  padding-block-start: 78px;
+}
+
+.gallery--company {
+  background-color: #fbfbfb;
+}
+
+.gallery__company-title,
+.gallery__company-text {
+  text-align: center;
+}
+
+.gallery__company-title {
+  @include font($Raleway45);
+  margin-block-start: 3px;
+}
+.gallery__company-text {
+  @include font($Raleway18);
+  margin-block-start: 26px;
+  margin-block-end: 68px;
+}
+.gallery__card-text--company {
+  max-width: 560px;
+  @media (max-width: 1240px) {
+    max-width: 100%;
+  }
+}
+.gallery__card-title--company {
+  margin-block-start: 4px;
+  margin-block-end: 4px;
+}
+
+.gallery__link-company {
+  padding-inline: 35px;
+}
+.gallery__item-company {
+  padding-block-end: 100px;
+}
+.eco__company {
+  .play__eco {
+    top: 34.5%;
+    @media (max-width: 600px) {
+      top: 36%;
+    }
+  }
+  .eco__title {
+    top: 50.6%;
+    @media (max-width: 600px) {
+      top: 20%;
+    }
+  }
+  .eco__text {
+    top: 59.4%;
+    @media (max-width: 1200px) {
+      top: 64%;
+    }
+  }
+}
+.section__news--company {
+  padding-block-start: 92px;
+}
+
+.gallery__down-copmany {
+  .meeting__play--galery {
+    top: 43.8%;
+  }
+  margin-inline-start: 3px;
+  @media (max-width: 1919px) {
+    margin-inline-start: 0px;
+  }
+}
+.news__all--company {
+  margin-block-start: 2px;
+  margin-inline-start: 1px;
+  @media (max-width: 1919px) {
+    margin: 0;
+  }
+  .news__all-link {
+    padding-inline: 26px;
+  }
+}
+
+.location__body--company {
+  top: 8.7%;
+  p {
+    margin: 0;
+  }
+}
+.company__top-img--first {
+  @media (max-width: 1240px) {
+    width: 100%;
+    max-width: 100% !important;
+  }
+}
+.meeting__galery--company {
+  .meeting__play--galery {
+    @media (max-width: 768px) {
+      top: 25%;
+    }
+  }
+  .meeting__text--galery {
+    padding-inline: 10px;
+    @media (max-width: 768px) {
+      font-size: 10px;
+      top: 70%;
+      line-height: 100%;
+    }
+  }
+  .meeting__title--galery {
+    @media (max-width: 768px) {
+      top: 55%;
+    }
+  }
+}

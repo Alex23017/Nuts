@@ -221,8 +221,6 @@
     margin-inline-start: 0px;
   }
 }
-.pay__select-img--delivery {
-}
 
 .pay__select-img {
   position: relative;
@@ -274,4 +272,11 @@
   @media (max-width: 600px) {
     padding-block-start: 20px;
   }
+}
+
+.pay__value {
+  padding-block-start: 37px;
+}
+.pay__value-text {
+  padding-block-start: 9px;
 }

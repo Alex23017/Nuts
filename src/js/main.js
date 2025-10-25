@@ -199,12 +199,12 @@ document.addEventListener("DOMContentLoaded", () => {
                   Оплатите Ваш заказ картой любого банка онлайн (LiqPay/Приват24)
                 </p>
               </div>
-              <div class="pay__method">
-                <div class="pay__img pay__img">
+              <div class="pay__method pay__value">
+                <div class="pay__img">
                   <img src="img/delivery/wallet.webp" alt="" class="pay__method-img" />
                   <h2 class="pay__method-title">Наличный расчет</h2>
                 </div>
-                <p class="pay__method-text">
+                <p class="pay__method-text pay__value-text">
                   Оплата заказов наложенным платежом в отделении Новой Почты, или наличными
                   курьерами
                 </p>
@@ -298,6 +298,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   if (isPage("selectNews.html")) {
     location.textContent = "Новости и статьи";
+  }
+  if (isPage("gallery.html")) {
+    location.textContent = "Галерея";
+  }
+  if (isPage("company.html")) {
+    location.textContent = "О производстве";
   }
 
   //BURGER MENU

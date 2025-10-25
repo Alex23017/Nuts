@@ -190,6 +190,8 @@
           justify-content: center;
   -webkit-padding-before: 45px;
           padding-block-start: 45px;
+  -webkit-padding-after: 90px;
+          padding-block-end: 90px;
 }
 
 .news__all-link {

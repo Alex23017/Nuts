@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p class="card__news-text">
                      ${card.text}
                     </p>
-                    <a href="" class="card__news-link"
+                    <a href="news.html" class="card__news-link"
                       >Читать
                       <img class="card__arrow-img" src="img/news/rightArrowLink.webp" alt="arrow" />
                     </a>

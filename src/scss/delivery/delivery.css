@@ -413,4 +413,14 @@
     -webkit-padding-before: 20px;
             padding-block-start: 20px;
   }
+}
+
+.pay__value {
+  -webkit-padding-before: 37px;
+          padding-block-start: 37px;
+}
+
+.pay__value-text {
+  -webkit-padding-before: 9px;
+          padding-block-start: 9px;
 }/*# sourceMappingURL=delivery.css.map */
