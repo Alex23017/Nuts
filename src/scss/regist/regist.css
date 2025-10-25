@@ -1,6 +1,11 @@
 .location__reg {
   color: #8a8a8a;
 }
+@media (max-width: 768px) {
+  .location__reg {
+    font-size: 10px;
+  }
+}
 
 .reg__select {
   white-space: nowrap;

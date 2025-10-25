@@ -2,6 +2,9 @@
 
 .location__reg {
   color: $greyColor;
+  @media (max-width: 768px) {
+    font-size: 10px;
+  }
 }
 .reg__select {
   white-space: nowrap;
