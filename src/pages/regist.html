@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,400;1,500;1,800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800,900&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loading1">
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/arrowUp/arrowUp.html")
+    <div class="wrapper wrapper__delivery">
+      <header class="header header__delivery">@@include("../components/header/header.html")</header>
+
+      <main class="main main__reg">
+        <div class="location__bag location__reg">
+          <p class="location__delivery">Главная</p>
+          <img src="img/basket/locationArrow.webp" alt="" class="location__img" />
+          <p class="location__delivery-page">Корзина</p>
+        </div>
+        <section class="reg">
+          <div class="reg__form">
+            <div class="reg__img">
+              <img src="img/reg/avatar.webp" alt="regAvatar" class="reg__form-img" />
+              <div class="render__select">
+                <label class="form__agree form__select">
+                  <input type="checkbox" name="agree" />
+                  <p>Являюсь ФОП</p>
+                </label>
+              </div>
+              <div class="render__form-ur">
+                <div class="form__adress">
+                  <h2 class="form__addres__tittle">1. Реквизиты</h2>
+                  <input
+                    type="text"
+                    placeholder="ОКПО"
+                    class="regist__input reg__form-input--phone"
+                  />
+                  <h2 class="form__addres__tittle form__addres__tittle--ur">
+                    2. Юридический адрес
+                  </h2>
+                  <div class="input__country dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonCountry"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Страна
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCountry">
+                      <li><a class="dropdown-country" href="#">Страна</a></li>
+                      <li><a class="dropdown-country" href="#">Украина</a></li>
+                      <li><a class="dropdown-country" href="#">Россия</a></li>
+                    </ul>
+                  </div>
+                  <div class="input__obl dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonObl"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Область
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonObl">
+                      <li><a class="dropdown-obl" href="#">Область</a></li>
+                      <li><a class="dropdown-obl" href="#">Киев.обл.</a></li>
+                      <li><a class="dropdown-obl" href="#">Винниц.обл.</a></li>
+                    </ul>
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder="Город*"
+                    class="regist__input reg__form-input--phone"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Адрес"
+                    class="regist__input reg__form-input--adress"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Индекс"
+                    class="regist__input reg__form-input--adress"
+                  />
+                </div>
+              </div>
+              <div class="render__form-fop">
+                <div class="form__adress">
+                  <h2 class="form__addres__tittle">1. Реквизиты</h2>
+                  <input
+                    type="text"
+                    placeholder="ЕДРПО"
+                    class="regist__input reg__form-input--phone"
+                  />
+                  <h2 class="form__addres__tittle form__addres__tittle--ur">2. Адрес ФОП</h2>
+                  <div class="input__country dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonCountry"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Страна
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCountry">
+                      <li><a class="dropdown-country" href="#">Страна</a></li>
+                      <li><a class="dropdown-country" href="#">Украина</a></li>
+                      <li><a class="dropdown-country" href="#">Россия</a></li>
+                    </ul>
+                  </div>
+                  <div class="input__obl dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonObl"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Область
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonObl">
+                      <li><a class="dropdown-obl" href="#">Область</a></li>
+                      <li><a class="dropdown-obl" href="#">Киев.обл.</a></li>
+                      <li><a class="dropdown-obl" href="#">Винниц.обл.</a></li>
+                    </ul>
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder="Город*"
+                    class="regist__input reg__form-input--phone"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Адрес"
+                    class="regist__input reg__form-input--adress"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Индекс"
+                    class="regist__input reg__form-input--adress"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="reg__info">
+              <div class="reg__title">
+                <h3 class="reg__title-title">Регистрация</h3>
+                <h3 class="reg__title-text">1. Контактные данные</h3>
+              </div>
+              <div class="reg__select">
+                <h3 class="reg__select-first">Физическое лицо</h3>
+                <h3 class="reg__select-second">Юридическое лицо</h3>
+              </div>
+              <form action="" class="reg__form-input">
+                <input
+                  type="text"
+                  placeholder="ФИО*"
+                  class="regist__input reg__form-input--fullname"
+                />
+                <input
+                  type="email"
+                  placeholder="Email*"
+                  class="regist__input reg__form-input--email"
+                />
+                <input
+                  type="number"
+                  placeholder="Телефон*"
+                  class="regist__input reg__form-input--phone"
+                />
+                <div class="form__adress">
+                  <h2 class="form__addres__tittle">2. Адрес</h2>
+                  <div class="input__country dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonCountry"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Страна
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCountry">
+                      <li><a class="dropdown-country" href="#">Страна</a></li>
+                      <li><a class="dropdown-country" href="#">Украина</a></li>
+                      <li><a class="dropdown-country" href="#">Россия</a></li>
+                    </ul>
+                  </div>
+                  <div class="input__obl dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonObl"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Область
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonObl">
+                      <li><a class="dropdown-obl" href="#">Область</a></li>
+                      <li><a class="dropdown-obl" href="#">Киев.обл.</a></li>
+                      <li><a class="dropdown-obl" href="#">Винниц.обл.</a></li>
+                    </ul>
+                  </div>
+
+                  <input
+                    type="text"
+                    placeholder="Город*"
+                    class="regist__input reg__form-input--phone"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Адрес"
+                    class="regist__input reg__form-input--adress"
+                  />
+                </div>
+                <h2 class="form__addres__tittle form__password__tittle">3. Пароль</h2>
+                <input
+                  type="text"
+                  placeholder="Пароль*"
+                  class="regist__input reg__form-input--fullname"
+                />
+                <input
+                  type="text"
+                  placeholder="Подтвердите пароль*"
+                  class="regist__input reg__form-input--email"
+                />
+              </form>
+              <label class="form__agree">
+                <input type="checkbox" name="agree" />
+                <p>Я согласен с <span>Условиями регистрации</span></p>
+              </label>
+
+              <a href="" class="form__agree-link">Продолжить</a>
+            </div>
+          </div>
+        </section>
+        <section class="map map__reg">@@include("../components/map/map.html")</section>
+      </main>
+      <footer class="footer footer__reg">@@include("../components/footer/footer.html")</footer>
+    </div>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/regist.bundle.js"></script>
+  </body>
+</html>

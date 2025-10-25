@@ -305,6 +305,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isPage("company.html")) {
     location.textContent = "О производстве";
   }
+  if (isPage("regist.html")) {
+    location.textContent = "Регистрация";
+  }
 
   //BURGER MENU
   const burger = document.querySelector(".burger");

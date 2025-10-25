@@ -671,11 +671,18 @@
   width: 13px;
   height: 13px;
 }
+
+.user__reg {
+  text-decoration: none;
+  color: black;
+}
 .mob__login-sign {
+  text-decoration: none;
   position: relative;
   padding-inline-start: 7px;
 }
 .mob__login-signup {
+  text-decoration: none;
   position: relative;
   padding-inline-start: 27px;
   letter-spacing: 0.2px;

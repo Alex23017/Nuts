@@ -146,6 +146,13 @@ $fonts: (
     line-height: 100%,
     weight: 600,
   ),
+  "Montserrat17": (
+    family: "Montserrat",
+    fallback: sans-serif,
+    font-size: 17px,
+    line-height: 100%,
+    weight: 700,
+  ),
   "Montserrat18": (
     family: "Montserrat",
     fallback: sans-serif,
@@ -223,6 +230,7 @@ $Montserrat24: map.get($fonts, "Montserrat24");
 $Montserrat22: map.get($fonts, "Montserrat22");
 $Montserrat20: map.get($fonts, "Montserrat20");
 $Montserrat18: map.get($fonts, "Montserrat18");
+$Montserrat17: map.get($fonts, "Montserrat17");
 $Montserrat16: map.get($fonts, "Montserrat16");
 $Montserrat15: map.get($fonts, "Montserrat15");
 $Montserrat14: map.get($fonts, "Montserrat14");

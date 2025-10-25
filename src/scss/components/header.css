@@ -1019,13 +1019,20 @@
   height: 13px;
 }
 
+.user__reg {
+  text-decoration: none;
+  color: black;
+}
+
 .mob__login-sign {
+  text-decoration: none;
   position: relative;
   -webkit-padding-start: 7px;
           padding-inline-start: 7px;
 }
 
 .mob__login-signup {
+  text-decoration: none;
   position: relative;
   -webkit-padding-start: 27px;
           padding-inline-start: 27px;

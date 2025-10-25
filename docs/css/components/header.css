@@ -849,12 +849,19 @@
   height: 0.8125rem;
 }
 
+.user__reg {
+  text-decoration: none;
+  color: black;
+}
+
 .mob__login-sign {
+  text-decoration: none;
   position: relative;
   padding-inline-start: 0.4375rem;
 }
 
 .mob__login-signup {
+  text-decoration: none;
   position: relative;
   padding-inline-start: 1.6875rem;
   letter-spacing: 0.0125rem;
