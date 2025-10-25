@@ -7774,6 +7774,17 @@ body.loading {
 .section__news--company {
   padding-block-start: 5.75rem;
 }
+.section__news--company .news__body-title {
+  padding-block-end: 1.875rem;
+}
+.section__news--company .news__body-title {
+  margin-inline-start: -0.1875rem;
+}
+@media (max-width: 1919px) {
+  .section__news--company {
+    margin-inline-start: 0;
+  }
+}
 
 .gallery__down-copmany .meeting__play--galery {
   top: 43.8%;
@@ -7832,6 +7843,24 @@ body.loading {
 @media (max-width: 768px) {
   .meeting__galery--company .meeting__title--galery {
     top: 55%;
+  }
+}
+
+.footer__company {
+  padding-block-start: 4.6875rem;
+}
+@media (max-width: 768px) {
+  .footer__company {
+    padding-block-start: 2.5rem;
+  }
+}
+
+.map__company {
+  padding-block-start: 7.25rem;
+}
+@media (max-width: 768px) {
+  .map__company {
+    padding-block-start: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

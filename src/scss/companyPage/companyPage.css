@@ -333,6 +333,20 @@
   -webkit-padding-before: 92px;
           padding-block-start: 92px;
 }
+.section__news--company .news__body-title {
+  -webkit-padding-after: 30px;
+          padding-block-end: 30px;
+}
+.section__news--company .news__body-title {
+  -webkit-margin-start: -3px;
+          margin-inline-start: -3px;
+}
+@media (max-width: 1919px) {
+  .section__news--company {
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+  }
+}
 
 .gallery__down-copmany {
   -webkit-margin-start: 3px;
@@ -395,5 +409,27 @@
 @media (max-width: 768px) {
   .meeting__galery--company .meeting__title--galery {
     top: 55%;
+  }
+}
+
+.footer__company {
+  -webkit-padding-before: 75px;
+          padding-block-start: 75px;
+}
+@media (max-width: 768px) {
+  .footer__company {
+    -webkit-padding-before: 40px;
+            padding-block-start: 40px;
+  }
+}
+
+.map__company {
+  -webkit-padding-before: 116px;
+          padding-block-start: 116px;
+}
+@media (max-width: 768px) {
+  .map__company {
+    -webkit-padding-before: 40px;
+            padding-block-start: 40px;
   }
 }/*# sourceMappingURL=companyPage.css.map */

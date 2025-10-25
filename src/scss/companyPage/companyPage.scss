@@ -229,6 +229,15 @@
 }
 .section__news--company {
   padding-block-start: 92px;
+  .news__body-title {
+    padding-block-end: 30px;
+  }
+  .news__body-title {
+    margin-inline-start: -3px;
+  }
+  @media (max-width: 1919px) {
+    margin-inline-start: 0px;
+  }
 }
 
 .gallery__down-copmany {
@@ -281,5 +290,19 @@
     @media (max-width: 768px) {
       top: 55%;
     }
+  }
+}
+
+.footer__company {
+  padding-block-start: 75px;
+  @media (max-width: 768px) {
+  padding-block-start: 40px;
+  }
+}
+
+.map__company {
+  padding-block-start: 116px;
+  @media (max-width: 768px) {
+    padding-block-start: 40px;
   }
 }
