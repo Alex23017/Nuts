@@ -688,14 +688,55 @@
           margin-block-start: 40px !important;
 }
 
+.reg__form-img {
+  height: 170px;
+}
 @media (max-width: 1440px) {
   .reg__form-img {
     max-width: 100px;
-    height: auto;
+    height: 100px;
   }
 }
 @media (max-width: 600px) {
   .reg__form-img {
-    max-width: 60px;
+    max-width: 100px;
+  }
+}
+
+.avatar-upload {
+  position: relative;
+}
+
+.input__donwnload,
+.avatar-label {
+  opacity: 0;
+  position: absolute;
+  top: 81px;
+  left: 12px;
+  white-space: nowrap;
+}
+
+.avatar-label {
+  cursor: pointer;
+  z-index: 10;
+  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 100%;
+  color: white;
+  font-weight: 500;
+  border-bottom: 1.5px dashed white;
+}
+@media (max-width: 1440px) {
+  .avatar-label {
+    font-size: 8px;
+    left: 6px;
+  }
+}
+@media (max-width: 600px) {
+  .avatar-label {
+    left: 8px;
+    font-size: 7px;
   }
 }/*# sourceMappingURL=regist.css.map */

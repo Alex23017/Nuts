@@ -80,4 +80,29 @@ document.addEventListener("DOMContentLoaded", () => {
       renderFormUr.classList.remove("active");
     }
   });
+
+  const selectFirst = document.querySelector(".reg__select-first");
+  const selectSecond = document.querySelector(".reg__select-second");
+  const linkAgree = document.querySelector(".form__agree-link");
+  linkAgree.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (selectFirst.classList.contains("active")) {
+      window.location.href = "index.html";
+    } else if (selectSecond.classList.contains("active")) {
+      window.location.href = "index.html";
+    }
+  });
+  const avatarInput = document.getElementById("avatarInput");
+  const avatarPreview = document.getElementById("avatarPreview");
+
+  avatarInput.addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function (event) {
+      avatarPreview.src = event.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
 });

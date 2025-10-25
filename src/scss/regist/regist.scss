@@ -476,11 +476,40 @@
   margin-block-start: 40px !important;
 }
 .reg__form-img {
+  height: 170px;
   @media (max-width: 1440px) {
     max-width: 100px;
-    height: auto;
+    height: 100px;
   }
   @media (max-width: 600px) {
-    max-width: 60px;
+    max-width: 100px;
+  }
+}
+.avatar-upload {
+  position: relative;
+}
+.input__donwnload,
+.avatar-label {
+  opacity: 0;
+  position: absolute;
+  top: 81px;
+  left: 12px;
+  white-space: nowrap;
+}
+.avatar-label {
+  cursor: pointer;
+  z-index: 10;
+  opacity: 1;
+  @include font($Montserrat13);
+  color: white;
+  font-weight: 500;
+  border-bottom: 1.5px dashed white;
+  @media (max-width: 1440px) {
+    font-size: 8px;
+    left: 6px;
+  }
+  @media (max-width: 600px) {
+    left: 8px;
+    font-size: 7px;
   }
 }
