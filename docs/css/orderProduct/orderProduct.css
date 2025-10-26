@@ -1,0 +1,155 @@
+.main__orderProduct .basket__footer {
+  justify-content: flex-end;
+}
+.main__orderProduct .location__delivery-page {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+.main__orderProduct .basket__body {
+  justify-content: flex-start;
+  gap: 4.5rem;
+  padding-block-end: 2.875rem;
+}
+.main__orderProduct .basket__manager {
+  margin-block-start: 0.125rem;
+}
+.main__orderProduct .basket__order {
+  margin-inline-end: -0.9375rem;
+}
+.main__orderProduct .total__value {
+  color: #337d5a;
+}
+@media (max-width: 768px) {
+  .main__orderProduct .location__bag {
+    font-size: 0.625rem;
+  }
+}
+@media (max-width: 768px) {
+  .main__orderProduct .basket__title {
+    font-size: 1.125rem;
+  }
+}
+.main__orderProduct .basket__body--order {
+  gap: 1.25rem;
+}
+@media (max-width: 768px) {
+  .main__orderProduct .regist__input,
+  .main__orderProduct .input__country,
+  .main__orderProduct .input__obl {
+    max-width: 15.625rem;
+  }
+}
+
+.order__np {
+  max-width: 29.625rem;
+  margin-inline-start: 19.8125rem;
+  margin-block-start: 6.5625rem;
+}
+@media (max-width: 1100px) {
+  .order__np {
+    margin: 0;
+    padding-inline: 1.875rem;
+    margin-block-start: 2.5rem;
+  }
+}
+
+.form__np {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  margin-block-start: 1.6875rem;
+}
+.form__np p {
+  color: black;
+}
+.form__np__tittle {
+  margin-block-start: 2.3125rem;
+}
+
+.render__np-np,
+.render__np-address {
+  display: none;
+}
+.render__np-np.active,
+.render__np-address.active {
+  display: flex;
+}
+@media (max-width: 1100px) {
+  .render__np-np,
+  .render__np-address {
+    width: 25.75rem;
+  }
+}
+
+.order__input-address {
+  width: 29.625rem;
+}
+
+.form__order {
+  width: 29.625rem;
+  margin-block-start: 0.25rem;
+  margin-inline-start: -0.125rem;
+}
+
+.form__agree--order {
+  margin-block-start: -0.125rem;
+  gap: 0.875rem;
+}
+
+.render__np-address {
+  margin-inline-start: -0.125rem;
+}
+
+.select__fop-np {
+  margin-block-start: 0;
+}
+
+.form__addres__title--method {
+  margin-block-start: 2.375rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.form__agree--pay {
+  margin-block-start: 0.25rem;
+}
+
+.order__np-continue {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
+  font-weight: 700;
+  width: 15.5625rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #337d5a;
+  padding-block: 1.0625rem;
+  margin-block-start: 1.25rem;
+}
+@media (max-width: 600px) {
+  .order__np-continue {
+    font-size: 0.625rem;
+    width: 9.375rem;
+  }
+}
+
+.map__order-np {
+  padding-block-start: 13.625rem;
+}
+
+.footer__order-np {
+  padding-block-start: 8.125rem;
+}
+
+@media (max-width: 600px) {
+  .dropdown-country,
+  .dropdown-obl {
+    font-size: 0.5rem;
+  }
+}
+/*# sourceMappingURL=orderProduct.css.map */

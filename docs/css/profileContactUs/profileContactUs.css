@@ -1,0 +1,50 @@
+.contact--us {
+  margin-block-start: 7.625rem;
+}
+.contact--us .form__adress--us {
+  margin-block-start: 2.6875rem;
+}
+@media (max-width: 600px) {
+  .contact--us .form__adress--us {
+    margin-inline-start: 0.3125rem;
+    max-width: 8.75rem;
+  }
+}
+.contact--us .address__item--ur {
+  justify-content: flex-start;
+  margin-block-start: 0.0625rem;
+}
+.contact--us .address__item--ur .address__item-link--us {
+  padding-inline: 4.5rem;
+}
+.contact--us .avatar-upload {
+  margin-block-start: 2.625rem;
+  margin-inline-start: 1.875rem;
+}
+@media (max-width: 600px) {
+  .contact--us .avatar-upload {
+    margin-inline-start: 0.3125rem;
+  }
+}
+@media (max-width: 600px) {
+  .contact--us .profile__header-title {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .contact--us .contact__all--us {
+    justify-content: center;
+  }
+}
+
+.map__conact-us {
+  padding-block-start: 13.125rem;
+}
+
+.location__else {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+/*# sourceMappingURL=profileContactUs.css.map */

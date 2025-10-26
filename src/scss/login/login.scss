@@ -20,6 +20,9 @@
   @include font($Raleway32);
   font-weight: 800;
   line-height: 32px;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .login__input {
@@ -32,6 +35,9 @@
   width: 100%;
   &::placeholder {
     color: black;
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
   }
 }
 .login__input-email {
@@ -85,9 +91,8 @@
   top: 18.3%;
   @media (max-width: 1600px) {
     top: 25%;
-  
   }
   @media (max-width: 768px) {
-  top: 20%;
+    top: 20%;
   }
 }

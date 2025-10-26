@@ -1,0 +1,50 @@
+@media (max-width: 1100px) {
+  .profile__all--us {
+    flex-direction: inherit;
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 768px) {
+  .profile__all--us .input__country,
+  .profile__all--us .input__obl,
+  .profile__all--us .regist__input {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .profile__all--us .profile__main {
+    margin-block-start: 2.1875rem;
+  }
+}
+
+.form__adress--us {
+  max-width: 29.625rem;
+  margin-inline-start: 8.875rem;
+  margin-block-start: 2.375rem;
+}
+@media (max-width: 768px) {
+  .form__adress--us {
+    margin-inline-start: 2.8125rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .address__item-link--us {
+    font-size: 0.625rem;
+    padding-inline: 1.25rem;
+    padding-block: 0.625rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .address__item--ur {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .location__body-addressUs {
+    top: 10.625rem;
+  }
+}
+/*# sourceMappingURL=adressUs.css.map */

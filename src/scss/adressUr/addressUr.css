@@ -1,0 +1,195 @@
+.form__adress--ur {
+  max-width: 474px;
+  -webkit-margin-start: 142px;
+          margin-inline-start: 142px;
+  -webkit-margin-before: 37px;
+          margin-block-start: 37px;
+}
+@media (max-width: 1100px) {
+  .form__adress--ur {
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .form__adress--ur .input__country,
+  .form__adress--ur .input__obl,
+  .form__adress--ur .regist__input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .profile__header--ur {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 1100px) {
+  .profile__manager--ur {
+    -webkit-margin-start: 0px !important;
+            margin-inline-start: 0px !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .profile__all--ur {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.address__img {
+  position: relative;
+  -webkit-margin-start: 46px;
+          margin-inline-start: 46px;
+  -webkit-margin-before: 70px;
+          margin-block-start: 70px;
+  min-width: 440px;
+}
+@media (max-width: 768px) {
+  .address__img {
+    min-width: 250px;
+    -webkit-margin-before: 70px;
+            margin-block-start: 70px;
+    -webkit-margin-start: 0px;
+            margin-inline-start: 0px;
+  }
+}
+
+.overley__adress {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4509803922);
+}
+
+.address__img-img {
+  width: 100%;
+  height: 100%;
+  max-width: 440px;
+  max-width: 852px;
+}
+
+.profile--ur {
+  -webkit-margin-before: 111px;
+          margin-block-start: 111px;
+}
+.profile--ur .profile__manager {
+  -webkit-margin-before: -13px;
+          margin-block-start: -13px;
+  -webkit-margin-start: 59px;
+          margin-inline-start: 59px;
+}
+
+.adressUr--margin {
+  -webkit-margin-before: 40px !important;
+          margin-block-start: 40px !important;
+}
+
+.address__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.address__item-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  background-color: #337d5a;
+  padding-block: 16.5px;
+  padding-inline: 71px;
+}
+
+.address__img-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 100%;
+  font-weight: 800;
+  position: absolute;
+  color: white;
+  top: 327px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .address__img-title {
+    font-size: 18px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+}
+
+.address__img-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 500;
+  position: absolute;
+  color: white;
+  top: 432px;
+  left: 70px;
+  text-align: center;
+  max-width: 300px;
+  line-height: 130%;
+}
+@media (max-width: 500px) {
+  .address__img-text {
+    font-size: 14px;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    top: 380px;
+  }
+}
+
+.map__address-ur {
+  -webkit-padding-before: 217px;
+          padding-block-start: 217px;
+}
+
+.footer__address-ur {
+  -webkit-padding-before: 130px;
+          padding-block-start: 130px;
+}
+.footer__address-ur .footer__footer {
+  -webkit-padding-before: 45px;
+          padding-block-start: 45px;
+}
+
+.address__manager-number {
+  -webkit-margin-start: 3px;
+          margin-inline-start: 3px;
+  -webkit-margin-before: 3px;
+          margin-block-start: 3px;
+}
+@media (max-width: 1100px) {
+  .address__manager-number {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}/*# sourceMappingURL=addressUr.css.map */

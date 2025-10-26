@@ -24,6 +24,11 @@
   font-weight: 800;
   line-height: 2rem;
 }
+@media (max-width: 768px) {
+  .login__title {
+    font-size: 1.5rem;
+  }
+}
 
 .login__input {
   font-family: "Montserrat", sans-serif;
@@ -42,6 +47,14 @@
 }
 .login__input::placeholder {
   color: black;
+}
+@media (max-width: 768px) {
+  .login__input::-moz-placeholder {
+    font-size: 0.625rem;
+  }
+  .login__input::placeholder {
+    font-size: 0.625rem;
+  }
 }
 
 .login__input-email {

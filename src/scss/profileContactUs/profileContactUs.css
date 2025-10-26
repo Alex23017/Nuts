@@ -1,0 +1,65 @@
+.contact--us {
+  -webkit-margin-before: 122px;
+          margin-block-start: 122px;
+}
+.contact--us .form__adress--us {
+  -webkit-margin-before: 43px;
+          margin-block-start: 43px;
+}
+@media (max-width: 600px) {
+  .contact--us .form__adress--us {
+    -webkit-margin-start: 5px;
+            margin-inline-start: 5px;
+    max-width: 140px;
+  }
+}
+.contact--us .address__item--ur {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-margin-before: 1px;
+          margin-block-start: 1px;
+}
+.contact--us .address__item--ur .address__item-link--us {
+  padding-inline: 72px;
+}
+.contact--us .avatar-upload {
+  -webkit-margin-before: 42px;
+          margin-block-start: 42px;
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+}
+@media (max-width: 600px) {
+  .contact--us .avatar-upload {
+    -webkit-margin-start: 5px;
+            margin-inline-start: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .contact--us .profile__header-title {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .contact--us .contact__all--us {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.map__conact-us {
+  -webkit-padding-before: 210px;
+          padding-block-start: 210px;
+}
+
+.location__else {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=profileContactUs.css.map */

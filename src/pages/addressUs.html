@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,400;1,500;1,800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800,900&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loading1">
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/arrowUp/arrowUp.html")
+    <div class="wrapper wrapper__delivery">
+      <header class="header header__delivery">@@include("../components/header/header.html")</header>
+
+      <main class="main main__profile">
+        <section class="profile profile--ur">
+          <div
+            class="location__body location__body-page location__body-login location__body-addressUs"
+          >
+            <p class="location__delivery">Главная</p>
+            <img src="img/newsPages/arrowLocation.webp" alt="" class="location__img" />
+            <a href="profile.html" class="location__delivery-page location__login-page"
+              >Новости и статьи</a
+            >
+            <div class="location__else-order">
+              <img src="img/newsPages/arrowLocation.webp" alt="" class="location__img" />
+              <p class="location__delivery-page">История заказов</p>
+            </div>
+            <div class="location__else-history">
+              <img src="img/newsPages/arrowLocation.webp" alt="" class="location__img" />
+              <p class="location__delivery-page">История транзакци</p>
+            </div>
+          </div>
+          <div class="profile__info">
+            <div class="profile__header">
+              <h2 class="profile__header-title">Учетная запись</h2>
+              <div class="profile__manager">
+                <p class="profile__manager-text">Ваш личный менеджер Олег</p>
+                <div class="profile__manager-number address__manager-number">
+                  <img src="img/header/phone.webp" alt="phone" />
+                  <p>+38 067 777 14 12</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile__all profile__all--us">
+              <div class="profile__main">
+                <h3 class="profile__main-title profile__main-title--history">Мои заказы</h3>
+                <a href="profile.html" class="profile__main-text profile__main-text--order"
+                  >История заказов</a
+                >
+                <a href="profile.html" class="profile__main-text profile__main-text--second"
+                  >История транзакций</a
+                >
+                <h3 class="profile__main-title profile__main-title--profile">Моя учетная запись</h3>
+                <a href="profileContactUs.html" class="profile__main-text">Контактная информация</a>
+                <a href="password.html" class="profile__main-text">Пароль</a>
+                <a href="addressUs.html" class="profile__main-text profile__main-text--address"
+                  >Адрес</a
+                >
+              </div>
+              <div class="form__adress form__adress--us">
+                <h2 class="form__addres__tittle">Адрес</h2>
+
+                <div class="input__country dropdown">
+                  <button
+                    class="btn-secondary btn-country"
+                    type="button"
+                    id="dropdownMenuButtonCountry"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    fdprocessedid="loojvm"
+                  >
+                    Страна
+                  </button>
+                  <img
+                    class="drop-arrow country__arrow"
+                    src="img/header/arrow.webp"
+                    alt="arrow-Language"
+                  />
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCountry">
+                    <li><a class="dropdown-country" href="#">Страна</a></li>
+                    <li><a class="dropdown-country" href="#">Украина</a></li>
+                    <li><a class="dropdown-country" href="#">Россия</a></li>
+                  </ul>
+                </div>
+                <div class="input__obl dropdown">
+                  <button
+                    class="btn-secondary btn-country"
+                    type="button"
+                    id="dropdownMenuButtonObl"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    fdprocessedid="loojvm"
+                  >
+                    Область
+                  </button>
+                  <img
+                    class="drop-arrow country__arrow"
+                    src="img/header/arrow.webp"
+                    alt="arrow-Language"
+                  />
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonObl">
+                    <li><a class="dropdown-obl" href="#">Область</a></li>
+                    <li><a class="dropdown-obl" href="#">Киев.обл.</a></li>
+                    <li><a class="dropdown-obl" href="#">Винниц.обл.</a></li>
+                  </ul>
+                </div>
+
+                <input
+                  type="text"
+                  placeholder="Город*"
+                  class="regist__input reg__form-input--phone"
+                  fdprocessedid="0y3mem"
+                />
+                <input
+                  type="text"
+                  placeholder="Адрес"
+                  class="regist__input reg__form-input--adress"
+                  fdprocessedid="todlk"
+                />
+
+                <div class="address__item address__item--ur">
+                  <a class="address__item-link address__item-link--us" href="">Сохранить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="map map__address-ur">@@include("../components/map/map.html")</section>
+      </main>
+      <footer class="footer footer__address-ur">
+        @@include("../components/footer/footer.html")
+      </footer>
+    </div>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/profile.bundle.js"></script>
+    <script defer src="js/regist.bundle.js"></script>
+  </body>
+</html>

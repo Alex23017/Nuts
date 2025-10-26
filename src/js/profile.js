@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!selectProfile.length) return;
 
-  renderOrder.classList.remove("active");
-  locationOrder.classList.remove("active");
-  renderHistory.classList.remove("active");
-  locationHistory.classList.remove("active");
+  if (renderOrder) renderOrder.classList.remove("active");
+  if (locationOrder) locationOrder.classList.remove("active");
+  if (renderHistory) renderHistory.classList.remove("active");
+  if (locationHistory) locationHistory.classList.remove("active");
 
   selectProfile.forEach((btn) => {
     btn.addEventListener("click", () => {

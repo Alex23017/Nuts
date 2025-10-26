@@ -1,0 +1,38 @@
+.profile--ur {
+  -webkit-margin-before: 122px;
+          margin-block-start: 122px;
+}
+.profile--ur .form__adress--us {
+  -webkit-margin-before: 43px;
+          margin-block-start: 43px;
+}
+.profile--ur .address__item--ur {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.profile--ur .address__item-link--us {
+  padding-inline: 72px;
+}
+.profile--ur .avatar-upload--ur {
+  -webkit-margin-before: 73px;
+          margin-block-start: 73px;
+  -webkit-margin-start: 30px;
+          margin-inline-start: 30px;
+}
+@media (max-width: 600px) {
+  .profile--ur .avatar-upload--ur {
+    -webkit-margin-start: 5px;
+            margin-inline-start: 5px;
+  }
+}
+
+.map__conact-ur {
+  -webkit-padding-before: 217px;
+          padding-block-start: 217px;
+}
+
+.footer__contact-ur {
+  -webkit-padding-before: 130px;
+          padding-block-start: 130px;
+}/*# sourceMappingURL=profileContactUr.css.map */

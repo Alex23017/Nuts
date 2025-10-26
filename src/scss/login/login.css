@@ -37,6 +37,11 @@
   font-weight: 800;
   line-height: 32px;
 }
+@media (max-width: 768px) {
+  .login__title {
+    font-size: 24px;
+  }
+}
 
 .login__input {
   font-family: "Montserrat", sans-serif;
@@ -65,6 +70,23 @@
 }
 .login__input::placeholder {
   color: black;
+}
+@media (max-width: 768px) {
+  .login__input::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+  .login__input::-moz-placeholder {
+    font-size: 10px;
+  }
+  .login__input:-ms-input-placeholder {
+    font-size: 10px;
+  }
+  .login__input::-ms-input-placeholder {
+    font-size: 10px;
+  }
+  .login__input::placeholder {
+    font-size: 10px;
+  }
 }
 
 .login__input-email {

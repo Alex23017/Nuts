@@ -62,47 +62,52 @@ document.addEventListener("DOMContentLoaded", () => {
       formSelect.classList.toggle("active");
     });
   }
+  if (renderSelect) {
+    renderSelect.addEventListener("click", (e) => {
+      const target = e.target.closest(".select__input-ur, .select__input-fop");
+      if (!target) return;
 
-  renderSelect.addEventListener("click", (e) => {
-    const target = e.target.closest(".select__input-ur, .select__input-fop");
-    if (!target) return;
-
-    renderSelect
-      .querySelectorAll(".select__input-ur, .select__input-fop")
-      .forEach((el) => el.classList.remove("active"));
-    target.classList.add("active");
-    if (target.classList.contains("select__input-ur")) {
-      renderFormUr.classList.add("active");
-      renderFormFop.classList.remove("active");
-    }
-    if (target.classList.contains("select__input-fop")) {
-      renderFormFop.classList.add("active");
-      renderFormUr.classList.remove("active");
-    }
-  });
+      renderSelect
+        .querySelectorAll(".select__input-ur, .select__input-fop")
+        .forEach((el) => el.classList.remove("active"));
+      target.classList.add("active");
+      if (target.classList.contains("select__input-ur")) {
+        renderFormUr.classList.add("active");
+        renderFormFop.classList.remove("active");
+      }
+      if (target.classList.contains("select__input-fop")) {
+        renderFormFop.classList.add("active");
+        renderFormUr.classList.remove("active");
+      }
+    });
+  }
 
   const selectFirst = document.querySelector(".reg__select-first");
   const selectSecond = document.querySelector(".reg__select-second");
   const linkAgree = document.querySelector(".form__agree-link");
-  linkAgree.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (selectFirst.classList.contains("active")) {
-      window.location.href = "index.html";
-    } else if (selectSecond.classList.contains("active")) {
-      window.location.href = "index.html";
-    }
-  });
+  if (linkAgree) {
+    linkAgree.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (selectFirst.classList.contains("active")) {
+        window.location.href = "addressUs.html";
+      } else if (selectSecond.classList.contains("active")) {
+        window.location.href = "addressUr.html";
+      }
+    });
+  }
+
   const avatarInput = document.getElementById("avatarInput");
   const avatarPreview = document.getElementById("avatarPreview");
+  if (avatarInput) {
+    avatarInput.addEventListener("change", (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
 
-  avatarInput.addEventListener("change", (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = function (event) {
-      avatarPreview.src = event.target.result;
-    };
-    reader.readAsDataURL(file);
-  });
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        avatarPreview.src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
 });

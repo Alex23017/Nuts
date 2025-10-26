@@ -17,6 +17,8 @@ export default {
     catalog: "./src/js/catalog.js",
     regist: "./src/js/regist.js",
     profile: "./src/js/profile.js",
+    login: "./src/js/login.js",
+    orderProduct: "./src/js/orderProduct.js",
   },
   output: {
     filename: "[name].bundle.js",

@@ -1,0 +1,26 @@
+.profile--ur {
+  margin-block-start: 122px;
+  .form__adress--us {
+    margin-block-start: 43px;
+  }
+  .address__item--ur {
+    justify-content: flex-start;
+  }
+  .address__item-link--us {
+    padding-inline: 72px;
+  }
+  .avatar-upload--ur{
+    margin-block-start: 73px;
+    margin-inline-start: 30px;
+    @media (max-width: 600px) {
+        margin-inline-start: 5px;
+    }
+  }
+}
+
+.map__conact-ur {
+    padding-block-start: 217px;
+}
+.footer__contact-ur{
+    padding-block-start: 130px;
+}

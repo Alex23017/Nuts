@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,800,italic&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loading1">
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/arrowUp/arrowUp.html")
+    <div class="wrapper">
+      <header class="header">
+        @@include("../components/header/header.html")
+
+        <div class="basket__overlay">
+          <div class="cart__bag"></div>
+          <div class="basket__footer basket__footer-bag">
+            <div class="basket__order">
+              <p>Всего <span class="total">0</span> <span class="total__value"> грн.</span></p>
+              <a href="" class="basket__back basket__back-order">Перейти в корзину</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main main__orderProduct">
+        <div class="location__bag">
+          <p class="location__delivery">Главная</p>
+          <img src="img/basket/locationArrow.webp" alt="" class="location__img" />
+          <a href="basket.html" class="location__delivery-page">Корзина</a>
+          <img src="img/basket/locationArrow.webp" alt="" class="location__img" />
+          <p class="location__delivery-page">Оформление заказа</p>
+        </div>
+        <div class="basket basket--order">
+          <div class="basket__body basket__body--order">
+            <h2 class="basket__title">Оформление заказа</h2>
+            <div class="basket__manager">
+              <p class="basket__manager-text">Ваш личный менеджер Олег</p>
+              <div class="basket__img">
+                <img src="img/header/phone.webp" alt="phone" class="basket__manager-img" />
+                <p class="basket__manager-text basket__manager-text--phone">+38 067 777 14 12</p>
+              </div>
+            </div>
+          </div>
+          <div class="basket__header">
+            <div class="basket__goods basket__goods--name">
+              <h2 class="basket__goods-title">Товар</h2>
+              <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+            </div>
+            <div class="basket__goods basket__goods--count">
+              <h2 class="basket__goods-title">Кол - во</h2>
+              <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+            </div>
+            <div class="basket__goods basket__goods--price">
+              <h2 class="basket__goods-title">Цена за товар</h2>
+              <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+            </div>
+            <div class="basket__goods basket__goods--all">
+              <h2 class="basket__goods-title">Итоговая стоимость</h2>
+              <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__basket"></div>
+        <div class="basket__footer">
+          <div class="basket__order">
+            <p>Всего <span class="total">0</span> <span class="total__value"> грн.</span></p>
+          </div>
+        </div>
+        <section class="order__np">
+          <h2 class="form__addres__tittle">1. Контактные данные</h2>
+          <form action="" class="form__np">
+            <input
+              type="text"
+              placeholder="ФИО*"
+              class="regist__input reg__form-input--phone"
+              fdprocessedid="bam4ni"
+            />
+            <input
+              type="text"
+              placeholder="Email*"
+              class="regist__input reg__form-input--phone"
+              fdprocessedid="bam4ni"
+            />
+            <input
+              type="text"
+              placeholder="Телефон*"
+              class="regist__input reg__form-input--phone"
+              fdprocessedid="bam4ni"
+            />
+            <h2 class="form__addres__tittle form__np__tittle">2. Способ доставки</h2>
+            <label class="form__agree form__select-select form__agree--order">
+              <div class="select__ur">
+                <input class="select__input-fop select__np" type="checkbox" name="agree" />
+                <p>Новая почта (по Украине оплата за счет Клиента)</p>
+              </div>
+              <div class="render__np-np">
+                <div class="form__adress form__order">
+                  <div class="input__country dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonCountry"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Страна
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCountry">
+                      <li><a class="dropdown-country" href="#">Страна</a></li>
+                      <li><a class="dropdown-country" href="#">Украина</a></li>
+                      <li><a class="dropdown-country" href="#">Россия</a></li>
+                    </ul>
+                  </div>
+                  <div class="input__obl dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonObl"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Область
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonObl">
+                      <li><a class="dropdown-obl" href="#">Область</a></li>
+                      <li><a class="dropdown-obl" href="#">Киев.обл.</a></li>
+                      <li><a class="dropdown-obl" href="#">Винниц.обл.</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="select__fop select__fop-np">
+                <input class="select__input-fop select__np-address" type="checkbox" name="agree" />
+                <p>Курьер по Одессе</p>
+              </div>
+              <div class="render__np-address">
+                <input
+                  type="text"
+                  placeholder="Адрес*"
+                  class="regist__input order__input-address"
+                  fdprocessedid="bam4ni"
+                />
+              </div>
+              <div class="select__fop">
+                <input class="select__input-fop select__np-self" type="checkbox" name="agree" />
+                <p>Самовывоз со склада</p>
+              </div>
+            </label>
+            <h2 class="form__addres__title form__addres__title--method">3. Способ оплаты</h2>
+            <label class="form__agree form__select-select form__agree--pay">
+              <div class="render__np-np">
+                <div class="form__adress form__order">
+                  <div class="input__country dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonCountry"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Страна
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonCountry">
+                      <li><a class="dropdown-country" href="#">Страна</a></li>
+                      <li><a class="dropdown-country" href="#">Украина</a></li>
+                      <li><a class="dropdown-country" href="#">Россия</a></li>
+                    </ul>
+                  </div>
+                  <div class="input__obl dropdown">
+                    <button
+                      class="btn-secondary btn-country"
+                      type="button"
+                      id="dropdownMenuButtonObl"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      fdprocessedid="loojvm"
+                    >
+                      Область
+                    </button>
+                    <img
+                      class="drop-arrow country__arrow"
+                      src="img/header/arrow.webp"
+                      alt="arrow-Language"
+                    />
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonObl">
+                      <li><a class="dropdown-obl" href="#">Область</a></li>
+                      <li><a class="dropdown-obl" href="#">Киев.обл.</a></li>
+                      <li><a class="dropdown-obl" href="#">Винниц.обл.</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="select__fop">
+                <input class="select__input-pay select__np-address" type="checkbox" name="agree" />
+                <p>Безналичный расчет</p>
+              </div>
+              <div class="render__np-address">
+                <input
+                  type="text"
+                  placeholder="Адрес*"
+                  class="regist__input order__input-address"
+                  fdprocessedid="bam4ni"
+                />
+              </div>
+              <div class="select__fop">
+                <input class="select__input-pay select__np-self" type="checkbox" name="agree" />
+                <p>LiqPay / Приват24</p>
+              </div>
+              <div class="select__fop">
+                <input class="select__input-pay select__np-self" type="checkbox" name="agree" />
+                <p>Наличными при получении (Наложенным платежом)</p>
+              </div>
+            </label>
+            <a href="succsecc.html" class="order__np-continue">Продолжить</a>
+
+          </form>
+        </section>
+
+        <section class="map map__order-np">@@include("../components/map/map.html")</section>
+      </main>
+      <footer class="footer footer__order-np">@@include("../components/footer/footer.html")</footer>
+    </div>
+
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+    <script defer src="js/orderProduct.bundle.js"></script>
+    <script defer src="js/regist.bundle.js"></script>
+  </body>
+</html>

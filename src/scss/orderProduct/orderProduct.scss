@@ -1,0 +1,140 @@
+@use "../variables/variables" as *;
+
+.main__orderProduct {
+  .basket__footer {
+    justify-content: flex-end;
+  }
+  .location__delivery-page {
+    text-decoration: none;
+    color: $greyColor;
+  }
+  .basket__body {
+    justify-content: flex-start;
+    gap: 72px;
+    padding-block-end: 46px;
+  }
+  .basket__manager {
+    margin-block-start: 2px;
+  }
+  .basket__order {
+    margin-inline-end: -15px;
+  }
+  .total__value {
+    color: $primaryColor;
+  }
+  .location__bag {
+    @media (max-width: 768px) {
+      font-size: 10px;
+    }
+  }
+  .basket__title {
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  .basket__body--order {
+    gap: 20px;
+  }
+  .regist__input,
+  .input__country,
+  .input__obl {
+    @media (max-width: 768px) {
+      max-width: 250px;
+    }
+  }
+
+
+}
+.order__np {
+  max-width: 474px;
+  margin-inline-start: 317px;
+  margin-block-start: 105px;
+  @media (max-width: 1100px) {
+    margin: 0;
+    padding-inline: 30px;
+    margin-block-start: 40px;
+  }
+}
+
+.form__np {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-block-start: 27px;
+  p {
+    color: black;
+  }
+  @media (max-width: 1100px) {
+  }
+}
+
+.form__np__tittle {
+  margin-block-start: 37px;
+}
+.render__np-np,
+.render__np-address {
+  display: none;
+  &.active {
+    display: flex;
+  }
+  @media (max-width: 1100px) {
+    width: 412px;
+  }
+}
+
+.order__input-address {
+  width: 474px;
+}
+.form__order {
+  width: 474px;
+  margin-block-start: 4px;
+  margin-inline-start: -2px;
+}
+.form__agree--order {
+  margin-block-start: -2px;
+  gap: 14px;
+}
+.render__np-address {
+  margin-inline-start: -2px;
+}
+.select__fop-np {
+  margin-block-start: 0px;
+}
+.form__addres__title--method {
+  margin-block-start: 38px;
+  @include font($Montserrat17);
+  font-weight: 700;
+}
+
+.form__agree--pay {
+  margin-block-start: 4px;
+}
+.order__np-continue {
+  @include font($Raleway16);
+  font-weight: 700;
+  width: 249px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: $primaryColor;
+  padding-block: 17px;
+  margin-block-start: 20px;
+  @media (max-width: 600px) {
+    font-size: 10px;
+    width: 150px;
+  }
+}
+
+.map__order-np {
+  padding-block-start: 218px;
+}
+.footer__order-np {
+  padding-block-start: 130px;
+}
+
+.dropdown-country,
+.dropdown-obl {
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
+}

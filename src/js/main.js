@@ -274,6 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const location = document.querySelector(".location__delivery-page");
+  const adressLocation = document.querySelector(".profile__main-text--address");
 
   function isPage(host) {
     return window.location.pathname.includes(host);
@@ -311,8 +312,25 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isPage("login.html")) {
     location.textContent = "Вход";
   }
-  if (isPage("profile.html")) {
+  if (
+    isPage("profile.html") ||
+    isPage("profileContactUs.html") ||
+    isPage("profileContactUr.html")
+  ) {
     location.textContent = "Личный кабинет";
+  }
+  if (isPage("password.html")) {
+    location.textContent = "Вход";
+  }
+  if (isPage("resetPassword.html")) {
+    location.textContent = "Восстановление пароля";
+  }
+  if (isPage("addressUr.html")) {
+    location.textContent = "Адрес и реквизиты";
+  }
+  if (isPage("addressUr.html") || isPage("addressUs.html")) {
+    location.textContent = "Адрес и реквизиты";
+    adressLocation.textContent = "Адрес реквизиты";
   }
 
   //BURGER MENU

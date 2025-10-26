@@ -1,0 +1,43 @@
+.contact--us {
+  margin-block-start: 122px;
+  .form__adress--us {
+    margin-block-start: 43px;
+    @media (max-width: 600px) {
+      margin-inline-start: 5px;
+      max-width: 140px;
+    }
+  }
+  .address__item--ur {
+    justify-content: flex-start;
+    margin-block-start: 1px;
+    .address__item-link--us {
+      padding-inline: 72px;
+    }
+  }
+  .avatar-upload {
+    margin-block-start: 42px;
+    margin-inline-start: 30px;
+    @media (max-width: 600px) {
+      margin-inline-start: 5px;
+    }
+  }
+  .profile__header-title {
+    @media (max-width: 600px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .contact__all--us {
+    @media (max-width: 600px) {
+      justify-content: center;
+    }
+  }
+}
+.map__conact-us {
+  padding-block-start: 210px;
+}
+.location__else {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

@@ -126,12 +126,19 @@
   line-height: 100%;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .profile__main-title {
+    font-size: 0.75rem;
+  }
+}
 
 .profile__main-title--history {
   margin-block-end: 1.4375rem;
 }
 
 .profile__main-text {
+  text-decoration: none;
+  color: black;
   cursor: pointer;
   position: relative;
   font-family: "Raleway", sans-serif;
@@ -166,7 +173,8 @@
 }
 @media (max-width: 768px) {
   .profile__main-text {
-    font-size: 0.875rem;
+    font-size: 0.625rem;
+    letter-spacing: 0;
   }
 }
 
@@ -492,7 +500,8 @@
 }
 @media (max-width: 600px) {
   .profile__body-history {
-    padding-inline-start: 0.3125rem;
+    margin-inline-start: 0;
+    padding-inline: 0.6875rem;
   }
 }
 
@@ -654,6 +663,20 @@
 @media (max-width: 1919px) {
   .body__history-status--margin {
     margin-inline-start: 0 !important;
+  }
+}
+
+.location__body-password {
+  top: 13.5rem;
+}
+@media (max-width: 1200px) {
+  .location__body-password {
+    top: 15.625rem;
+  }
+}
+@media (max-width: 768px) {
+  .location__body-password {
+    top: 12.5rem;
   }
 }
 /*# sourceMappingURL=profile.css.map */

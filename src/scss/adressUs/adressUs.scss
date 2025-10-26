@@ -1,0 +1,44 @@
+.profile__all--us {
+  @media (max-width: 1100px) {
+    flex-direction: inherit;
+    flex-direction: row !important;
+  }
+  .input__country,
+  .input__obl,
+  .regist__input {
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  .profile__main {
+    @media (max-width: 768px) {
+      margin-block-start: 35px;
+    }
+  }
+}
+
+.form__adress--us {
+  max-width: 474px;
+  margin-inline-start: 142px;
+  margin-block-start: 38px;
+  @media (max-width: 768px) {
+    margin-inline-start: 45px;
+  }
+}
+.address__item-link--us {
+  @media (max-width: 768px) {
+    font-size: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
+  }
+}
+.address__item--ur {
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+.location__body-addressUs {
+  @media (max-width: 600px) {
+    top: 170px;
+  }
+}

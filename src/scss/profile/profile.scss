@@ -91,11 +91,16 @@
 .profile__main-title {
   @include font($Raleway18);
   font-weight: 700;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 .profile__main-title--history {
   margin-block-end: 23px;
 }
 .profile__main-text {
+  text-decoration: none;
+  color: black;
   cursor: pointer;
   position: relative;
   @include font($Raleway18);
@@ -125,7 +130,8 @@
     bottom: -3px;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 10px;
+    letter-spacing: 0px;
   }
 }
 .profile__main-title--profile {
@@ -380,7 +386,8 @@
     padding-inline-start: 20px;
   }
   @media (max-width: 600px) {
-    padding-inline-start: 5px;
+    margin-inline-start: 0px;
+    padding-inline: 11px;
   }
 }
 .body__history-img {
@@ -505,5 +512,14 @@
   margin-inline-start: 298px !important;
   @media (max-width: 1919px) {
     margin-inline-start: 0px !important;
+  }
+}
+.location__body-password {
+  top: 216px;
+  @media (max-width: 1200px) {
+    top: 250px;
+  }
+  @media (max-width: 768px) {
+    top: 200px;
   }
 }
