@@ -235,31 +235,21 @@
 }
 
 .location__body-login {
-  top: 17%;
+  top: 19.7%;
 }
-@media (max-width: 1600px) {
+@media (min-width: 1930px) {
   .location__body-login {
-    top: 26%;
+    top: 220px;
   }
 }
 @media (max-width: 1200px) {
   .location__body-login {
-    top: 33%;
+    top: 250px;
   }
 }
 @media (max-width: 768px) {
   .location__body-login {
-    top: 30%;
-  }
-}
-@media (max-width: 600px) {
-  .location__body-login {
-    top: 25%;
-  }
-}
-@media (max-width: 414px) {
-  .location__body-login {
-    top: 22%;
+    top: 210px;
   }
 }
 
@@ -757,4 +747,64 @@
 .basket__goods-title--block {
   -webkit-margin-start: 15px;
           margin-inline-start: 15px;
+}
+
+.location__login-page {
+  text-decoration: none;
+  color: #8a8a8a;
+}
+
+.data--margin {
+  -webkit-margin-start: 114px !important;
+          margin-inline-start: 114px !important;
+}
+@media (max-width: 1919px) {
+  .data--margin {
+    -webkit-margin-start: 0px !important;
+            margin-inline-start: 0px !important;
+  }
+}
+
+.order--margin {
+  -webkit-margin-start: 132px !important;
+          margin-inline-start: 132px !important;
+}
+@media (max-width: 1919px) {
+  .order--margin {
+    -webkit-margin-start: 0px !important;
+            margin-inline-start: 0px !important;
+  }
+}
+
+.send--margin {
+  -webkit-margin-start: 135px !important;
+          margin-inline-start: 135px !important;
+}
+@media (max-width: 1919px) {
+  .send--margin {
+    -webkit-margin-start: 0px !important;
+            margin-inline-start: 0px !important;
+  }
+}
+
+.price--margin {
+  -webkit-margin-start: 85px !important;
+          margin-inline-start: 85px !important;
+}
+@media (max-width: 1919px) {
+  .price--margin {
+    -webkit-margin-start: 0px !important;
+            margin-inline-start: 0px !important;
+  }
+}
+
+.body__history-status--margin {
+  -webkit-margin-start: 298px !important;
+          margin-inline-start: 298px !important;
+}
+@media (max-width: 1919px) {
+  .body__history-status--margin {
+    -webkit-margin-start: 0px !important;
+            margin-inline-start: 0px !important;
+  }
 }/*# sourceMappingURL=profile.css.map */
