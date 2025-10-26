@@ -1,0 +1,121 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 7.8125rem;
+  padding-inline: 1.875rem;
+}
+.login a {
+  text-decoration: none;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 25.625rem;
+}
+
+.login__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 800;
+  line-height: 2rem;
+}
+
+.login__input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 100%;
+  font-weight: 500;
+  border: 0.03125rem solid rgba(0, 0, 0, 0.1490196078);
+  padding-block: 0.8125rem;
+  padding-block-start: 1rem;
+  padding-inline: 0.75rem;
+  width: 100%;
+}
+.login__input::-moz-placeholder {
+  color: black;
+}
+.login__input::placeholder {
+  color: black;
+}
+
+.login__input-email {
+  margin-block-start: 2.1875rem;
+}
+
+.login__input-password {
+  margin-block-start: 0.9375rem;
+}
+
+.login__forget {
+  margin-block-start: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 0.8125rem;
+  line-height: 100%;
+  font-weight: 600;
+  color: #337d5a;
+  text-align: center;
+}
+
+.login__enter {
+  margin-block-start: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 100%;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  background-color: #337d5a;
+  padding-block: 1.0625rem;
+}
+
+.login__registr {
+  position: relative;
+  margin-block-start: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 0.8125rem;
+  line-height: 100%;
+  font-weight: 600;
+  color: #337d5a;
+  text-align: center;
+}
+.login__registr::after {
+  position: absolute;
+  content: "";
+  background-color: #337d5a;
+  width: 5.75rem;
+  height: 0.09375rem;
+  bottom: -0.3125rem;
+  left: 10rem;
+}
+
+.map__login {
+  padding-block-start: 13.5rem;
+}
+
+.footer__login {
+  padding-block-start: 8.0625rem;
+}
+
+.location__body-login {
+  top: 18.3%;
+}
+@media (max-width: 1600px) {
+  .location__body-login {
+    top: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .location__body-login {
+    top: 20%;
+  }
+}
+/*# sourceMappingURL=login.css.map */

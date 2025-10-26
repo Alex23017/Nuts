@@ -72,6 +72,7 @@
 .header__user,
 .header__user-login,
 .header__language {
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,6 +999,7 @@
 }
 
 .mob__login {
+  text-decoration: none;
   background-color: #fafafa;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -1029,6 +1031,7 @@
   position: relative;
   -webkit-padding-start: 7px;
           padding-inline-start: 7px;
+  color: black;
 }
 
 .mob__login-signup {
@@ -1040,6 +1043,12 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  color: black;
+}
+
+.user__text {
+  text-decoration: none;
+  color: black;
 }
 
 .login__social {

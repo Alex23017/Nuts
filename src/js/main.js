@@ -308,6 +308,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (isPage("regist.html")) {
     location.textContent = "Регистрация";
   }
+  if (isPage("login.html")) {
+    location.textContent = "Вход";
+  }
+  if (isPage("profile.html")) {
+    location.textContent = "Личный кабинет";
+  }
 
   //BURGER MENU
   const burger = document.querySelector(".burger");
@@ -413,7 +419,6 @@ document.addEventListener("DOMContentLoaded", () => {
       videoOpenSmall.classList.remove("open");
       videoOpenSmall.src = "";
 
-  
       aboutSwipers.forEach((el) => {
         el.swiperInstance.allowSlideNext = true;
         el.swiperInstance.allowSlidePrev = true;

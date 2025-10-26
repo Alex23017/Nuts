@@ -1,0 +1,93 @@
+@use "../variables/variables" as *;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 125px;
+  padding-inline: 30px;
+  a {
+    text-decoration: none;
+  }
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 410px;
+}
+.login__title {
+  @include font($Raleway32);
+  font-weight: 800;
+  line-height: 32px;
+}
+
+.login__input {
+  @include font($Montserrat14);
+  font-weight: 500;
+  border: 0.5px solid #00000026;
+  padding-block: 13px;
+  padding-block-start: 16px;
+  padding-inline: 12px;
+  width: 100%;
+  &::placeholder {
+    color: black;
+  }
+}
+.login__input-email {
+  margin-block-start: 35px;
+}
+.login__input-password {
+  margin-block-start: 15px;
+}
+.login__forget {
+  margin-block-start: 18px;
+  @include font($Montserrat13);
+  font-weight: 600;
+  color: $primaryColor;
+  text-align: center;
+}
+.login__enter {
+  margin-block-start: 16px;
+  @include font($Raleway16);
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  background-color: $primaryColor;
+  padding-block: 17px;
+}
+.login__registr {
+  position: relative;
+  margin-block-start: 18px;
+  @include font($Montserrat13);
+  font-weight: 600;
+  color: $primaryColor;
+  text-align: center;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: $primaryColor;
+    width: 92px;
+    height: 1.5px;
+    bottom: -5px;
+    left: 160px;
+  }
+}
+
+.map__login {
+  padding-block-start: 216px;
+}
+.footer__login {
+  padding-block-start: 129px;
+}
+
+.location__body-login {
+  top: 18.3%;
+  @media (max-width: 1600px) {
+    top: 25%;
+  
+  }
+  @media (max-width: 768px) {
+  top: 20%;
+  }
+}

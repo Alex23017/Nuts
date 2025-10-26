@@ -42,6 +42,7 @@
 .header__user,
 .header__user-login,
 .header__language {
+  text-decoration: none;
   display: flex;
   align-items: center;
   @include font($Raleway13);
@@ -659,6 +660,7 @@
   line-height: 15px;
 }
 .mob__login {
+  text-decoration: none;
   background-color: #fafafa;
   @include font($Raleway14);
   font-weight: 500;
@@ -680,6 +682,7 @@
   text-decoration: none;
   position: relative;
   padding-inline-start: 7px;
+  color: black;
 }
 .mob__login-signup {
   text-decoration: none;
@@ -687,6 +690,11 @@
   padding-inline-start: 27px;
   letter-spacing: 0.2px;
   flex: 1;
+  color: black;
+}
+.user__text {
+  text-decoration: none;
+  color: black;
 }
 .login__social {
   display: flex;

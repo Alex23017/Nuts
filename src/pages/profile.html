@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="img/preload/nutsPreload.webp" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,400;1,500;1,800&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,800,900&display=swap"
+      rel="preload"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <link rel="stylesheet" href="css/style/style.css" />
+  </head>
+  <body class="loading1">
+    <!-- @@include(("../components/preload/preload.html")) -->
+    @@include("../components/arrowUp/arrowUp.html")
+    <div class="wrapper wrapper__delivery">
+      <header class="header header__delivery">@@include("../components/header/header.html")</header>
+
+      <main class="main main__profile">
+        <section class="profile">
+          <div class="location__body location__body-page location__body-login">
+            <p class="location__delivery">Главная</p>
+            <img src="img/newsPages/arrowLocation.webp" alt="" class="location__img" />
+            <p class="location__delivery-page">Новости и статьи</p>
+            <div class="location__else-order">
+              <img src="img/newsPages/arrowLocation.webp" alt="" class="location__img" />
+              <p class="location__delivery-page">История заказов</p>
+            </div>
+            <div class="location__else-history">
+              <img src="img/newsPages/arrowLocation.webp" alt="" class="location__img" />
+              <p class="location__delivery-page">История транзакци</p>
+            </div>
+          </div>
+          <div class="profile__info">
+            <div class="profile__header">
+              <h2 class="profile__header-title">Учетная запись</h2>
+              <div class="profile__manager">
+                <p class="profile__manager-text">Ваш личный менеджер Олег</p>
+                <div class="profile__manager-number">
+                  <img src="img/header/phone.webp" alt="phone" />
+                  <p>+38 067 777 14 12</p>
+                </div>
+              </div>
+              <p class="profile__count">Ваша персональная скидка - 5%</p>
+            </div>
+            <div class="profile__all">
+              <div class="profile__main">
+                <h3 class="profile__main-title profile__main-title--history">Мои заказы</h3>
+                <p class="profile__main-text profile__main-text--order">История заказов</p>
+                <p class="profile__main-text profile__main-text--second">История транзакций</p>
+                <h3 class="profile__main-title profile__main-title--profile">Моя учетная запись</h3>
+                <p class="profile__main-text">Контактная информация</p>
+                <p class="profile__main-text">Пароль</p>
+                <p class="profile__main-text">Адрес</p>
+              </div>
+              <div class="profile__render">
+                <div class="profile__order">
+                  <div class="basket__header">
+                    <div class="basket__goods basket__goods--number">
+                      <h2 class="basket__goods-title basket__goods-title--none">№ Заказа</h2>
+                      <h2 class="basket__goods-title basket__goods-title--flex">№</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                    <div class="basket__goods basket__goods--data">
+                      <h2 class="basket__goods-title">Дата</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                    <div class="basket__goods basket__goods--count">
+                      <h2 class="basket__goods-title basket__goods-title--none">
+                        Кол - во товаров
+                      </h2>
+                      <h2 class="basket__goods-title basket__goods-title--block">Кол-во</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                    <div class="basket__goods basket__goods--status">
+                      <h2 class="basket__goods-title">Статус</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                    <div class="basket__goods basket__goods--allprice">
+                      <h2 class="basket__goods-title basket__goods-title--none">Стоимость</h2>
+                      <h2 class="basket__goods-title basket__goods-title--flex">Цена</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                    <div class="basket__goods basket__goods--function">
+                      <h2 class="basket__goods-title">Функции</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                  </div>
+                  <div class="profile__body-history">
+                    <p class="body__order-data body__order--number">23</p>
+                    <p class="body__order-status body__order--data">3.05.2019</p>
+                    <p class="body__order-all body__order-all--count">13</p>
+                    <p class="body__order-all body__order-all--send">Отправлено</p>
+                    <p class="body__order-all body__order-all--price">2500 грн.</p>
+                    <div class="body__wrapper-history body__wrapper-order">
+                      <img src="img/profile/copy.webp" alt="" class="body__order-img" />
+                      <svg
+                        class="body__history-img body__order-img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.8475 12.4669C23.6331 12.7602 18.5245 19.6484 11.9999 19.6484C5.47529 19.6484 0.36647 12.7602 0.152297 12.4672C-0.0507657 12.1889 -0.0507657 11.8115 0.152297 11.5333C0.36647 11.24 5.47529 4.35174 11.9999 4.35174C18.5245 4.35174 23.6331 11.24 23.8475 11.533C24.0508 11.8113 24.0508 12.1889 23.8475 12.4669ZM11.9999 5.93415C7.19383 5.93415 3.03127 10.506 1.79907 12.0006C3.02968 13.4966 7.18352 18.066 11.9999 18.066C16.8057 18.066 20.968 13.495 22.2007 11.9995C20.9701 10.5037 16.8163 5.93415 11.9999 5.93415Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M11.9992 16.7471C9.38163 16.7471 7.25195 14.6174 7.25195 11.9998C7.25195 9.38219 9.38163 7.25252 11.9992 7.25252C14.6168 7.25252 16.7465 9.38219 16.7465 11.9998C16.7465 14.6174 14.6168 16.7471 11.9992 16.7471ZM11.9992 8.83497C10.2541 8.83497 8.83441 10.2547 8.83441 11.9998C8.83441 13.7449 10.2541 15.1646 11.9992 15.1646C13.7443 15.1646 15.164 13.7449 15.164 11.9998C15.164 10.2547 13.7444 8.83497 11.9992 8.83497Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="profile__body-history">
+                    <p class="body__order-data body__order--number">24</p>
+                    <p class="body__order-status body__order--data">10.05.2019</p>
+                    <p class="body__order-all body__order-all--count">15</p>
+                    <p class="body__order-all body__order-all--send">В ожидании</p>
+                    <p class="body__order-all body__order-all--price">2400 грн.</p>
+                    <div class="body__wrapper-history body__wrapper-order">
+                      <img src="img/profile/copy.webp" alt="" class="body__order-img" />
+                      <svg
+                        class="body__history-img body__order-img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                      >
+                        <path
+                          d="M23.8475 12.4669C23.6331 12.7602 18.5245 19.6484 11.9999 19.6484C5.47529 19.6484 0.36647 12.7602 0.152297 12.4672C-0.0507657 12.1889 -0.0507657 11.8115 0.152297 11.5333C0.36647 11.24 5.47529 4.35174 11.9999 4.35174C18.5245 4.35174 23.6331 11.24 23.8475 11.533C24.0508 11.8113 24.0508 12.1889 23.8475 12.4669ZM11.9999 5.93415C7.19383 5.93415 3.03127 10.506 1.79907 12.0006C3.02968 13.4966 7.18352 18.066 11.9999 18.066C16.8057 18.066 20.968 13.495 22.2007 11.9995C20.9701 10.5037 16.8163 5.93415 11.9999 5.93415Z"
+                          fill="currentColor"
+                        ></path>
+                        <path
+                          d="M11.9992 16.7471C9.38163 16.7471 7.25195 14.6174 7.25195 11.9998C7.25195 9.38219 9.38163 7.25252 11.9992 7.25252C14.6168 7.25252 16.7465 9.38219 16.7465 11.9998C16.7465 14.6174 14.6168 16.7471 11.9992 16.7471ZM11.9992 8.83497C10.2541 8.83497 8.83441 10.2547 8.83441 11.9998C8.83441 13.7449 10.2541 15.1646 11.9992 15.1646C13.7443 15.1646 15.164 13.7449 15.164 11.9998C15.164 10.2547 13.7444 8.83497 11.9992 8.83497Z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile__pay">
+                  <div class="basket__header">
+                    <div class="basket__goods basket__goods--number">
+                      <h2 class="basket__goods-title">Добавлено</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                    <div class="basket__goods basket__goods--data">
+                      <h2 class="basket__goods-title">Статус</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                    <div class="basket__goods basket__goods--count">
+                      <h2 class="basket__goods-title">Сумма</h2>
+                      <img src="img/basket/arrow.webp" alt="arrow" class="basket__goods-img" />
+                    </div>
+                  </div>
+                  <div class="profile__body-history">
+                    <p class="body__history-data">3.05.2019</p>
+                    <p class="body__history-status">Платеж принят</p>
+                    <div class="body__flex">
+                      <p class="body__history-all">2500 грн.</p>
+                      <div class="body__wrapper-history">
+                        <svg
+                          class="body__history-img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M23.8475 12.4669C23.6331 12.7602 18.5245 19.6484 11.9999 19.6484C5.47529 19.6484 0.36647 12.7602 0.152297 12.4672C-0.0507657 12.1889 -0.0507657 11.8115 0.152297 11.5333C0.36647 11.24 5.47529 4.35174 11.9999 4.35174C18.5245 4.35174 23.6331 11.24 23.8475 11.533C24.0508 11.8113 24.0508 12.1889 23.8475 12.4669ZM11.9999 5.93415C7.19383 5.93415 3.03127 10.506 1.79907 12.0006C3.02968 13.4966 7.18352 18.066 11.9999 18.066C16.8057 18.066 20.968 13.495 22.2007 11.9995C20.9701 10.5037 16.8163 5.93415 11.9999 5.93415Z"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M11.9992 16.7471C9.38163 16.7471 7.25195 14.6174 7.25195 11.9998C7.25195 9.38219 9.38163 7.25252 11.9992 7.25252C14.6168 7.25252 16.7465 9.38219 16.7465 11.9998C16.7465 14.6174 14.6168 16.7471 11.9992 16.7471ZM11.9992 8.83497C10.2541 8.83497 8.83441 10.2547 8.83441 11.9998C8.83441 13.7449 10.2541 15.1646 11.9992 15.1646C13.7443 15.1646 15.164 13.7449 15.164 11.9998C15.164 10.2547 13.7444 8.83497 11.9992 8.83497Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile__body-history">
+                    <p class="body__history-data">10.05.2019</p>
+                    <p class="body__history-status">Платеж принят</p>
+                    <div class="body__flex">
+                      <p class="body__history-all">2400 грн.</p>
+
+                      <div class="body__wrapper-history">
+                        <svg
+                          class="body__history-img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path
+                            d="M23.8475 12.4669C23.6331 12.7602 18.5245 19.6484 11.9999 19.6484C5.47529 19.6484 0.36647 12.7602 0.152297 12.4672C-0.0507657 12.1889 -0.0507657 11.8115 0.152297 11.5333C0.36647 11.24 5.47529 4.35174 11.9999 4.35174C18.5245 4.35174 23.6331 11.24 23.8475 11.533C24.0508 11.8113 24.0508 12.1889 23.8475 12.4669ZM11.9999 5.93415C7.19383 5.93415 3.03127 10.506 1.79907 12.0006C3.02968 13.4966 7.18352 18.066 11.9999 18.066C16.8057 18.066 20.968 13.495 22.2007 11.9995C20.9701 10.5037 16.8163 5.93415 11.9999 5.93415Z"
+                            fill="currentColor"
+                          />
+                          <path
+                            d="M11.9992 16.7471C9.38163 16.7471 7.25195 14.6174 7.25195 11.9998C7.25195 9.38219 9.38163 7.25252 11.9992 7.25252C14.6168 7.25252 16.7465 9.38219 16.7465 11.9998C16.7465 14.6174 14.6168 16.7471 11.9992 16.7471ZM11.9992 8.83497C10.2541 8.83497 8.83441 10.2547 8.83441 11.9998C8.83441 13.7449 10.2541 15.1646 11.9992 15.1646C13.7443 15.1646 15.164 13.7449 15.164 11.9998C15.164 10.2547 13.7444 8.83497 11.9992 8.83497Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="profile__pay-none">У вас не было транзакций!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="map map__profile">@@include("../components/map/map.html")</section>
+      </main>
+      <footer class="footer footer__profile">@@include("../components/footer/footer.html")</footer>
+    </div>
+    <script defer src="js/about.bundle.js"></script>
+    <script defer src="js/basket.bundle.js"></script>
+    <script defer src="js/main.bundle.js"></script>
+    <script defer src="js/profile.bundle.js"></script>
+  </body>
+</html>
