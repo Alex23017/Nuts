@@ -326,8 +326,20 @@ body.open {
   cursor: pointer;
 }
 
+.user__reg {
+  position: relative;
+}
+.user__reg::after {
+  position: absolute;
+  content: "";
+  bottom: -0.25rem;
+  left: 0;
+  background-color: #93b474;
+  width: 100%;
+  height: 0.125rem;
+}
+
 .header__user-login:hover::after,
-.header__user-reg:hover::after,
 .header__language:hover::after {
   position: absolute;
   content: "";
@@ -1029,14 +1041,20 @@ body.open {
   background-color: #93b474;
 }
 
-.mob__login-signup:hover::after {
+.mob__login-signup::after {
   position: absolute;
   content: "";
   bottom: -0.3125rem;
   left: 1.625rem;
   height: 0.0625rem;
-  width: 46%;
+  width: 24%;
   background-color: #93b474;
+}
+@media (max-width: 768px) {
+  .mob__login-signup::after {
+    min-width: 5.625rem;
+    max-width: 5.625rem;
+  }
 }
 
 .mob__items {
