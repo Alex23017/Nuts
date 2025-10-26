@@ -8814,6 +8814,11 @@ body.loading {
   left: 0.125rem;
   bottom: -0.1875rem;
 }
+@media (max-width: 768px) {
+  .profile__main-text {
+    font-size: 0.875rem;
+  }
+}
 
 .profile__main-title--profile {
   margin-block-start: 2.1875rem;
@@ -9196,12 +9201,23 @@ body.loading {
 .body__wrapper-history:hover::after {
   position: absolute;
   content: "Просмотреть заказ";
+  white-space: wrap;
   top: -3.125rem;
   left: -2.5625rem;
   background-color: #337d5a;
   padding-block-start: 0.5rem;
   width: 6.625rem;
   height: 2.8125rem;
+}
+@media (max-width: 1100px) {
+  .body__wrapper-history:hover::after {
+    left: -3.9375rem;
+  }
+}
+@media (max-width: 768px) {
+  .body__wrapper-history:hover::after {
+    left: -4.6875rem;
+  }
 }
 
 .profile__pay-none {
@@ -9213,6 +9229,11 @@ body.loading {
   text-align: end;
   margin-block-start: 1.75rem;
   margin-inline-end: -0.625rem;
+}
+@media (max-width: 768px) {
+  .profile__pay-none {
+    font-size: 0.625rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -9227,16 +9248,22 @@ body.loading {
   }
 }
 
-.basket__goods-title--block {
+.basket__goods-title--block,
+.basket__goods-title--flex {
   display: none;
 }
 @media (max-width: 768px) {
-  .basket__goods-title--block {
+  .basket__goods-title--block,
+  .basket__goods-title--flex {
     display: flex;
   }
 }
 
 .body__flex {
   display: flex;
+}
+
+.basket__goods-title--block {
+  margin-inline-start: 0.9375rem;
 }
 /*# sourceMappingURL=style.css.map */
