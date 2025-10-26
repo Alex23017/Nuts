@@ -9,6 +9,12 @@ import "swiper/css/pagination";
 window.addEventListener("load", () => {
   const preload = document.querySelector(".preload");
   const preloadText = document.querySelector(".preload__text");
+  const logoLink = document.querySelector(".header__logo-img");
+  if (logoLink) {
+    logoLink.addEventListener("click", () => {
+      window.location.pathname = "index.html";
+    });
+  }
 
   const texts = ["Собираем орехи...", "Подготовка завершена!"];
   let textMaxWidth = 50;
