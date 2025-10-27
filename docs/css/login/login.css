@@ -90,6 +90,11 @@
 }
 
 .login__registr {
+  display: flex;
+  justify-content: center;
+}
+
+.login__registr--link {
   position: relative;
   margin-block-start: 1.125rem;
   font-family: "Montserrat", sans-serif;
@@ -100,14 +105,14 @@
   color: #337d5a;
   text-align: center;
 }
-.login__registr::after {
+.login__registr--link::after {
   position: absolute;
   content: "";
   background-color: #337d5a;
   width: 5.75rem;
   height: 0.09375rem;
   bottom: -0.3125rem;
-  left: 10rem;
+  left: 0;
 }
 
 .map__login {

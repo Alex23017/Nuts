@@ -312,6 +312,11 @@
     top: 36%;
   }
 }
+@media (max-width: 414px) {
+  .eco__company .play__eco {
+    top: 10%;
+  }
+}
 .eco__company .eco__title {
   top: 50.6%;
 }
@@ -320,12 +325,23 @@
     top: 20%;
   }
 }
+@media (max-width: 414px) {
+  .eco__company .eco__title {
+    top: 38%;
+  }
+}
 .eco__company .eco__text {
   top: 59.4%;
 }
 @media (max-width: 1200px) {
   .eco__company .eco__text {
     top: 64%;
+  }
+}
+@media (max-width: 414px) {
+  .eco__company .eco__text {
+    top: 60%;
+    font-size: 8px;
   }
 }
 
@@ -394,6 +410,7 @@
 @media (max-width: 768px) {
   .meeting__galery--company .meeting__play--galery {
     top: 25%;
+    width: 32px;
   }
 }
 .meeting__galery--company .meeting__text--galery {
@@ -401,14 +418,15 @@
 }
 @media (max-width: 768px) {
   .meeting__galery--company .meeting__text--galery {
-    font-size: 10px;
-    top: 70%;
+    font-size: 8px;
+    top: 60%;
     line-height: 100%;
   }
 }
 @media (max-width: 768px) {
   .meeting__galery--company .meeting__title--galery {
-    top: 55%;
+    top: 45%;
+    font-size: 12px;
   }
 }
 

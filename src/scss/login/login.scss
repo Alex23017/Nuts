@@ -63,6 +63,10 @@
   padding-block: 17px;
 }
 .login__registr {
+  display: flex;
+  justify-content: center;
+}
+.login__registr--link {
   position: relative;
   margin-block-start: 18px;
   @include font($Montserrat13);
@@ -76,7 +80,8 @@
     width: 92px;
     height: 1.5px;
     bottom: -5px;
-    left: 160px;
+    left: 0px;
+    
   }
 }
 

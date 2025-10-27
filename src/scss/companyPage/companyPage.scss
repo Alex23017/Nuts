@@ -213,17 +213,27 @@
     @media (max-width: 600px) {
       top: 36%;
     }
+    @media (max-width: 414px) {
+      top: 10%;
+    }
   }
   .eco__title {
     top: 50.6%;
     @media (max-width: 600px) {
       top: 20%;
     }
+    @media (max-width: 414px) {
+      top: 38%;
+    }
   }
   .eco__text {
     top: 59.4%;
     @media (max-width: 1200px) {
       top: 64%;
+    }
+    @media (max-width: 414px) {
+      top: 60%;
+      font-size: 8px;
     }
   }
 }
@@ -276,19 +286,21 @@
   .meeting__play--galery {
     @media (max-width: 768px) {
       top: 25%;
+      width: 32px;
     }
   }
   .meeting__text--galery {
     padding-inline: 10px;
     @media (max-width: 768px) {
-      font-size: 10px;
-      top: 70%;
+      font-size: 8px;
+      top: 60%;
       line-height: 100%;
     }
   }
   .meeting__title--galery {
     @media (max-width: 768px) {
-      top: 55%;
+      top: 45%;
+      font-size: 12px;
     }
   }
 }
@@ -296,7 +308,7 @@
 .footer__company {
   padding-block-start: 75px;
   @media (max-width: 768px) {
-  padding-block-start: 40px;
+    padding-block-start: 40px;
   }
 }
 

@@ -126,6 +126,15 @@
 }
 
 .login__registr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login__registr--link {
   position: relative;
   -webkit-margin-before: 18px;
           margin-block-start: 18px;
@@ -137,14 +146,14 @@
   color: #337d5a;
   text-align: center;
 }
-.login__registr::after {
+.login__registr--link::after {
   position: absolute;
   content: "";
   background-color: #337d5a;
   width: 92px;
   height: 1.5px;
   bottom: -5px;
-  left: 160px;
+  left: 0px;
 }
 
 .map__login {
