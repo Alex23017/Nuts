@@ -425,7 +425,7 @@ document.addEventListener("DOMContentLoaded", () => {
       paginationHiddenSmall.classList.add("hidden");
       stopBtnSmall.classList.add("open");
       videoOpenSmall.classList.add("open");
-      videoOpenSmall.src = "https://www.youtube.com/embed/zo7i8VTpfNM?autoplay=1&mute=0&controls=1";
+      videoOpenSmall.src = "https://www.youtube.com/embed/hT4O8VI__XE?autoplay=1&mute=0&controls=1";
 
       aboutSwipers.forEach((el) => {
         el.swiperInstance.allowSlideNext = false;
@@ -467,7 +467,7 @@ document.addEventListener("DOMContentLoaded", () => {
       overlayWrapper.classList.add("hidden");
       videoOpen.classList.add("open");
       stopBtn.classList.add("open");
-      videoOpen.src = "https://www.youtube.com/embed/zo7i8VTpfNM?autoplay=1&mute=0&controls=1";
+      videoOpen.src = "https://www.youtube.com/embed/hT4O8VI__XE?autoplay=1&mute=0&controls=1";
     });
   }
   if (stopBtn) {
