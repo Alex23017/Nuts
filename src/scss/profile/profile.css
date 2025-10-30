@@ -242,9 +242,12 @@
           padding-block-start: 45px;
 }
 
+.location__body-login {
+  top: 200px;
+}
 @media (min-width: 1930px) {
   .location__body-login {
-    top: 220px;
+    top: 250px;
   }
 }
 @media (max-width: 1600px) {

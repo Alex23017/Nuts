@@ -149,8 +149,9 @@
   }
 }
 .location__body-login {
+  top: 200px;
   @media (min-width: 1930px) {
-    top: 220px;
+    top: 250px;
   }
   @media (max-width: 1600px) {
     top: 200px;
