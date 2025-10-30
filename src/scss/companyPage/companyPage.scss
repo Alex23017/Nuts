@@ -5,12 +5,23 @@
     max-width: 520px;
   }
   .gallery__card {
+    cursor: pointer;
     max-width: 100%;
     position: relative;
+    min-height: 250px;
+
     img {
       position: absolute;
       inset: 0;
-      opacity: 0.04;
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      object-fit: cover;
+      &:hover {
+        opacity: 0.2;
+      }
     }
   }
   @media (max-width: 1240px) {
@@ -250,6 +261,7 @@
   }
 }
 
+
 .gallery__down-copmany {
   .meeting__play--galery {
     top: 43.8%;
@@ -258,6 +270,16 @@
   @media (max-width: 1919px) {
     margin-inline-start: 0px;
   }
+}
+.meeting__play--galery{
+  @media (max-width: 1500px) {
+    top: 25%;
+  }
+  @media (max-width: 768px) {
+    top: 40%;
+  
+  }
+
 }
 .news__all--company {
   margin-block-start: 2px;

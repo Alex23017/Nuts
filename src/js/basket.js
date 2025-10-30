@@ -142,10 +142,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
   window.addEventListener("scroll", () => {
     if (basketOverlay && window.scrollY > 400) {
       basketOverlay.classList.remove("active");
     }
   });
+
+  const btnOrder = document.querySelector(".basket__back-order--succsecc");
+
+  if (btnOrder) {
+    btnOrder.addEventListener("click", (e) => {
+      e.preventDefault();
+      const cartItem = document.querySelectorAll(".cart-item");
+      if (cartItem.length > 0) {
+        window.location.href = "orderProduct.html";
+      } else {
+        alert("Добавьте товар");
+      }
+    });
+  }
 });

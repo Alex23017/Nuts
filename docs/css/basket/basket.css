@@ -260,7 +260,7 @@
   .input__card {
     width: 2.125rem;
     height: 1.75rem;
-    font-size: 0.5rem;
+    font-size: 0.625rem;
     padding-inline: 0;
     text-align: center;
   }
@@ -330,7 +330,7 @@
 }
 @media (max-width: 600px) {
   .input__price {
-    font-size: 0.5rem;
+    font-size: 0.625rem;
     max-width: 5rem;
   }
 }
@@ -405,7 +405,7 @@
 }
 @media (max-width: 600px) {
   .input__price-all {
-    font-size: 0.5rem;
+    font-size: 0.625rem;
   }
 }
 
@@ -473,7 +473,7 @@
   .basket__back {
     padding-block: 0.5rem;
     padding-inline: 0.5rem;
-    font-size: 0.5rem;
+    font-size: 0.625rem;
   }
 }
 

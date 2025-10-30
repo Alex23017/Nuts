@@ -9,10 +9,10 @@ import "swiper/css/pagination";
 window.addEventListener("load", () => {
   const preload = document.querySelector(".preload");
   const preloadText = document.querySelector(".preload__text");
-  const logoLink = document.querySelector(".header__logo-img");
+  const logoLink = document.querySelector(".header__logo");
   if (logoLink) {
     logoLink.addEventListener("click", () => {
-      window.location.pathname = "index.html";
+      window.location.pathname = "Nuts/index.html";
     });
   }
 
@@ -482,4 +482,6 @@ document.addEventListener("DOMContentLoaded", () => {
       videoOpen.src = "";
     });
   }
+
+
 });

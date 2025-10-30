@@ -242,17 +242,24 @@
           padding-block-start: 45px;
 }
 
-.location__body-login {
-  top: 19.7%;
-}
 @media (min-width: 1930px) {
   .location__body-login {
     top: 220px;
   }
 }
+@media (max-width: 1600px) {
+  .location__body-login {
+    top: 200px;
+  }
+}
 @media (max-width: 1200px) {
   .location__body-login {
-    top: 250px;
+    top: 300px;
+  }
+}
+@media (max-width: 992.99px) {
+  .location__body-login {
+    top: 260px;
   }
 }
 @media (max-width: 768px) {

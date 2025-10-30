@@ -5,6 +5,10 @@
   max-height: 46.25rem;
 }
 
+.target__video-wrapper.open {
+  display: flex;
+}
+
 .play__target {
   position: absolute;
   top: 26.25rem;
@@ -29,6 +33,9 @@
   .play__target {
     top: 70%;
   }
+}
+.play__target.hidden {
+  display: none;
 }
 
 .target {
@@ -129,10 +136,15 @@
   }
 }
 
+.overlay__target-img {
+  position: relative;
+}
+
 .overlay__target {
   position: absolute;
   width: 100%;
   height: 100%;
+  max-height: 46.25rem;
   z-index: 10;
   left: 0;
   background-color: rgba(13, 12, 12, 0.5490196078);

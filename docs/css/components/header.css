@@ -271,6 +271,7 @@
   display: flex;
   flex: 1;
   gap: 0.5625rem;
+  cursor: pointer;
   align-items: center;
   padding-block-start: 1.0625rem;
   padding-block-end: 0.875rem;
